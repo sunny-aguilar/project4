@@ -1,3 +1,11 @@
+# Directories
+cmake-build-debug/
+.idea/
+
+# Specific Files
+CMakeLists.txt
+*.DS_Stor
+
 # Prerequisites
 *.d
 
