@@ -62,6 +62,9 @@ void Game::startGame() {
 *********************************************************************/
 void Game::gameFlow() {
     do {
+        // select number of fighters for each team
+        menu.menuTotalFighters();
+
         // select player
         selectPlayer();
 

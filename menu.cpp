@@ -24,6 +24,17 @@ void Menu::mainMenu() {
 }
 
 /*********************************************************************
+** Description:     prompts user to enter the number of fighters for
+**                  both teams
+*********************************************************************/
+void Menu::menuTotalFighters() {
+    int num = 1;
+    cout << "\n SELECT THE NUMBER OF FIGHTERS FOR EACH TEAM\n"
+            "+--------------------------------------------------+\n";
+    cout << "Team #" << num << " >> ";
+}
+
+/*********************************************************************
 ** Description:     displays the menu of characters to choose from
 *********************************************************************/
 void Menu::menuSelectFighter(int player) {
