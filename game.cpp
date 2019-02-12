@@ -63,7 +63,7 @@ void Game::startGame() {
 void Game::gameFlow() {
     do {
         // select number of fighters for each team
-        menu.menuTotalFighters();
+        setTeam();
 
         // select player
         selectPlayer();
@@ -83,6 +83,9 @@ void Game::gameFlow() {
 **                  or false bool value.
 *********************************************************************/
 void Game::setTeam() {
+    // prompt user to select team players
+    menu.menuTotalFighters();
+
 
 }
 
