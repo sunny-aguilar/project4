@@ -14,7 +14,7 @@
 ** Description:     no-args default constructor that sets the member
 **                  variables
 *********************************************************************/
-Game::Game(): fighterType{UNSET}, rounds{0} {}
+Game::Game(): fighterType{UNSET}, teamQty{0}, rounds{0} {}
 
 /*********************************************************************
 ** Description:     destructor

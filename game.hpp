@@ -38,11 +38,10 @@ public:
 
 private:
     Menu menu;
-    int teamOne;
-    int teamTwo;
     Fighter fighterType[2];
     Character *playerOne;
     Character *playerTwo;
+    int teamQty;
     int rounds;
 
 };
