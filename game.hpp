@@ -29,6 +29,7 @@ public:
     void playGame();
     void startGame();
     void gameFlow();
+    void setTeam();
     void selectPlayer();
     void startCombat();
     bool checkDeath(Character *defender);
