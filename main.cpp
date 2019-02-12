@@ -12,9 +12,10 @@
 **                  class.
 *********************************************************************/
 #include "game.hpp"
-#include <iostream>
 
 int main() {
-
+    auto seed = static_cast<unsigned int>(time(nullptr));
+    srand(seed);                // create random number generator
+    Game game;                  // create game object
     return 0;
 }

@@ -1,8 +1,26 @@
-//
-// Created by Sandro on 2/11/2019.
-//
+/*********************************************************************
+** Author:          Sandro Aguilar
+** Date:            Feb 15, 2019
+** Description:     Barbarian class is derived from Character class.
+**                  Barbarian has no special abilities to call.
+*********************************************************************/
+#ifndef BARBARIAN_HPP
+#define BARBARIAN_HPP
 
-#ifndef PROJECT4_BARBARIAN_HPP
-#define PROJECT4_BARBARIAN_HPP
+#include "character.hpp"
 
-#endif //PROJECT4_BARBARIAN_HPP
+class Barbarian : public Character {
+public:
+    Barbarian();
+    ~Barbarian() override;
+    void initializeDice() override;
+    int rollDice(std::string action) override;
+    void attackPlayer(Character *defender) override;
+    void defend() override;
+    void specialAbility() override;
+
+private:
+
+};
+
+#endif //PROJECT3_BARBARIAN_HPP
