@@ -38,7 +38,8 @@ public:
 
 private:
     Menu menu;
-    int
+    int teamOne;
+    int teamTwo;
     Fighter fighterType[2];
     Character *playerOne;
     Character *playerTwo;

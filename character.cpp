@@ -21,6 +21,7 @@ Character::Character() {}
 *********************************************************************/
 Character::Character(string name, int attack, int defense, int armor, int strength) :
         name{name},
+        characterName{},
         attack{attack},
         defense{defense},
         armor{armor},
