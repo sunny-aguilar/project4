@@ -12,6 +12,7 @@
 #define GAME_HPP
 
 #include "menu.hpp"
+#include "heroList.hpp"
 #include "character.hpp"
 #include "vampire.hpp"
 #include "barbarian.hpp"
@@ -37,6 +38,7 @@ public:
 
 private:
     Menu menu;
+    HeroList heroes;
     Fighter fighterType[2];
     Character *playerOne;
     Character *playerTwo;

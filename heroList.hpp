@@ -8,4 +8,12 @@
 #ifndef HEROLIST_HPP
 #define HEROLIST_HPP
 
+class HeroList {
+public:
+    HeroList();
+
+private:
+
+};
+
 #endif //PROJECT4_HEROLIST_HPP
