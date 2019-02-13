@@ -1,6 +1,6 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
-** Date:            Feb 15, 2019
+** Date:            Feb 22, 2019
 ** Description:     Menu class holds the main menu and user prompts
 **                  for the program. The menu class lives inside of
 **                  the Game class and the menus are called

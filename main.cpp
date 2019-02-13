@@ -1,6 +1,6 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
-** Date:            Feb 15, 2019
+** Date:            Feb 22, 2019
 ** Description:     PROJECT 3 - this program is a fantasy combat
 **                  simulation where two characters fight using
 **                  various attack power and special abilities.

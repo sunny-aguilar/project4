@@ -1,6 +1,6 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
-** Date:            Feb 15, 2019
+** Date:            Feb 22, 2019
 ** Description:     Game class holds various classes in it and is the
 **                  main driver behind the game. The game flow is
 **                  controlled with various functions here and

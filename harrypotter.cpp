@@ -1,6 +1,6 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
-** Date:            Feb 15, 2019
+** Date:            Feb 22, 2019
 ** Description:     HarryPotter class is derived from Character class.
 **                  HarryPotter has the special ability to revive after
 **                  health drops below 0 but only one time. HarryPotter

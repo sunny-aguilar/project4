@@ -1,6 +1,6 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
-** Date:            Feb 15, 2019
+** Date:            Feb 22, 2019
 ** Description:     Vampire class is derived from Character class.
 **                  Vampire has the special ability of charming
 **                  opponents into not attacking 50% of the time.
@@ -26,4 +26,4 @@ private:
 
 };
 
-#endif //PROJECT3_VAMPIRE_HPP
+#endif //PROJECT4_VAMPIRE_HPP

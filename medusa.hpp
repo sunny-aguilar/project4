@@ -1,6 +1,6 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
-** Date:            Feb 15, 2019
+** Date:            Feb 22, 2019
 ** Description:     Medusa class is derived from Character. Medusa
 **                  has a special offensive ability that allows her
 **                  to immediately defeat her opponents upon rolling
@@ -27,4 +27,4 @@ private:
 
 };
 
-#endif //PROJECT3_MEDUSA_HPP
+#endif //PROJECT4_MEDUSA_HPP

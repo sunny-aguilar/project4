@@ -1,6 +1,6 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
-** Date:            Feb 15, 2019
+** Date:            Feb 22, 2019
 ** Description:     Dice are implemented using a class which allows
 **                  each character to have their own type of dice
 **                  as an object inside of them. This allows characters
@@ -31,4 +31,4 @@ protected:
     int N;                          // number of sides on the die
 };
 
-#endif //PROJECT3_DICE_HPP
+#endif //PROJECT4_DICE_HPP
