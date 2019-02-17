@@ -88,9 +88,9 @@ void Game::gameFlow() {
 *********************************************************************/
 void Game::setTeam() {
     // prompt user to select team players
-    menu.menuTotalFighters();
+    menu.menuTotalFighters(1);
     teamOneQty = menu.validateNumber(1,100);
-    menu.menuTotalFighters();
+    menu.menuTotalFighters(2);
     teamTwoQty = menu.validateNumber(1,100);
 }
 

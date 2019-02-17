@@ -25,7 +25,7 @@ using std::endl;
 class Menu {
 public:
     void mainMenu();
-    void menuTotalFighters();
+    void menuTotalFighters(int team);
     void menuSelectFighter(int player);
     int validateNumber(int min, int max);
     void menuDisplayPlayers(int fighter1, int fighter2);

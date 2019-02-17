@@ -27,12 +27,10 @@ void Menu::mainMenu() {
 ** Description:     prompts user to enter the number of fighters for
 **                  both teams
 *********************************************************************/
-void Menu::menuTotalFighters() {
-    int num = 1;
+void Menu::menuTotalFighters(int team) {
     cout << "\n SELECT THE NUMBER OF FIGHTERS FOR EACH TEAM\n"
             "+--------------------------------------------------+\n";
-    cout << "Team #" << num << " >> ";
-    num++;
+    cout << "Team #" << team << " >> ";
 }
 
 /*********************************************************************
