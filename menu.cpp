@@ -32,6 +32,7 @@ void Menu::menuTotalFighters() {
     cout << "\n SELECT THE NUMBER OF FIGHTERS FOR EACH TEAM\n"
             "+--------------------------------------------------+\n";
     cout << "Team #" << num << " >> ";
+    num++;
 }
 
 /*********************************************************************
