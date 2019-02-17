@@ -44,9 +44,9 @@ private:
     Fighter fighterType[2];
     Character *playerOne;
     Character *playerTwo;
-    int teamQty;
+    int teamOneQty;
+    int teamTwoQty;
     int rounds;
-
 };
 
 #endif //PROJECT4_GAME_HPP

@@ -14,7 +14,11 @@
 ** Description:     no-args default constructor that sets the member
 **                  variables
 *********************************************************************/
-Game::Game(): fighterType{UNSET}, teamQty{0}, rounds{0} {}
+Game::Game() :
+    fighterType{UNSET},
+    teamOneQty{0},
+    teamTwoQty{0},
+    rounds{0} {}
 
 /*********************************************************************
 ** Description:     destructor
@@ -85,8 +89,9 @@ void Game::gameFlow() {
 void Game::setTeam() {
     // prompt user to select team players
     menu.menuTotalFighters();
-
-
+    teamOneQty = menu.validateNumber(1,100);
+    menu.menuTotalFighters();
+    teamTwoQty = menu.validateNumber(1,100);
 }
 
 /*********************************************************************
