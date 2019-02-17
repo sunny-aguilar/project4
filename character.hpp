@@ -41,6 +41,7 @@ public:
 
 protected:
     string name;
+    string characterName;
     int attack;
     int defense;
     int armor;

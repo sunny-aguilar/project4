@@ -30,6 +30,7 @@ public:
     void playGame();
     void startGame();
     void gameFlow();
+    void setTeam();
     void selectPlayer();
     void startCombat();
     bool checkDeath(Character *defender);
@@ -42,6 +43,7 @@ private:
     Fighter fighterType[2];
     Character *playerOne;
     Character *playerTwo;
+    int teamQty;
     int rounds;
 
 };

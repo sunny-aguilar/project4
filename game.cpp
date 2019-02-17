@@ -14,7 +14,7 @@
 ** Description:     no-args default constructor that sets the member
 **                  variables
 *********************************************************************/
-Game::Game(): fighterType{UNSET}, rounds{0} {}
+Game::Game(): fighterType{UNSET}, teamQty{0}, rounds{0} {}
 
 /*********************************************************************
 ** Description:     destructor
@@ -63,7 +63,7 @@ void Game::startGame() {
 void Game::gameFlow() {
     do {
         // select number of fighters for each team
-        menu.menuTotalFighters();
+        setTeam();
 
         // select player
         selectPlayer();
@@ -75,6 +75,18 @@ void Game::gameFlow() {
         // start combat
         startCombat();
     } while (playAgain());
+}
+
+/*********************************************************************
+** Description:     this function allows a player to set up the teams
+**                  for each side
+**                  or false bool value.
+*********************************************************************/
+void Game::setTeam() {
+    // prompt user to select team players
+    menu.menuTotalFighters();
+
+
 }
 
 /*********************************************************************
