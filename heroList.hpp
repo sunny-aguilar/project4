@@ -13,6 +13,9 @@ public:
     HeroList();
 
 private:
+    struct HeroNode {
+
+    };
 
 };
 
