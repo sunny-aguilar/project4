@@ -68,6 +68,8 @@ void Game::gameFlow() {
     do {
         // select number of fighters for each team
         setTeam();
+        cout << "Team #1 " << teamOneQty << endl;
+        cout << "Team #2 " << teamTwoQty << endl;
 
         // select player
         selectPlayer();
