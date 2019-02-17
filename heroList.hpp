@@ -22,11 +22,11 @@ public:
 
 private:
     struct HeroNode {
-        HeroNode(HeroNode *hero, HeroNode *next = nullptr) {
-            this->hero = hero;
+        HeroNode(HeroNode *head, HeroNode *next = nullptr) {
+            this->head = head;
             this->next = next;
         }
-        HeroNode *hero;
+        HeroNode *head;
         HeroNode *next;
     };
 
