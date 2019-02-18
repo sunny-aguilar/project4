@@ -102,7 +102,16 @@ void Game::setTeam() {
 **                  to class data variables.
 *********************************************************************/
 void Game::selectPlayer() {
-// initialize fighters chosen to fight
+    for (int index = 0; index < teamOneQty; index++) {
+        menu.menuSelectFighter(1);
+    }
+
+
+    for (int index = 0; index < teamTwoQty; index++) {
+
+    }
+
+    // initialize fighters chosen to fight
     for (int player: {0,1}) {
         menu.menuSelectFighter(player+1);
         switch (menu.validateNumber(1,5)) {
@@ -111,7 +120,7 @@ void Game::selectPlayer() {
                 fighterType[player] = VAMPIRE;
                 if (player == 0) {
                     playerOne = new Vampire;
-                    heroes.setHeroes(playerOne, 0);
+                    heroes.setHeroes(playerOne, FIRSTPLAYER);
                 }
                 else if (player == 1) {
                     playerTwo = new Vampire;
