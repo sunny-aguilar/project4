@@ -126,8 +126,8 @@ bool HeroList::isEmpty(HeroNode *team) {
 *********************************************************************/
 void HeroList::startTournament() {
 
-
-
+    // start hero combat
+    heroFight();
 
 
 }
@@ -136,6 +136,13 @@ void HeroList::startTournament() {
 ** Description:     combat operations
 *********************************************************************/
  void HeroList::heroFight() {
+
+
+     while (headTeamOne != nullptr && headTeamTwo != nullptr) {
+        startCombat(playerOne, playerOne);
+
+
+     }
 
  }
 

@@ -131,7 +131,7 @@ void Game::selectPlayer() {
 **                  After the game has ended, the dynamically created
 **                  players are deleted.
 *********************************************************************/
-void Game::startCombat() {
+void Game::startCombat(Character *playerOne, Character *playerTwo) {
     bool playerDead = false;
 
     do {

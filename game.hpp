@@ -33,7 +33,7 @@ public:
     void gameFlow();
     void setTeam();
     void selectPlayer();
-    void startCombat();
+    void startCombat(Character *playerOne, Character *playerTwo);
     bool checkDeath(Character *defender);
     bool playAgain();
     void exitGame();

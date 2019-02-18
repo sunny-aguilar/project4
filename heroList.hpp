@@ -8,6 +8,7 @@
 #ifndef HEROLIST_HPP
 #define HEROLIST_HPP
 
+#include "game.hpp"
 #include "menu.hpp"
 #include "character.hpp"
 #include "vampire.hpp"
@@ -18,9 +19,7 @@
 
 enum Player {FIRSTPLAYER, SECONDPLAYER};
 
-//struct HeroNode;
-
-class HeroList {
+class HeroList : public Game {
 private:
     struct HeroNode {
         HeroNode(Character *hero = nullptr, HeroNode *next = nullptr) {
