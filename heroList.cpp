@@ -60,7 +60,7 @@ Character *HeroList::pickHero(int heroType, string heroName) {
 /*********************************************************************
 ** Description:     adds a hero node to the back of the node list
 *********************************************************************/
-void HeroList::addHeroNode(int heroName, string heroType, HeroNode *team) {
+void HeroList::addHeroNode(int heroType, string heroName, HeroNode *team) {
     if (team == nullptr) {
         cout << "reached 2\n";
         team = new HeroNode( pickHero(heroType, heroName) );
