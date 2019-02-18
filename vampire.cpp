@@ -15,8 +15,7 @@
 **                  name / attack / defense / armor / strength
 **                  Attack Dice: 1d12, Defense Dice: 1d6
 *********************************************************************/
-Vampire::Vampire(string name) :
-        Character{name,0,0,1,18} {
+Vampire::Vampire(string name) : Character{name,0,0,1,18} {
     attackDice = new Dice*[1];
     defenseDice = new Dice*[1];
 }

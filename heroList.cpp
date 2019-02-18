@@ -30,12 +30,15 @@ Character *HeroList::pickHero(int heroType, string heroName) {
         case 1:
             return new Vampire(heroName);
         case 2:
-            return new Barbarian();
+            return new Barbarian(heroName);
         case 3:
+
             break;
         case 4:
+
             break;
         case 5:
+
             break;
         default:
             cout << "Unable to determine hero type!\n";
