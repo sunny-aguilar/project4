@@ -47,7 +47,7 @@ public:
     ~HeroList();
     void addHeroes(Player player, int heroType, string heroName);
     Character *pickHero(int heroType, string heroName);
-    void addHeroNode(string name, int heroType, HeroNode *team);
+    void addHeroNode(int heroType, string name, HeroNode *team);
     void traverseForward(HeroNode *team);
     bool isEmpty(HeroNode *team);
 
