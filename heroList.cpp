@@ -13,7 +13,8 @@
 HeroList::HeroList() :
     headTeamOne{nullptr},
     headTeamTwo{nullptr},
-    tailTeamOne{nullptr} {}
+    tailTeamOne{nullptr},
+    tailTeamTwo{nullptr} {}
 
 /*********************************************************************
 ** Description:     node list destructor
