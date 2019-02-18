@@ -10,7 +10,10 @@
 /*********************************************************************
 ** Description:     no-args default constructor
 *********************************************************************/
-HeroList::HeroList() {}
+HeroList::HeroList() :
+    headTeamOne{nullptr},
+    headTeamTwo{nullptr},
+    tailTeamOne{nullptr} {}
 
 /*********************************************************************
 ** Description:     node list destructor
@@ -56,10 +59,13 @@ Character *HeroList::pickHero(int heroType, string heroName) {
 ** Description:     adds a hero node to the back of the node list
 *********************************************************************/
 void HeroList::addHeroNodeTeamOne(string heroName, int heroType) {
+    cout << "reached 1\n"; // error after this
     if (headTeamOne == nullptr) {
+        cout << "reached 1\n";
         headTeamOne = new HeroNode( pickHero(heroType, heroName) );
     }
     else {
+        cout << "reached 3\n";
         HeroNode *heroPtr = headTeamOne;
 
         while (heroPtr->next != nullptr) {
@@ -68,6 +74,7 @@ void HeroList::addHeroNodeTeamOne(string heroName, int heroType) {
 
         heroPtr->next = new HeroNode( pickHero(heroType, heroName) );
     }
+
 }
 
 /*********************************************************************
