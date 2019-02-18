@@ -31,11 +31,11 @@ void HeroList::addHeroes(Player player, int heroType, string heroName) {
         case FIRSTPLAYER:
             // assign pickHero to the right team list
             addHeroNodeTeamOne(heroName, heroType);
-            traverseForwardTeamOne();
+            traverseForward();
             break;
         case SECONDPLAYER:
             addHeroNodeTeamTwo(heroName, heroType);
-            traverseForwardTeamTwo();
+            traverseForward();
             break;
         default:
             cout << "Unable to determine player!\n";
