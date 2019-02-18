@@ -105,8 +105,9 @@ void Game::selectPlayer() {
     string heroName;
     int heroType;
     for (int index = 0; index < teamOneQty; index++) {
-        menu.menuSelectFighter(1, index+1);
+        menu.menuSelectFighter(FIRSTPLAYER, index+1);
         heroType = menu.validateNumber(1,5);
+
         menu.menuEnterHeroName();
         getline(cin, heroName);
         heroes.addHeroes(FIRSTPLAYER, heroType, heroName);
@@ -115,80 +116,83 @@ void Game::selectPlayer() {
 
     for (int index = 0; index < teamTwoQty; index++) {
         menu.menuSelectFighter(SECONDPLAYER, index+1);
+        heroType = menu.validateNumber(1,5);
 
+        menu.menuEnterHeroName();
+        getline(cin, heroName);
+        heroes.addHeroes(SECONDPLAYER, heroType, heroName);
     }
 
     // initialize fighters chosen to fight
-    for (int player: {0,1}) {
-        menu.menuSelectFighter(player+1, 1);
-        switch (menu.validateNumber(1,5)) {
-            case 1:
-            {
-                fighterType[player] = VAMPIRE;
-                if (player == 0) {
-                    playerOne = new Vampire;
-                    heroes.setHeroes(playerOne, FIRSTPLAYER);
-                }
-                else if (player == 1) {
-                    playerTwo = new Vampire;
-                }
-            }
-                break;
-            case 2:
-            {
-                fighterType[player] = BARBARIAN;
-                if (player == 0) {
-                    playerOne = new Barbarian;
-                }
-                else if (player == 1) {
-                    playerTwo = new Barbarian;
-                }
-            }
-                break;
-            case 3:
-            {
-                fighterType[player] = BLUEMEN;
-                if (player == 0) {
-                    playerOne = new BlueMen;
-                }
-                else if (player == 1) {
-                    playerTwo = new BlueMen;
-                }
-            }
-                break;
-            case 4:
-            {
-                fighterType[player] = MEDUSA;
-                if (player == 0) {
-                    playerOne = new Medusa;
-                }
-                else if (player == 1) {
-                    playerTwo = new Medusa;
-                }
-            }
-                break;
-            case 5:
-            {
-                fighterType[player] = HARRYPOTTER;
-                if (player == 0) {
-                    playerOne = new HarryPotter;
-                }
-                else if (player == 1) {
-                    playerTwo = new HarryPotter;
-                }
-            }
-                break;
-            default:
-                cout << "Unable to determine fighter type\n";
-        }
-    }
+//    for (int player: {0,1}) {
+//        menu.menuSelectFighter(player+1, 1);
+//        switch (menu.validateNumber(1,5)) {
+//            case 1:
+//            {
+//                fighterType[player] = VAMPIRE;
+//                if (player == 0) {
+//                    //playerOne = new Vampire;
+//                }
+//                else if (player == 1) {
+//                    //playerTwo = new Vampire;
+//                }
+//            }
+//                break;
+//            case 2:
+//            {
+//                fighterType[player] = BARBARIAN;
+//                if (player == 0) {
+//                    //playerOne = new Barbarian;
+//                }
+//                else if (player == 1) {
+//                    //playerTwo = new Barbarian;
+//                }
+//            }
+//                break;
+//            case 3:
+//            {
+//                fighterType[player] = BLUEMEN;
+//                if (player == 0) {
+//                    playerOne = new BlueMen;
+//                }
+//                else if (player == 1) {
+//                    playerTwo = new BlueMen;
+//                }
+//            }
+//                break;
+//            case 4:
+//            {
+//                fighterType[player] = MEDUSA;
+//                if (player == 0) {
+//                    playerOne = new Medusa;
+//                }
+//                else if (player == 1) {
+//                    playerTwo = new Medusa;
+//                }
+//            }
+//                break;
+//            case 5:
+//            {
+//                fighterType[player] = HARRYPOTTER;
+//                if (player == 0) {
+//                    playerOne = new HarryPotter;
+//                }
+//                else if (player == 1) {
+//                    playerTwo = new HarryPotter;
+//                }
+//            }
+//                break;
+//            default:
+//                cout << "Unable to determine fighter type\n";
+//        }
+//    }
 
     // confirm players with user
-    int type[2] = {};
-    for (int player: {0,1}) {
-        type[player] = fighterType[player];
-    }
-    menu.menuDisplayPlayers(type[0], type[1]);
+//    int type[2] = {};
+//    for (int player: {0,1}) {
+//        type[player] = fighterType[player];
+//    }
+//    menu.menuDisplayPlayers(type[0], type[1]);
 
 }
 
