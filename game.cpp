@@ -111,6 +111,7 @@ void Game::selectPlayer() {
                 fighterType[player] = VAMPIRE;
                 if (player == 0) {
                     playerOne = new Vampire;
+                    heroes.setHeroes(playerOne, 0);
                 }
                 else if (player == 1) {
                     playerTwo = new Vampire;

@@ -16,9 +16,12 @@
 #include "medusa.hpp"
 #include "harrypotter.hpp"
 
+enum Player {FIRSTPLAYER, SECONDPLAYER};
+
 class HeroList {
 public:
     HeroList();
+    void setHeroes(Character *heroType, Player player);
 
 private:
     struct HeroNode {
@@ -30,6 +33,7 @@ private:
         HeroNode *next;
     };
 
+    Player player;
     HeroList *teamOne;
     HeroList *teamTwo;
     HeroList *losers;
