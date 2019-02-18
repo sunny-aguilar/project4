@@ -79,6 +79,7 @@ void Game::gameFlow() {
         //heroes.startTournament();
         while (!heroes.isTeamEmpty(FIRSTPLAYER) && !heroes.isTeamEmpty(SECONDPLAYER)) {
             startCombat(heroes.getHero(FIRSTPLAYER), heroes.getHero(SECONDPLAYER));
+            cout << "NEXT MATCH\n";
         }
     } while (playAgain());
 }
@@ -167,11 +168,7 @@ void Game::startCombat(Character *playerOne, Character *playerTwo) {
 
     } while (!playerDead);
 
-    // free allocated memory for players created during each fight
-    delete playerOne;
-    delete playerTwo;
-    playerOne = nullptr;
-    playerTwo = nullptr;
+
 }
 
 /*********************************************************************
