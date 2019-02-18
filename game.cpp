@@ -83,7 +83,6 @@ void Game::gameFlow() {
 /*********************************************************************
 ** Description:     this function allows a player to set up the teams
 **                  for each side
-**                  or false bool value.
 *********************************************************************/
 void Game::setTeam() {
     // prompt user to select team players

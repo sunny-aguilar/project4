@@ -38,7 +38,6 @@ private:
     HeroNode *tailTeamOne;
     HeroNode *tailTeamTwo;
     HeroNode *losers;
-    int number;
 
 public:
     HeroList();
