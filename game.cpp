@@ -102,6 +102,7 @@ void Game::setTeam() {
 **                  to class data variables.
 *********************************************************************/
 void Game::selectPlayer() {
+    string heroName;
     for (int index = 0; index < teamOneQty; index++) {
         menu.menuSelectFighter(1, index+1);
         heroes.addHeroes(FIRSTPLAYER, menu.validateNumber(1,5));

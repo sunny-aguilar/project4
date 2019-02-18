@@ -48,6 +48,15 @@ void Menu::menuSelectFighter(int player, int heroNum) {
 }
 
 /*********************************************************************
+** Description:     prompts user to enter hero name
+*********************************************************************/
+void Menu::menuEnterHeroName() {
+    cout << "\n ENTER A NAME FOR THIS HERO\n"
+            "+--------------------------------------------------+\n";
+    cout << ">> ";
+}
+
+/*********************************************************************
 ** Description:     displays characters chosen for battle
 *********************************************************************/
 void Menu::menuDisplayPlayers(int first, int second) {

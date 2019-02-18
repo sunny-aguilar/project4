@@ -28,6 +28,7 @@ void HeroList::addHeroes(Player player, int heroType) {
 Character *HeroList::pickHero(int heroType) {
     switch (heroType) {
         case 1:
+            return new Vampire();
             break;
         case 2:
             break;
