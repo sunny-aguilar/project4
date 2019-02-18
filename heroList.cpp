@@ -20,10 +20,10 @@ void HeroList::addHeroes(Player player, int heroType, string heroName) {
     switch (player) {
         case FIRSTPLAYER:
             // assign pickHero to the right team list
-            addHeroNode( pickHero(heroType, heroName) );
+            addHeroNode(heroName, heroType, heroName);
             break;
         case SECONDPLAYER:
-            addHeroNode( pickHero(heroType, heroName) );
+            addHeroNode(heroName, heroType, heroName);
             break;
         default:
             cout << "Unable to determine player!\n";
@@ -48,14 +48,20 @@ Character *HeroList::pickHero(int heroType, string heroName) {
 /*********************************************************************
 ** Description:     adds a hero node to the back of the node list
 *********************************************************************/
-void HeroList::addHeroNode(Character *&hero) {
+void HeroList::addHeroNode(string name, int heroType, string heroName) {
     if (headTeamOne == nullptr) {
-        headTeamOne = hero;
+        headTeamOne = new HeroNode( pickHero(heroType, heroName) );
     }
     else {
+        HeroNode *heroPtr = headTeamOne;
+
+        while (heroPtr->next != nullptr) {
+            heroPtr = heroPtr->next;
+        }
+
+        heroPtr->next = new HeroNode( pickHero(heroType, heroName) );
 
     }
-
 }
 
 

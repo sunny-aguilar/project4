@@ -23,7 +23,7 @@ public:
     HeroList();
     void addHeroes(Player player, int heroType, string heroName);
     Character *pickHero(int heroType, string heroName);
-    void addHeroNode(Character *&hero);
+    void addHeroNode(string name, int heroType, string heroName);
 
 private:
     struct HeroNode {
@@ -37,7 +37,8 @@ private:
     };
 
     Player player;
-    Character *headTeamOne;
+    HeroNode *headTeamOne;
+    HeroNode *headTeamTwo;
     HeroNode *teamOne;
     HeroNode *teamTwo;
     HeroNode *losers;
