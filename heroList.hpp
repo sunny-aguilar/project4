@@ -24,7 +24,8 @@ public:
     ~HeroList();
     void addHeroes(Player player, int heroType, string heroName);
     Character *pickHero(int heroType, string heroName);
-    void addHeroNode(string name, int heroType);
+    void addHeroNodeTeamOne(string name, int heroType);
+    void addHeroNodeTeamTwo(string name, int heroType);
 
 private:
     struct HeroNode {
