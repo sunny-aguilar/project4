@@ -48,7 +48,7 @@ public:
     void addHeroNode(int heroType, string name, HeroNode *&team);
     void traverseForward(HeroNode *team);
     bool isEmpty(HeroNode *team);
-    void setDice(HeroNode *&team);
+    //void setDice(HeroNode *&team);
 
 
 

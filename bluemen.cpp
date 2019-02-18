@@ -18,6 +18,7 @@
 BlueMen::BlueMen(string name) : Character{name,0,0,3,12} {
     attackDice = new Dice*[2];
     defenseDice = new Dice*[3];
+    initializeDice();
 }
 
 /*********************************************************************

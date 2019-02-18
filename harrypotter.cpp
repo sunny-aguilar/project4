@@ -18,6 +18,7 @@
 HarryPotter::HarryPotter(string name) : Character{name,0,0,0,10}, hogwartsUsed{false} {
     attackDice = new Dice*[2];
     defenseDice = new Dice*[2];
+    initializeDice();
 }
 
 /*********************************************************************

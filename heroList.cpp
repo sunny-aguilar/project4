@@ -110,14 +110,14 @@ bool HeroList::isEmpty(HeroNode *team) {
 ** Description:     calls the functions in the character class to
 **                  initialize the dice in each hero
 *********************************************************************/
-void HeroList::setDice(HeroNode *&team) {
-    HeroNode *nodePtr = team;
-
-    while (nodePtr != nullptr) {
-        cout << "Hero name is " <<nodePtr->hero->getName() << endl;
-        nodePtr->hero->initializeDice();
-        nodePtr = nodePtr->next;
-    }
-
-}
+//void HeroList::setDice(HeroNode *&team) {
+//    HeroNode *nodePtr = team;
+//
+//    while (nodePtr != nullptr) {
+//        cout << "Hero name is " <<nodePtr->hero->getName() << endl;
+//        nodePtr->hero->initializeDice();
+//        nodePtr = nodePtr->next;
+//    }
+//
+//}
 

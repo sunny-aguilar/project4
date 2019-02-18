@@ -15,6 +15,7 @@
 Barbarian::Barbarian(string name) : Character{name,0,0,0,12} {
     attackDice = new Dice*[2];
     defenseDice = new Dice*[2];
+    initializeDice();
 }
 
 /*********************************************************************
