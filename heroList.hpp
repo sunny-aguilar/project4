@@ -18,17 +18,9 @@
 
 enum Player {FIRSTPLAYER, SECONDPLAYER};
 
-class HeroList {
-public:
-    HeroList();
-    ~HeroList();
-    void addHeroes(Player player, int heroType, string heroName);
-    Character *pickHero(int heroType, string heroName);
-    void addHeroNodeTeamOne(string name, int heroType);
-    void addHeroNodeTeamTwo(string name, int heroType);
-    void traverseForwardTeamOne();
-    void traverseForwardTeamTwo();
+//struct HeroNode;
 
+class HeroList {
 private:
     struct HeroNode {
         HeroNode(Character *hero = nullptr, HeroNode *next = nullptr) {
@@ -48,6 +40,20 @@ private:
     HeroNode *teamOne;
     HeroNode *teamTwo;
     HeroNode *losers;
+    int number;
+
+public:
+    HeroList();
+    ~HeroList();
+    void addHeroes(Player player, int heroType, string heroName);
+    Character *pickHero(int heroType, string heroName);
+    void addHeroNodeTeamOne(string name, int heroType);
+    void addHeroNodeTeamTwo(string name, int heroType);
+    void traverseForwardTeamOne(HeroNode *team);
+    bool isEmpty(HeroNode *team);
+
+
+
 
 };
 

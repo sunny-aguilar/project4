@@ -73,6 +73,7 @@ void Game::gameFlow() {
         selectPlayer();
 
         // create combatant dice
+        // need to initialize dice inside of node list
         playerOne->initializeDice();
         playerTwo->initializeDice();
 

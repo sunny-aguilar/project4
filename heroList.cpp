@@ -100,8 +100,14 @@ void HeroList::addHeroNodeTeamTwo(string heroName, int heroType) {
 /*********************************************************************
 ** Description:     traverse the list forward
 *********************************************************************/
-void HeroList::traverseForwardTeamOne() {
-    HeroNode *nodePtr = headTeamOne;
+void HeroList::traverseForwardTeamOne(HeroNode *team) {
+    HeroNode *nodePtr = team;
+
+    if (isEmpty(team)) {
+        cout << "There are no players in the team!\n";
+        return;
+    }
+
     while (nodePtr != nullptr) {
         cout << "Hero name is " <<nodePtr->hero->getName() << endl;
         nodePtr = nodePtr->next;
@@ -109,15 +115,15 @@ void HeroList::traverseForwardTeamOne() {
 }
 
 /*********************************************************************
-** Description:     traverse the list forward
+** Description:     checks to see if a team list is empty
 *********************************************************************/
-void HeroList::traverseForwardTeamTwo() {
-    HeroNode *nodePtr = headTeamTwo;
-    while (nodePtr != nullptr) {
-        cout << "Hero name is " <<nodePtr->hero->getName() << endl;
-        nodePtr = nodePtr->next;
+bool HeroList::isEmpty(HeroNode *team) {
+    if (!team) {
+        return true;
+    }
+    else {
+        return false;
     }
 }
-
 
 
