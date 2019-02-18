@@ -12,26 +12,25 @@
 *********************************************************************/
 HeroList::HeroList() {}
 
-void HeroList::addHeroes(Player player, int heroType) {
+void HeroList::addHeroes(Player player, int heroType, string heroName) {
     switch (player) {
         case FIRSTPLAYER:
-            pickHero();
+            pickHero(heroType, heroName);
             break;
         case SECONDPLAYER:
-            pickHero();
+            pickHero(heroType);
             break;
         default:
             cout << "Unable to determine player!\n";
     }
 }
 
-Character *HeroList::pickHero(int heroType) {
+Character *HeroList::pickHero(int heroType, string heroName) {
     switch (heroType) {
         case 1:
-            return new Vampire();
-            break;
+            return new Vampire(heroName);
         case 2:
-            break;
+            return new Barbarian();
         case 3:
             break;
         case 4:
