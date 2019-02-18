@@ -44,3 +44,13 @@ Character *HeroList::pickHero(int heroType, string heroName) {
             cout << "Unable to determine hero type!\n";
     }
 }
+
+/*********************************************************************
+** Description:     adds a hero node to the back of the node list
+*********************************************************************/
+void HeroList::addHeroNode() {
+
+}
+
+
+
