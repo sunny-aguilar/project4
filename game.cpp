@@ -76,8 +76,10 @@ void Game::gameFlow() {
         // auto created inside hero classes in constructor
 
         // start combat
-        heroes.startTournament();
-        //startCombat();
+        //heroes.startTournament();
+        while (headTeamOne != nullptr && headTeamTwo != nullptr) {
+            startCombat(heroes.getHero(FIRSTPLAYER), heroes.getHero(SECONDPLAYER));
+        }
     } while (playAgain());
 }
 

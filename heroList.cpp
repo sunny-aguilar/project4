@@ -107,29 +107,11 @@ bool HeroList::isEmpty(HeroNode *team) {
 }
 
 /*********************************************************************
-** Description:     calls the functions in the character class to
-**                  initialize the dice in each hero
-*********************************************************************/
-//void HeroList::setDice(HeroNode *&team) {
-//    HeroNode *nodePtr = team;
-//
-//    while (nodePtr != nullptr) {
-//        cout << "Hero name is " <<nodePtr->hero->getName() << endl;
-//        nodePtr->hero->initializeDice();
-//        nodePtr = nodePtr->next;
-//    }
-//
-//}
-
-/*********************************************************************
 ** Description:     runs the tournament operations
 *********************************************************************/
 void HeroList::startTournament() {
-
     // start hero combat
-    heroFight();
-
-
+    //heroFight();
 }
 
 /*********************************************************************
@@ -137,16 +119,21 @@ void HeroList::startTournament() {
 *********************************************************************/
  void HeroList::heroFight() {
 
-
      while (headTeamOne != nullptr && headTeamTwo != nullptr) {
-        startCombat(playerOne, playerOne);
-
 
      }
 
  }
 
 
+Character *HeroList::getHero(Player player) {
+     switch (player) {
+         case 0: return headTeamOne->hero;
+         case 1: return headTeamTwo->hero;
+         default: cout << "Unable to return hero\n";
+     }
+ }
 
+HeroList *HeroList::getTeamList() {
 
-
+ }

@@ -8,7 +8,6 @@
 #ifndef HEROLIST_HPP
 #define HEROLIST_HPP
 
-#include "game.hpp"
 #include "menu.hpp"
 #include "character.hpp"
 #include "vampire.hpp"
@@ -19,14 +18,13 @@
 
 enum Player {FIRSTPLAYER, SECONDPLAYER};
 
-class HeroList : public Game {
+class HeroList {
 private:
     struct HeroNode {
         HeroNode(Character *hero = nullptr, HeroNode *next = nullptr) {
             this->hero = hero;
             this->next = next;
         }
-
         HeroNode *next;
         Character *hero;
     };
@@ -46,10 +44,10 @@ public:
     void addHeroNode(int heroType, string name, HeroNode *&team);
     void traverseForward(HeroNode *team);
     bool isEmpty(HeroNode *team);
-    //void setDice(HeroNode *&team);
     void startTournament();
     void heroFight();
-
+    Character *getHero(Player player);
+    HeroList *getTeamList();
 
 
 };
