@@ -27,17 +27,17 @@ public:
 
 private:
     struct HeroNode {
-        HeroNode(Character *hero = nullptr, HeroNode *head = nullptr, HeroNode *next = nullptr) {
+        HeroNode(Character *hero = nullptr, HeroNode *next = nullptr) {
             this->hero = hero;
-            this->head = head;
             this->next = next;
         }
-        HeroNode *head;
+
         HeroNode *next;
         Character *hero;
     };
 
     Player player;
+    HeroNode *head;
     Character *teamOne;
     Character *teamTwo;
     Character *losers;

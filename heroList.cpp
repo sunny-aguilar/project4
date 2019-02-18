@@ -49,7 +49,10 @@ Character *HeroList::pickHero(int heroType, string heroName) {
 ** Description:     adds a hero node to the back of the node list
 *********************************************************************/
 void HeroList::addHeroNode() {
+    if (head == nullptr) {
 
+    }
+    
 }
 
 
