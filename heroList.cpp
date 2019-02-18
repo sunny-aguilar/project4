@@ -12,15 +12,19 @@
 *********************************************************************/
 HeroList::HeroList() {}
 
-void HeroList::setHeroes(Character *heroType, Player player) {
+void HeroList::addHeroes(Player player, int heroType) {
     switch (player) {
         case FIRSTPLAYER:
-            teamOne = heroType;
+            pickHero();
             break;
         case SECONDPLAYER:
-            teamTwo = heroType;
+            pickHero();
             break;
         default:
             cout << "Unable to determine player!\n";
     }
+}
+
+Character *HeroList::pickHero() {
+
 }

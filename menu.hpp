@@ -26,7 +26,7 @@ class Menu {
 public:
     void mainMenu();
     void menuTotalFighters(int team);
-    void menuSelectFighter(int player);
+    void menuSelectFighter(int player, int heroNum);
     int validateNumber(int min, int max);
     void menuDisplayPlayers(int fighter1, int fighter2);
     void menuRound(int round);

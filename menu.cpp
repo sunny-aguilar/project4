@@ -36,15 +36,15 @@ void Menu::menuTotalFighters(int team) {
 /*********************************************************************
 ** Description:     displays the menu of characters to choose from
 *********************************************************************/
-void Menu::menuSelectFighter(int player) {
-    cout << "\n TEAM #" << player << " SELECT YOUR HEROS\n"
+void Menu::menuSelectFighter(int player, int heroNum) {
+    cout << "\n TEAM #" << player << " SELECT YOUR HEROES\n"
             "+--------------------------------------------------+\n";
     cout << "   1. Vampire class\n";
     cout << "   2. Barbarian class\n";
     cout << "   3. Blue Men class\n";
     cout << "   4. Medusa class\n";
     cout << "   5. Harry Potter class\n";
-    cout << "   >> ";
+    cout << "   Hero #" << heroNum << " >> ";
 }
 
 /*********************************************************************

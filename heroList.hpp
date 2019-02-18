@@ -21,8 +21,8 @@ enum Player {FIRSTPLAYER, SECONDPLAYER};
 class HeroList {
 public:
     HeroList();
-    void setHeroes(Character *heroType, Player player);
-    void addHeroNode();
+    void addHeroes(Player player, int heroType);
+    Character *pickHero();
 
 private:
     struct HeroNode {

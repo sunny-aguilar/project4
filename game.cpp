@@ -103,17 +103,19 @@ void Game::setTeam() {
 *********************************************************************/
 void Game::selectPlayer() {
     for (int index = 0; index < teamOneQty; index++) {
-        menu.menuSelectFighter(1);
+        menu.menuSelectFighter(1, index+1);
+        heroes.addHeroes(menu.validateNumber(1,5));
     }
 
 
     for (int index = 0; index < teamTwoQty; index++) {
+        menu.menuSelectFighter(2, index+1);
 
     }
 
     // initialize fighters chosen to fight
     for (int player: {0,1}) {
-        menu.menuSelectFighter(player+1);
+        menu.menuSelectFighter(player+1, 1);
         switch (menu.validateNumber(1,5)) {
             case 1:
             {
