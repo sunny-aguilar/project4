@@ -12,6 +12,10 @@
 *********************************************************************/
 HeroList::HeroList() {}
 
+/*********************************************************************
+** Description:     adds heroes to the linked list for player 1 and
+**                  player 2
+*********************************************************************/
 void HeroList::addHeroes(Player player, int heroType, string heroName) {
     switch (player) {
         case FIRSTPLAYER:
@@ -26,6 +30,9 @@ void HeroList::addHeroes(Player player, int heroType, string heroName) {
     }
 }
 
+/*********************************************************************
+** Description:     returns hero chosen
+*********************************************************************/
 Character *HeroList::pickHero(int heroType, string heroName) {
     switch (heroType) {
         case 1: return new Vampire(heroName);
