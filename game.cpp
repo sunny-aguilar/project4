@@ -76,7 +76,8 @@ void Game::gameFlow() {
         // auto created inside hero classes in constructor
 
         // start combat
-        startCombat();
+        heroes.startTournament();
+        //startCombat();
     } while (playAgain());
 }
 
@@ -140,6 +141,7 @@ void Game::startCombat() {
 
         // first player attacks
         if (!playerDead) {
+
             playerOne->attackPlayer(playerTwo);
             playerTwo->defend();
             playerTwo->strengthUpdate(); // issue is here

@@ -121,3 +121,22 @@ bool HeroList::isEmpty(HeroNode *team) {
 //
 //}
 
+/*********************************************************************
+** Description:     calls the functions in the character class to
+**                  initialize the dice in each hero
+*********************************************************************/
+void HeroList::startTournament() {
+
+
+
+
+
+}
+
+
+
+
+
+
+
+

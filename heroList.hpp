@@ -48,6 +48,7 @@ public:
     void traverseForward(HeroNode *team);
     bool isEmpty(HeroNode *team);
     //void setDice(HeroNode *&team);
+    void startTournament();
 
 
 
