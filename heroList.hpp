@@ -37,8 +37,6 @@ private:
     HeroNode *headTeamTwo;
     HeroNode *tailTeamOne;
     HeroNode *tailTeamTwo;
-    HeroNode *teamOne;
-    HeroNode *teamTwo;
     HeroNode *losers;
     int number;
 
@@ -50,7 +48,7 @@ public:
     void addHeroNode(int heroType, string name, HeroNode *&team);
     void traverseForward(HeroNode *team);
     bool isEmpty(HeroNode *team);
-
+    void setDice(HeroNode *&team);
 
 
 

@@ -74,7 +74,7 @@ void Game::gameFlow() {
 
         // create combatant dice
         // need to initialize dice inside of node list
-
+        heroes.setDice()
 
         playerOne->initializeDice();
         playerTwo->initializeDice();
