@@ -49,6 +49,7 @@ public:
     bool isEmpty(HeroNode *team);
     //void setDice(HeroNode *&team);
     void startTournament();
+    void heroFight();
 
 
 
