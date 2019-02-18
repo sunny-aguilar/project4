@@ -26,9 +26,11 @@ void HeroList::addHeroes(Player player, int heroType, string heroName) {
         case FIRSTPLAYER:
             // assign pickHero to the right team list
             addHeroNodeTeamOne(heroName, heroType);
+            traverseForward();
             break;
         case SECONDPLAYER:
             addHeroNodeTeamTwo(heroName, heroType);
+            traverseForward();
             break;
         default:
             cout << "Unable to determine player!\n";
@@ -85,4 +87,16 @@ void HeroList::addHeroNodeTeamTwo(string heroName, int heroType) {
         heroPtr->next = new HeroNode( pickHero(heroType, heroName) );
     }
 }
+
+/*********************************************************************
+** Description:     traverse the list forward
+*********************************************************************/
+void HeroList::traverseForward(HeroList *team) {
+    HeroNode *nodePtr = headTeamOne;
+    while (nodePtr != nullptr) {
+        cout << "Hero name is " <<nodePtr->hero->getName() << endl;
+        nodePtr = nodePtr->next;
+    }
+}
+
 
