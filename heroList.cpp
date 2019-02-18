@@ -30,11 +30,11 @@ void HeroList::addHeroes(Player player, int heroType, string heroName) {
     switch (player) {
         case FIRSTPLAYER:
             // assign pickHero to the right team list
-            addHeroNode(heroName, heroType);
+            addHeroNode(heroName, heroType, headTeamOne);
             traverseForward(headTeamOne);
             break;
         case SECONDPLAYER:
-            addHeroNode(heroName, heroType);
+            addHeroNode(heroName, heroType, headTeamTwo);
             traverseForward(headTeamTwo);
             break;
         default:
