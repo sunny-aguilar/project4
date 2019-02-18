@@ -30,6 +30,10 @@ private:
         HeroNode *next;
     };
 
+    HeroList *teamOne;
+    HeroList *teamTwo;
+    HeroList *losers;
+
 };
 
 #endif //PROJECT4_HEROLIST_HPP
