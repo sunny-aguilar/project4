@@ -22,21 +22,24 @@ class HeroList {
 public:
     HeroList();
     void setHeroes(Character *heroType, Player player);
+    void addHeroNode();
 
 private:
     struct HeroNode {
-        HeroNode(HeroNode *head, HeroNode *next = nullptr) {
+        HeroNode(Character *hero = nullptr, HeroNode *head = nullptr, HeroNode *next = nullptr) {
+            this->hero = hero;
             this->head = head;
             this->next = next;
         }
         HeroNode *head;
         HeroNode *next;
+        Character *hero;
     };
 
     Player player;
-    HeroList *teamOne;
-    HeroList *teamTwo;
-    HeroList *losers;
+    Character *teamOne;
+    Character *teamTwo;
+    Character *losers;
 
 };
 
