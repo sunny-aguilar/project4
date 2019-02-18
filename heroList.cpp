@@ -60,15 +60,15 @@ Character *HeroList::pickHero(int heroType, string heroName) {
 /*********************************************************************
 ** Description:     adds a hero node to the back of the node list
 *********************************************************************/
-void HeroList::addHeroNodeTeamOne(string heroName, int heroType) {
+void HeroList::addHeroNode(string heroName, int heroType, HeroNode *team) {
     cout << "reached 1\n"; // error after this
-    if (headTeamOne == nullptr) {
+    if (team == nullptr) {
         cout << "reached 1\n";
-        headTeamOne = new HeroNode( pickHero(heroType, heroName) );
+        team = new HeroNode( pickHero(heroType, heroName) );
     }
     else {
         cout << "reached 3\n";
-        HeroNode *heroPtr = headTeamOne;
+        HeroNode *heroPtr = team;
 
         while (heroPtr->next != nullptr) {
             heroPtr = heroPtr->next;
@@ -77,24 +77,6 @@ void HeroList::addHeroNodeTeamOne(string heroName, int heroType) {
         heroPtr->next = new HeroNode( pickHero(heroType, heroName) );
     }
 
-}
-
-/*********************************************************************
-** Description:     adds a hero node to the back of the node list
-*********************************************************************/
-void HeroList::addHeroNodeTeamTwo(string heroName, int heroType) {
-    if (headTeamTwo == nullptr) {
-        headTeamTwo = new HeroNode( pickHero(heroType, heroName) );
-    }
-    else {
-        HeroNode *heroPtr = headTeamTwo;
-
-        while (heroPtr->next != nullptr) {
-            heroPtr = heroPtr->next;
-        }
-
-        heroPtr->next = new HeroNode( pickHero(heroType, heroName) );
-    }
 }
 
 /*********************************************************************
