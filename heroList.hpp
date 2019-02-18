@@ -44,10 +44,11 @@ public:
     void addHeroNode(int heroType, string name, HeroNode *&team);
     void traverseForward(HeroNode *team);
     bool isEmpty(HeroNode *team);
+    bool isTeamEmpty(Player player);
     void startTournament();
     void heroFight();
     Character *getHero(Player player);
-    HeroList *getTeamList();
+
 
 
 };

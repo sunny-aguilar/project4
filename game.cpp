@@ -77,7 +77,7 @@ void Game::gameFlow() {
 
         // start combat
         //heroes.startTournament();
-        while (headTeamOne != nullptr && headTeamTwo != nullptr) {
+        while (!heroes.isTeamEmpty(FIRSTPLAYER) && !heroes.isTeamEmpty(SECONDPLAYER)) {
             startCombat(heroes.getHero(FIRSTPLAYER), heroes.getHero(SECONDPLAYER));
         }
     } while (playAgain());

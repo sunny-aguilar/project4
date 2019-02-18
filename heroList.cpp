@@ -106,6 +106,26 @@ bool HeroList::isEmpty(HeroNode *team) {
     }
 }
 
+bool HeroList::isTeamEmpty(Player player) {
+    switch (player) {
+        case 0:
+            if (!headTeamOne) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        case 1:
+            if (!headTeamTwo) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        default: cout << "Unable to return hero\n";
+    }
+}
+
 /*********************************************************************
 ** Description:     runs the tournament operations
 *********************************************************************/
@@ -125,7 +145,9 @@ void HeroList::startTournament() {
 
  }
 
-
+/*********************************************************************
+** Description:     returns a team hero from either team
+*********************************************************************/
 Character *HeroList::getHero(Player player) {
      switch (player) {
          case 0: return headTeamOne->hero;
@@ -134,6 +156,4 @@ Character *HeroList::getHero(Player player) {
      }
  }
 
-HeroList *HeroList::getTeamList() {
 
- }
