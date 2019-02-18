@@ -31,10 +31,8 @@ Character *HeroList::pickHero(int heroType, string heroName) {
         case 1: return new Vampire(heroName);
         case 2: return new Barbarian(heroName);
         case 3: return new BlueMen(heroName);
-        case 4: return new Medusa();
-        case 5:
-
-            break;
+        case 4: return new Medusa(heroName);
+        case 5: return new HarryPotter(heroName);
         default:
             cout << "Unable to determine hero type!\n";
     }

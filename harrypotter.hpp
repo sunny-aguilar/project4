@@ -14,7 +14,7 @@
 
 class HarryPotter : public Character {
 public:
-    HarryPotter();
+    HarryPotter(string name);
     ~HarryPotter() override;
     void initializeDice() override;
     int rollDice(std::string action) override;
