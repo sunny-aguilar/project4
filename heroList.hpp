@@ -26,7 +26,8 @@ public:
     Character *pickHero(int heroType, string heroName);
     void addHeroNodeTeamOne(string name, int heroType);
     void addHeroNodeTeamTwo(string name, int heroType);
-    void traverseForward(HeroList *team);
+    void traverseForwardTeamOne();
+    void traverseForwardTeamTwo();
 
 private:
     struct HeroNode {
