@@ -100,7 +100,7 @@ void HeroList::addHeroNodeTeamTwo(string heroName, int heroType) {
 /*********************************************************************
 ** Description:     traverse the list forward
 *********************************************************************/
-void HeroList::traverseForwardTeamOne(HeroNode *team) {
+void HeroList::traverseForward(HeroNode *team) {
     HeroNode *nodePtr = team;
 
     if (isEmpty(team)) {
