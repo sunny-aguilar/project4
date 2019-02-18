@@ -15,9 +15,7 @@
 **                  name / attack / defense / armor / strength
 **                  Attack Dice: 2d6, Defense Dice: 2d6
 *********************************************************************/
-HarryPotter::HarryPotter(string name) :
-        Character{name,0,0,0,10},
-        hogwartsUsed{false} {
+HarryPotter::HarryPotter(string name) : Character{name,0,0,0,10}, hogwartsUsed{false} {
     attackDice = new Dice*[2];
     defenseDice = new Dice*[2];
 }

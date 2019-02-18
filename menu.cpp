@@ -59,12 +59,9 @@ void Menu::menuEnterHeroName() {
 /*********************************************************************
 ** Description:     displays characters chosen for battle
 *********************************************************************/
-void Menu::menuDisplayPlayers(int first, int second) {
-    string fighterArray[] = {"Vampire", "Barbarian", "Blue Men",
-                             "Medusa", "Harry Potter"};
-
-    cout << "\nFirst Combatant - " << fighterArray[first - 1] << endl;
-    cout << "Second Combatant - " << fighterArray[second - 1] << endl << endl;
+void Menu::menuDisplayPlayers() {
+    cout << "\n TEAM #1 HEROES\n"
+            "+--------------------------------------------------+\n";
 }
 
 /*********************************************************************

@@ -29,7 +29,7 @@ public:
     void menuSelectFighter(int player, int heroNum);
     void menuEnterHeroName();
     int validateNumber(int min, int max);
-    void menuDisplayPlayers(int fighter1, int fighter2);
+    void menuDisplayPlayers();
     void menuRound(int round);
     void menuDeath(string type);
     void menuPlayAgain();
