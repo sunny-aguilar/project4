@@ -48,9 +48,12 @@ Character *HeroList::pickHero(int heroType, string heroName) {
 /*********************************************************************
 ** Description:     adds a hero node to the back of the node list
 *********************************************************************/
-void HeroList::addHeroNode(Character *hero) {
-    if (head == nullptr) {
-        head = hero;
+void HeroList::addHeroNode(Character *&hero) {
+    if (headTeamOne == nullptr) {
+        headTeamOne = hero;
+    }
+    else {
+
     }
 
 }
