@@ -38,9 +38,9 @@ private:
 
     Player player;
     Character *head;
-    Character *teamOne;
-    Character *teamTwo;
-    Character *losers;
+    HeroNode *teamOne;
+    HeroNode *teamTwo;
+    HeroNode *losers;
 
 };
 
