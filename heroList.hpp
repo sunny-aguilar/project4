@@ -21,6 +21,7 @@ enum Player {FIRSTPLAYER, SECONDPLAYER};
 class HeroList {
 public:
     HeroList();
+    ~HeroList();
     void addHeroes(Player player, int heroType, string heroName);
     Character *pickHero(int heroType, string heroName);
     void addHeroNode(string name, int heroType);
