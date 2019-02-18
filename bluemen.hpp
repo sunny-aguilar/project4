@@ -14,7 +14,7 @@
 
 class BlueMen : public Character {
 public:
-    BlueMen();
+    BlueMen(string name);
     ~BlueMen() override;
     void initializeDice() override;
     int rollDice(std::string action) override;

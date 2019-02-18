@@ -15,7 +15,7 @@
 
 class Medusa : public Character {
 public:
-    Medusa();
+    Medusa(string name);
     ~Medusa() override;
     void initializeDice() override;
     int rollDice(std::string action) override;
