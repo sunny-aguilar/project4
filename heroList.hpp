@@ -22,7 +22,7 @@ class HeroList {
 public:
     HeroList();
     void addHeroes(Player player, int heroType);
-    Character *pickHero();
+    Character *pickHero(int heroType);
 
 private:
     struct HeroNode {

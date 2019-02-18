@@ -104,12 +104,12 @@ void Game::setTeam() {
 void Game::selectPlayer() {
     for (int index = 0; index < teamOneQty; index++) {
         menu.menuSelectFighter(1, index+1);
-        heroes.addHeroes(menu.validateNumber(1,5));
+        heroes.addHeroes(FIRSTPLAYER, menu.validateNumber(1,5));
     }
 
 
     for (int index = 0; index < teamTwoQty; index++) {
-        menu.menuSelectFighter(2, index+1);
+        menu.menuSelectFighter(SECONDPLAYER, index+1);
 
     }
 

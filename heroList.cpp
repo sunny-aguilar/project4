@@ -26,5 +26,7 @@ void HeroList::addHeroes(Player player, int heroType) {
 }
 
 Character *HeroList::pickHero() {
+    switch (int heroType) {
 
+    }
 }
