@@ -181,8 +181,11 @@ void HeroList::moveBack(HeroNode *&winnerTeam) {
 /*********************************************************************
 ** Description:     adds loser hero to loser list
 *********************************************************************/
-void HeroList::addLoser(HeroNode *&team) {
-    cout << "add losing hero to list fx called\n";
+void HeroList::addLoser(HeroNode *&loserTeam) {
+    cout << "add losing hero to list fx\n";
+    HeroNode *head = loserTeam;
+
+
 }
 
 
