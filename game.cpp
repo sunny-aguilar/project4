@@ -192,8 +192,8 @@ void Game::startCombat(Character *playerOne, Character *playerTwo) {
         // calculate team scores
         teamScore(playerOneWon, playerTwoWon);
 
-        // send gameFlow combat loser
-        getLoser(playerOneWon, playerTwoWon);
+        // set round loser
+        roundLoser = getLoser(playerOneWon, playerTwoWon);
 
 
         // pause between rounds
@@ -235,10 +235,10 @@ void Game::teamScore(bool playerOneResult, bool playerTwoResult) {
 **                  combat round
 *********************************************************************/
 Player Game::getLoser(bool playerOneResult, bool playerTwoResult) {
-    if (playerOneResult) {
+    if (!playerOneResult) {
         return FIRSTPLAYER;
     }
-    else if (playerTwoResult) {
+    else if (!playerTwoResult) {
         return SECONDPLAYER;
     }
 }

@@ -51,6 +51,7 @@ private:
     int rounds;
     int teamOneScore;
     int teamTwoScore;
+    Player roundLoser;
 };
 
 #endif //PROJECT4_GAME_HPP
