@@ -13,8 +13,6 @@
 HeroList::HeroList() :
     headTeamOne{nullptr},
     headTeamTwo{nullptr},
-    tailTeamOne{nullptr},
-    tailTeamTwo{nullptr},
     losers{nullptr} {}
 
 /*********************************************************************
@@ -159,20 +157,24 @@ void HeroList::sortHeros(Player player) {
 /*********************************************************************
 ** Description:     moves winner hero to the back of the queue
 *********************************************************************/
-void HeroList::moveBack(HeroNode *&team) {
+void HeroList::moveBack(HeroNode *&winnerTeam) {
     cout << "move hero back fx called\n";
-    HeroNode *head = team;
+    HeroNode *head = winnerTeam;
 
     while (head->next != nullptr) {
-        team = team->next;
+        winnerTeam = winnerTeam->next;
     }
 
     // restore player strength
     int restoreHealth = ((rand() % 10 + 1) / 100) * head->hero->getStrength();
     head->hero->setStrength(restoreHealth + head->hero->getStrength());
 
-    team->next = head;
-
+    // make player last node on list
+    winnerTeam->next = head;
+    // next node
+    winnerTeam = head->next;
+    // point next pointer to null
+    head->next = nullptr;
 
 }
 

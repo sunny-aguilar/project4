@@ -32,8 +32,6 @@ private:
     Player player;
     HeroNode *headTeamOne;
     HeroNode *headTeamTwo;
-    HeroNode *tailTeamOne;
-    HeroNode *tailTeamTwo;
     HeroNode *losers;
 
 public:
