@@ -182,9 +182,23 @@ void HeroList::removeHead(Player player) {
     }
     else {
         // get head node
+        if (player == 0) {
+            playerList = headTeamOne;
+        }
+        else if (player == 1) {
+            playerList = headTeamTwo;
+        }
+
         // set new head to next node
-        // set new head prev pointer to nullptr
+        if (player == 0) {
+            headTeamOne = headTeamOne->next;
+        }
+        else if (player == 1) {
+            headTeamTwo = headTeamTwo->next;
+        }
+
         // delete first node
+        delete playerList;
     }
 }
 
