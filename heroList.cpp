@@ -160,14 +160,22 @@ Character *HeroList::getHero(Player player) {
 ** Description:     removes losing hero from the team list
 *********************************************************************/
 void HeroList::removeHead(Player player) {
+    // player list to use
+    HeroNode *playerList = nullptr;
+    if (player == 0) {
+        playerList = headTeamOne;
+    }
+    else if (player == 1) {
+        playerList = headTeamTwo;
+    }
 
-
-    if ( isEmpty( /*ENTER ENUM PLAYER*/ ) ) {
+    // select node to delete
+    if ( isEmpty( playerList ) ) {
         cout << "There are no nodes in the player list\n";
         return;
     }
-    else if () {
-        
+    else if ( playerList->next == nullptr ) {
+
     }
     else {
         // assign new head node and assign it the next node from head
