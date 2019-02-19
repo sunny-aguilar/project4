@@ -18,7 +18,9 @@ Game::Game() :
     fighterType{UNSET},
     teamOneQty{0},
     teamTwoQty{0},
-    rounds{0} {}
+    rounds{0},
+    teamOneScore{0},
+    teamTwoScore{0} {}
 
 /*********************************************************************
 ** Description:     destructor
@@ -79,7 +81,16 @@ void Game::gameFlow() {
         //heroes.startTournament();
         while (!heroes.isTeamEmpty(FIRSTPLAYER) && !heroes.isTeamEmpty(SECONDPLAYER)) {
             startCombat(heroes.getHero(FIRSTPLAYER), heroes.getHero(SECONDPLAYER));
+
             cout << "NEXT MATCH\n";
+            // determine who lost
+
+            // remove loser from list
+
+            // add loser to loser list
+
+            // continue with rounds again
+
         }
     } while (playAgain());
 }
@@ -161,6 +172,9 @@ void Game::startCombat(Character *playerOne, Character *playerTwo) {
             playerOne->checkStrength();
             playerDead = checkDeath(playerOne);
         }
+
+        // report who won and who died
+        if ()
 
         // pause between rounds
         cout << "\nHit [ENTER] to continue to next round\n";

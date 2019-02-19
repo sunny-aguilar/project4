@@ -47,6 +47,8 @@ private:
     int teamOneQty;
     int teamTwoQty;
     int rounds;
+    int teamOneScore;
+    int teamTwoScore;
 };
 
 #endif //PROJECT4_GAME_HPP
