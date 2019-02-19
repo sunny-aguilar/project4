@@ -89,7 +89,7 @@ void Game::gameFlow() {
             heroes.sortHeros(roundLoser);
 
             // continue with rounds again
-
+            rounds = 0;     // reset round number
 
         }
 
