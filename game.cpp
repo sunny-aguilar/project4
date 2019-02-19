@@ -214,6 +214,13 @@ bool Game::checkDeath(Character *defender) {
 ** Description:     calculates the team score
 *********************************************************************/
 void Game::teamScore(bool playerOneResult, bool playerTwoResult) {
+    if (playerOneResult) {
+        teamOneScore += 2;
+        teamTwoScore -= 1;
+    }
+    else if (playerTwoResult) {
+        teamTwoScore +=2;
+    }
 
 }
 
