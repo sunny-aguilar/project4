@@ -85,8 +85,8 @@ void Game::gameFlow() {
             cout << "NEXT MATCH\n";
             // determine who lost - in startCombat()
 
-            // remove loser from list
-            heroes.removeHead(roundLoser);
+            // send heroes to their proper destination
+            heroes.sortHeros(roundLoser);
 
             // add loser to loser list
 

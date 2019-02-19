@@ -138,6 +138,13 @@ Character *HeroList::getHero(Player player) {
  }
 
 /*********************************************************************
+** Description:     sends winner and loser hero to the right list
+*********************************************************************/
+void HeroList::sortHeros(Player player) {
+
+}
+
+/*********************************************************************
 ** Description:     removes losing hero from the team list
 *********************************************************************/
 void HeroList::removeHead(Player player) {
