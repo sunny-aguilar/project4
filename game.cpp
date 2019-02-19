@@ -92,6 +92,10 @@ void Game::gameFlow() {
             // continue with rounds again
 
         }
+
+
+
+
     } while (playAgain());
 }
 
@@ -188,6 +192,10 @@ void Game::startCombat(Character *playerOne, Character *playerTwo) {
         // calculate team scores
         teamScore(playerOneWon, playerTwoWon);
 
+        // send gameFlow combat loser
+        getLoser(playerOneWon, playerTwoWon);
+
+
         // pause between rounds
         cout << "\nHit [ENTER] to continue to next round\n";
         cin.ignore();
@@ -215,6 +223,17 @@ void Game::teamScore(bool playerOneResult, bool playerTwoResult) {
     if (playerOneResult) {
         teamOneScore += 2;
         teamTwoScore -= 1;
+    }
+    else if (playerTwoResult) {
+        teamTwoScore += 2;
+        teamOneScore -= 1;
+    }
+}
+
+
+Player Game::getLoser(bool playerOneResult, bool playerTwoResult) {
+    if (playerOneResult) {
+        return FIRSTPLAYER;
     }
     else if (playerTwoResult) {
         teamTwoScore += 2;
