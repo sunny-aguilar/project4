@@ -181,10 +181,10 @@ void HeroList::removeHead(Player player) {
         delete nodePtr;
     }
     else {
-
-
-
-        
+        // get head node
+        // set new head to next node
+        // set new head prev pointer to nullptr
+        // delete first node
     }
 }
 
