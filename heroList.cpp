@@ -161,26 +161,37 @@ Character *HeroList::getHero(Player player) {
 *********************************************************************/
 void HeroList::removeHead(Player player) {
 
-    // if node is empty, do not remove anything
-    // else update head pointer and delete node
+
     if ( isEmpty( /*ENTER ENUM PLAYER*/ ) ) {
-        cout << "There are no nodes in the queue\n";
+        cout << "There are no nodes in the player list\n";
+        return;
+    }
+    else if () {
+        
     }
     else {
         // assign new head node and assign it the next node from head
-
         HeroNode *oldHead = nullptr;
-
+        HeroNode *newHead = nullptr;
         // select right player list to delete
         if (player == 0) {
             oldHead = headTeamOne;
+            newHead = headTeamOne->next;
         }
         else if (player == 1) {
             oldHead = headTeamTwo;
+            newHead = headTeamTwo->next;
         }
 
-        HeroNode *newHead = nullptr;
-        newHead = head->next;
+
+        // select right player list to delete
+        if (player == 0) {
+
+        }
+        else if (player == 1) {
+
+        }
+
 
         // if the next node is not the head node i.e., there is
         // only one node, then connect the last node to the new node
