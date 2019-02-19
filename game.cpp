@@ -86,7 +86,7 @@ void Game::gameFlow() {
             // determine who lost - in startCombat()
 
             // remove loser from list
-
+            heroes.removeHead(roundLoser);
 
             // add loser to loser list
 

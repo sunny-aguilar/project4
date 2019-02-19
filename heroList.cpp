@@ -162,9 +162,13 @@ Character *HeroList::getHero(Player player) {
 void HeroList::removeHead() {
     // if node is empty, do not remove anything
     // else update head pointer and delete node
-    if ( isEmpty() ) {
+    if ( isEmpty( /*ENTER ENUM PLAYER*/ ) ) {
         cout << "There are no nodes in the queue\n";
     }
+
+
+
+
 }
 
 
