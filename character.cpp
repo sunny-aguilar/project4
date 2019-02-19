@@ -56,6 +56,13 @@ void Character::setAttackVal(int val) {
 int Character::getStrength() { return strength; }
 
 /*********************************************************************
+** Description:     setter for strength integer
+*********************************************************************/
+void Character::setStrength(int strength) {
+    this->strength = strength;
+}
+
+/*********************************************************************
 ** Description:     this function updates the damage inflicted on a
 **                  player during combat and resets "damageReceived"
 **                  back to zero after

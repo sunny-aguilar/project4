@@ -34,6 +34,7 @@ public:
     void setAttackVal(int val);
     virtual void defend() = 0;
     int getStrength();
+    void setStrength(int strength);
     void strengthUpdate();
     void checkStrength();
     bool playerStatus();
