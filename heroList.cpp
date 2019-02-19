@@ -161,7 +161,7 @@ void HeroList::moveBack(HeroNode *&winnerTeam) {
     cout << "move hero back fx called\n";
     HeroNode *head = winnerTeam;
 
-    while (head->next != nullptr) {
+    while (winnerTeam->next != nullptr) {
         winnerTeam = winnerTeam->next;
     }
 
