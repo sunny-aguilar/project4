@@ -170,56 +170,21 @@ void HeroList::removeHead(Player player) {
     }
 
     // select node to delete
+    HeroNode *nodePtr;
     if ( isEmpty( playerList ) ) {
         cout << "There are no nodes in the player list\n";
         return;
     }
     else if ( playerList->next == nullptr ) {
-
+        nodePtr = playerList;
+        playerList = nullptr;
+        delete nodePtr;
     }
     else {
-        // assign new head node and assign it the next node from head
-        HeroNode *oldHead = nullptr;
-        HeroNode *newHead = nullptr;
-        // select right player list to delete
-        if (player == 0) {
-            oldHead = headTeamOne;
-            newHead = headTeamOne->next;
-        }
-        else if (player == 1) {
-            oldHead = headTeamTwo;
-            newHead = headTeamTwo->next;
-        }
 
 
-        // select right player list to delete
-        if (player == 0) {
 
-        }
-        else if (player == 1) {
-
-        }
-
-
-        // if the next node is not the head node i.e., there is
-        // only one node, then connect the last node to the new node
-        // and connect the new node ->prev to the last node
-        if (newHead != oldHead) {
-            // connect new head node to last node
-            newHead->prev = oldHead->prev;
-
-            // connect last node to the new head node
-            QueueNode *last = head->prev;
-            last->next = newHead;
-
-            // point head pointer to the new head
-            head = newHead;
-        }
-        else {
-            // if only one node, remove it
-            head = nullptr;
-        }
-        delete oldHead;
+        
     }
 }
 
