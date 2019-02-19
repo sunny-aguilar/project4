@@ -193,8 +193,6 @@ void Game::startCombat(Character *playerOne, Character *playerTwo) {
         cin.ignore();
 
     } while (!playerDead);
-
-
 }
 
 /*********************************************************************
@@ -222,7 +220,6 @@ void Game::teamScore(bool playerOneResult, bool playerTwoResult) {
         teamTwoScore += 2;
         teamOneScore -= 1;
     }
-
 }
 
 /*********************************************************************
