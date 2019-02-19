@@ -88,14 +88,10 @@ void Game::gameFlow() {
             // send heroes to their proper destination
             heroes.sortHeros(roundLoser);
 
-            // add loser to loser list
-
-
             // continue with rounds again
 
 
         }
-
 
 
 
