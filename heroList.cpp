@@ -159,7 +159,7 @@ void HeroList::sortHeros(Player player) {
 /*********************************************************************
 ** Description:     moves winner hero to the back of the queue
 *********************************************************************/
-void HeroList::moveBack(HeroNode *team) {
+void HeroList::moveBack(HeroNode *&team) {
     cout << "move hero back fx called\n";
     HeroNode *head = team;
 
@@ -170,6 +170,9 @@ void HeroList::moveBack(HeroNode *team) {
     // restore player strength
     int restoreHealth = ((rand() % 10 + 1) / 100) * head->hero->getStrength();
     head->hero->setStrength(restoreHealth + head->hero->getStrength());
+
+    team->hero = head;
+
 
 }
 
