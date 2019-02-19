@@ -183,4 +183,12 @@ void HeroList::removeHead(Player player) {
     }
 }
 
+/*********************************************************************
+** Description:     adds loser hero to loser list
+*********************************************************************/
+void HeroList::addLoser(HeroNode *&team) {
+
+}
+
+
 
