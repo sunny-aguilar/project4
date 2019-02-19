@@ -139,11 +139,11 @@ Character *HeroList::getHero(Player player) {
 
 /*********************************************************************
 ** Description:     sends winner and loser hero to the right list.
- *                  Function takes an enum variable that lets the
- *                  function know who lost the round. The hero that
- *                  lost is send to the losers list and removed from
- *                  the team list and the winner is sent to the back
- *                  of their team list.
+**                  Function takes an enum variable that lets the
+**                  function know who lost the round. The hero that
+**                  lost is send to the losers list and removed from
+**                  the team list and the winner is sent to the back
+**                  of their team list.
 *********************************************************************/
 void HeroList::sortHeros(Player player) {
     if (player == 0) {
