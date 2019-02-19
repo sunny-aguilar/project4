@@ -35,6 +35,7 @@ public:
     void selectPlayer();
     void startCombat(Character *playerOne, Character *playerTwo);
     bool checkDeath(Character *defender);
+    void teamScore();
     bool playAgain();
     void exitGame();
 
