@@ -160,6 +160,7 @@ Character *HeroList::getHero(Player player) {
 ** Description:     removes losing hero from the team list
 *********************************************************************/
 void HeroList::removeHead(Player player) {
+
     // if node is empty, do not remove anything
     // else update head pointer and delete node
     if ( isEmpty( /*ENTER ENUM PLAYER*/ ) ) {
@@ -170,12 +171,14 @@ void HeroList::removeHead(Player player) {
 
         HeroNode *oldHead = nullptr;
 
-        switch (player) {
-            case 0: oldHead = headTeamOne;
-            case 1: oldHead = headTeamTwo;
+        if (player == 0) {
+            HeroNode *oldHead = headTeamOne;
         }
-        
-        QueueNode *newHead = nullptr;
+        else if (player == 1) {
+            HeroNode *oldHead = headTeamTwo;
+        }
+
+        HeroNode *newHead = nullptr;
         newHead = head->next;
 
         // if the next node is not the head node i.e., there is
