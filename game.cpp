@@ -83,14 +83,17 @@ void Game::gameFlow() {
             startCombat(heroes.getHero(FIRSTPLAYER), heroes.getHero(SECONDPLAYER));
 
             cout << "NEXT MATCH\n";
-            // determine who lost
+            // determine who lost - in startCombat()
 
             // remove loser from list
 
+
             // add loser to loser list
+
 
             // continue with rounds again
 
+            
         }
 
 
