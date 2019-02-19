@@ -159,7 +159,7 @@ Character *HeroList::getHero(Player player) {
 /*********************************************************************
 ** Description:     removes losing hero from the team list
 *********************************************************************/
-void HeroList::removeHead() {
+void HeroList::removeHead(Player player) {
     // if node is empty, do not remove anything
     // else update head pointer and delete node
     if ( isEmpty( /*ENTER ENUM PLAYER*/ ) ) {

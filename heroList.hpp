@@ -48,7 +48,7 @@ public:
     void startTournament();
     void heroFight();
     Character *getHero(Player player);
-    void removeHead();
+    void removeHead(Player player);
 
 
 };
