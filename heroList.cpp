@@ -185,7 +185,24 @@ void HeroList::addLoser(HeroNode *&loserTeam) {
     cout << "add losing hero to list fx\n";
     HeroNode *head = loserTeam;
 
+    loserTeam = head->next;
 
+    head->next = nullptr;
+
+    if (losers == nullptr) {
+        losers = head;
+    }
+    else {
+        HeroNode *loserHead =losers;
+
+        while (losers->next != nullptr) {
+            losers = losers->next;
+        }
+
+        losers->next = head;
+
+        losers = loserHead;
+    }
 }
 
 
