@@ -47,6 +47,7 @@ public:
     bool isTeamEmpty(Player player);
     Character *getHero(Player player);
     void sortHeros(Player player);
+    void moveBack();
     void removeHead(Player player);
     void addLoser(HeroNode *&team);
 

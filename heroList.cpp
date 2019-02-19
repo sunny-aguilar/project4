@@ -147,11 +147,20 @@ Character *HeroList::getHero(Player player) {
 *********************************************************************/
 void HeroList::sortHeros(Player player) {
     if (player == 0) {
-
+        addLoser();
+        moveBack();
     }
     else if (player == 1) {
-
+        addLoser();
+        moveBack();
     }
+}
+
+/*********************************************************************
+** Description:     moves winner hero to the back of the queue
+*********************************************************************/
+void HeroList::moveBack() {
+    cout << "move hero back called\n";
 }
 
 /*********************************************************************
