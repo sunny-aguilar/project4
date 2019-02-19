@@ -156,4 +156,15 @@ Character *HeroList::getHero(Player player) {
      }
  }
 
+/*********************************************************************
+** Description:     removes losing hero from the team list
+*********************************************************************/
+void HeroList::removeHead() {
+    // if node is empty, do not remove anything
+    // else update head pointer and delete node
+    if ( isEmpty() ) {
+        cout << "There are no nodes in the queue\n";
+    }
+}
+
 
