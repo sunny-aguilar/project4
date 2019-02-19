@@ -171,11 +171,12 @@ void HeroList::removeHead(Player player) {
 
         HeroNode *oldHead = nullptr;
 
+        // select right player list to delete
         if (player == 0) {
-            HeroNode *oldHead = headTeamOne;
+            oldHead = headTeamOne;
         }
         else if (player == 1) {
-            HeroNode *oldHead = headTeamTwo;
+            oldHead = headTeamTwo;
         }
 
         HeroNode *newHead = nullptr;
