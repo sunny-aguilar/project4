@@ -165,10 +165,40 @@ void HeroList::removeHead(Player player) {
     if ( isEmpty( /*ENTER ENUM PLAYER*/ ) ) {
         cout << "There are no nodes in the queue\n";
     }
+    else {
+        // assign new head node and assign it the next node from head
 
+        HeroNode *oldHead = nullptr;
 
+        switch (player) {
+            case 0: oldHead = headTeamOne;
+            case 1: oldHead = headTeamTwo;
+        }
 
+        QueueNode *oldHead = head;
+        QueueNode *newHead = nullptr;
+        newHead = head->next;
 
+        // if the next node is not the head node i.e., there is
+        // only one node, then connect the last node to the new node
+        // and connect the new node ->prev to the last node
+        if (newHead != oldHead) {
+            // connect new head node to last node
+            newHead->prev = oldHead->prev;
+
+            // connect last node to the new head node
+            QueueNode *last = head->prev;
+            last->next = newHead;
+
+            // point head pointer to the new head
+            head = newHead;
+        }
+        else {
+            // if only one node, remove it
+            head = nullptr;
+        }
+        delete oldHead;
+    }
 }
 
 
