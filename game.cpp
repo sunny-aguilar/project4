@@ -236,8 +236,7 @@ Player Game::getLoser(bool playerOneResult, bool playerTwoResult) {
         return FIRSTPLAYER;
     }
     else if (playerTwoResult) {
-        teamTwoScore += 2;
-        teamOneScore -= 1;
+        return SECONDPLAYER;
     }
 }
 
