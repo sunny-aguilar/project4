@@ -171,7 +171,7 @@ void HeroList::moveBack(HeroNode *&team) {
     int restoreHealth = ((rand() % 10 + 1) / 100) * head->hero->getStrength();
     head->hero->setStrength(restoreHealth + head->hero->getStrength());
 
-    team->hero = head;
+    team->next = head;
 
 
 }
