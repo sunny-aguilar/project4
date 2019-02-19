@@ -230,7 +230,10 @@ void Game::teamScore(bool playerOneResult, bool playerTwoResult) {
     }
 }
 
-
+/*********************************************************************
+** Description:     returns enum that states which player lost the
+**                  combat round
+*********************************************************************/
 Player Game::getLoser(bool playerOneResult, bool playerTwoResult) {
     if (playerOneResult) {
         return FIRSTPLAYER;
