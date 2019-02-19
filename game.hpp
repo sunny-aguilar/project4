@@ -44,8 +44,6 @@ private:
     Menu menu;
     HeroList heroes;
     Fighter fighterType[2];
-    //Character *playerOne;
-    //Character *playerTwo;
     int teamOneQty;
     int teamTwoQty;
     int rounds;
