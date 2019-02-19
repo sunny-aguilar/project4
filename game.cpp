@@ -219,7 +219,7 @@ void Game::teamScore(bool playerOneResult, bool playerTwoResult) {
         teamTwoScore -= 1;
     }
     else if (playerTwoResult) {
-        teamTwoScore +=2;
+        teamTwoScore += 2;
         teamOneScore -= 1;
     }
 
