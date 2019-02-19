@@ -45,8 +45,6 @@ public:
     void traverseForward(HeroNode *team);
     bool isEmpty(HeroNode *team);
     bool isTeamEmpty(Player player);
-    void startTournament();
-    void heroFight();
     Character *getHero(Player player);
     void removeHead(Player player);
 

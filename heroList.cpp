@@ -127,25 +127,6 @@ bool HeroList::isTeamEmpty(Player player) {
 }
 
 /*********************************************************************
-** Description:     runs the tournament operations
-*********************************************************************/
-void HeroList::startTournament() {
-    // start hero combat
-    //heroFight();
-}
-
-/*********************************************************************
-** Description:     combat operations
-*********************************************************************/
- void HeroList::heroFight() {
-
-     while (headTeamOne != nullptr && headTeamTwo != nullptr) {
-
-     }
-
- }
-
-/*********************************************************************
 ** Description:     returns a team hero from either team
 *********************************************************************/
 Character *HeroList::getHero(Player player) {

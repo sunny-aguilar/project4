@@ -86,7 +86,7 @@ void Vampire::attackPlayer(Character *defender) {
     attack = rollDice("attack");
     // display attack info
     cout << ">>Vampire attacks!    -|---" << endl;
-    cout << "Sinks his fangs into his opponent with an attack power of " << attack << " points (1d12)" << endl << endl;
+    cout << getName() << " Sinks his fangs into his opponent with an attack power of " << attack << " points (1d12)" << endl << endl;
 
     // send attack value to defender object
     defender->setAttackVal(attack);
