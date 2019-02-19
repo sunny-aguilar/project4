@@ -146,67 +146,22 @@ Character *HeroList::getHero(Player player) {
 **                  of their team list.
 *********************************************************************/
 void HeroList::sortHeros(Player player) {
-    if (player == 0) {
-        addLoser();
-        moveBack();
+    if (player == FIRSTPLAYER) {
+        addLoser(headTeamOne);
+        moveBack(headTeamTwo);
     }
-    else if (player == 1) {
-        addLoser();
-        moveBack();
+    else if (player == SECONDPLAYER) {
+        addLoser(headTeamTwo);
+        moveBack(headTeamOne);
     }
 }
 
 /*********************************************************************
 ** Description:     moves winner hero to the back of the queue
 *********************************************************************/
-void HeroList::moveBack() {
+void HeroList::moveBack(HeroNode *team) {
     cout << "move hero back called\n";
-}
 
-/*********************************************************************
-** Description:     removes losing hero from the team list
-*********************************************************************/
-void HeroList::removeHead(Player player) {
-    // player list to use
-    HeroNode *playerList = nullptr;
-    if (player == 0) {
-        playerList = headTeamOne;
-    }
-    else if (player == 1) {
-        playerList = headTeamTwo;
-    }
-
-    // select node to delete
-    HeroNode *nodePtr;
-    if ( isEmpty( playerList ) ) {
-        cout << "There are no nodes in the player list\n";
-        return;
-    }
-    else if ( playerList->next == nullptr ) {
-        nodePtr = playerList;
-        playerList = nullptr;
-        delete nodePtr;
-    }
-    else {
-        // get head node
-        if (player == 0) {
-            playerList = headTeamOne;
-        }
-        else if (player == 1) {
-            playerList = headTeamTwo;
-        }
-
-        // set new head to next node
-        if (player == 0) {
-            headTeamOne = headTeamOne->next;
-        }
-        else if (player == 1) {
-            headTeamTwo = headTeamTwo->next;
-        }
-
-        // delete first node
-        delete playerList;
-    }
 }
 
 /*********************************************************************
