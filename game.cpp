@@ -147,8 +147,8 @@ void Game::selectPlayer() {
 *********************************************************************/
 void Game::startCombat(Character *playerOne, Character *playerTwo) {
     bool playerDead = false;
-    bool playerOneLost = false;
-    bool playerTwoLost = false;
+    bool playerOneWon = false;
+    bool playerTwoWon = false;
 
     do {
         // display banner for each round played
@@ -166,7 +166,7 @@ void Game::startCombat(Character *playerOne, Character *playerTwo) {
 
             // report who won and who died
             if (playerDead) {
-                playerOneLost = true;
+                playerOneWon = true;
             }
         }
         cout << endl;
@@ -181,11 +181,12 @@ void Game::startCombat(Character *playerOne, Character *playerTwo) {
 
             // report who won and who died
             if (playerDead) {
-                playerTwoLost = true;
+                playerTwoWon = true;
             }
         }
 
-
+        // calculate team scores
+        teamScore(playerOneWon, playerTwoWon);
 
         // pause between rounds
         cout << "\nHit [ENTER] to continue to next round\n";
@@ -212,8 +213,8 @@ bool Game::checkDeath(Character *defender) {
 /*********************************************************************
 ** Description:     calculates the team score
 *********************************************************************/
-void Game::teamScore() {
-    
+void Game::teamScore(bool playerOneResult, bool playerTwoResult) {
+
 }
 
 /*********************************************************************
