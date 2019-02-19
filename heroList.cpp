@@ -174,8 +174,7 @@ void HeroList::removeHead(Player player) {
             case 0: oldHead = headTeamOne;
             case 1: oldHead = headTeamTwo;
         }
-
-        QueueNode *oldHead = head;
+        
         QueueNode *newHead = nullptr;
         newHead = head->next;
 
