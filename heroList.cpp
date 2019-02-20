@@ -197,10 +197,8 @@ void HeroList::moveBack(HeroNode *&winnerTeam) {
 
     // restore player strength
     restoreHealth(head);
-    int strengthLost = head->hero->getStrength();
-    int restoreHealth = ((rand() % 10 + 1) / 10) * head->hero->getStrength();
-    cout << "Health to restore " << restoreHealth << endl;
-    cout << "Current health " << head->hero->getStrength() << endl;
+
+
     head->hero->setStrength(restoreHealth + head->hero->getStrength());
     cout << "Hero Health " << head->hero->getStrength() << endl;
 
@@ -244,21 +242,34 @@ void HeroList::addLoser(HeroNode *&loserTeam) {
 ** Description:     calculates health to restore
 *********************************************************************/
 int HeroList::restoreHealth(const HeroList::HeroNode *player) {
+    int restoreHealth = 0;
+
     if ( player->hero->getType() == "Vampire" ) {
         // max strength is 18
+        cout << "Vampire health before recover " << player->hero->getStrength() << endl;
+
+        int strengthLost = 18 - player->hero->getStrength();
+        cout << "Vampire Health Lost " << strengthLost << endl;
+
+        restoreHealth = ((rand() % 10 + 1) / 10) * strengthLost;
+        cout << "Health to restore " << restoreHealth << endl;
     }
     else if ( player->hero->getType() == "Barbarian" ) {
         // max strength is 12
+
     }
     else if ( player->hero->getType() == "Blue Men" ) {
         // max strength is 12
+
     }
     else if ( player->hero->getType() == "Medusa" ) {
         // max strength is 8
+
     }
     else if ( player->hero->getType() == "Harry Potter" ) {
         // max strength is 10/20
+
     }
 
-    return 0;
+    return restoreHealth;
 }
