@@ -68,9 +68,10 @@ void Menu::menuDisplayPlayers() {
 ** Description:     displays banner and combat round number for each
 **                  combat round
 *********************************************************************/
-void Menu::menuRound(int round) {
-    cout << "\n COMBAT ROUND " << round << "        ====)-------------\n"
-                                           "+--------------------------------------------------+\n";
+void Menu::menuRound(int round, Character *playerOne, Character *playerTwo) {
+    cout << playerOne->getType() << " vs. " << playerTwo->getType() << "\n";
+    cout << "\n COMBAT ROUND " << round << "        ====)-------------\n";
+    cout << "+--------------------------------------------------+\n";
 }
 
 /*********************************************************************

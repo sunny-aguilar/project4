@@ -19,7 +19,7 @@ Game::Game() :
     teamOneQty{0},
     teamTwoQty{0},
     rounds{0},
-    match{0},
+    match{1},
     teamOneScore{0},
     teamTwoScore{0} {}
 
@@ -158,7 +158,7 @@ void Game::startCombat(Character *playerOne, Character *playerTwo) {
     do {
         // display banner for each round played
         rounds++;
-        menu.menuRound(rounds);
+        menu.menuRound(rounds, playerOne, playerTwo);
 
         // first player attacks
         if (!playerDead) {

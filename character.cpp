@@ -21,7 +21,7 @@ Character::Character() {}
 *********************************************************************/
 Character::Character(string name, string type, int attack, int defense, int armor, int strength) :
         name{name},
-        characterName{type},
+        characterType{type},
         attack{attack},
         defense{defense},
         armor{armor},
@@ -41,6 +41,13 @@ Character::~Character() {}
 *********************************************************************/
 string Character::getName() {
     return name;
+}
+
+/*********************************************************************
+** Description:     getter that returns the character type
+*********************************************************************/
+string Character::getType() {
+    return characterType;
 }
 
 /*********************************************************************
