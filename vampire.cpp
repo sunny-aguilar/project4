@@ -86,7 +86,7 @@ void Vampire::attackPlayer(Character *defender) {
     attack = rollDice("attack");
     // display attack info
     cout << ">>Vampire attacks!    -|---" << endl;
-    cout << getName() << " Sinks his fangs into his opponent with an attack power of " << attack << " points (1d12)" << endl << endl;
+    cout << getName() << " sinks his fangs into his opponent with an attack power of " << attack << " points (1d12)" << endl << endl;
 
     // send attack value to defender object
     defender->setAttackVal(attack);
@@ -102,7 +102,7 @@ void Vampire::attackPlayer(Character *defender) {
 **                  ability during its defense.
 *********************************************************************/
 void Vampire::defend() {
-    cout << ">>Vampire defends!    )))" << endl;
+    cout << getName() << " Vampire defends!    )))" << endl;
     cout << strength << " - Starting strength points " << endl << endl;
     int defendValue = 0;
 
@@ -112,7 +112,7 @@ void Vampire::defend() {
     // display damage received report
     if (useSpecial) {
         attack = 0;
-        cout << "Vampire has charmed his opponent and was not attacked!\n";
+        cout << getName() << " Vampire has charmed his opponent and was not attacked!\n";
         cout << strength << " - ending strength points\n\n";
         // reset special ability after use
         useSpecial = false;

@@ -19,6 +19,7 @@ Game::Game() :
     teamOneQty{0},
     teamTwoQty{0},
     rounds{0},
+    match{0},
     teamOneScore{0},
     teamTwoScore{0} {}
 
@@ -80,6 +81,7 @@ void Game::gameFlow() {
         // start combat
         //heroes.startTournament();
         while (!heroes.isTeamEmpty(FIRSTPLAYER) && !heroes.isTeamEmpty(SECONDPLAYER)) {
+            // start combat rounds
             startCombat(heroes.getHero(FIRSTPLAYER), heroes.getHero(SECONDPLAYER));
 
             cout << "NEXT MATCH\n";

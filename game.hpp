@@ -47,6 +47,7 @@ private:
     int teamOneQty;
     int teamTwoQty;
     int rounds;
+    int match;
     int teamOneScore;
     int teamTwoScore;
     Player roundLoser;
