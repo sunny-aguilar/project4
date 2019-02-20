@@ -249,6 +249,7 @@ int HeroList::restoreHealth(const HeroList::HeroNode *player) {
         cout << "Vampire Health Lost " << strengthLost << endl;
 
         restoreHealth = ((rand() % 10 + 1) / 10) * strengthLost;
+        cout << "Random num generated " << ((rand() % 10 + 1) / 10) << endl;
         cout << "Health to restore " << restoreHealth << endl;
 
         restoreHealth += player->hero->getStrength();
@@ -262,6 +263,7 @@ int HeroList::restoreHealth(const HeroList::HeroNode *player) {
         cout << "Barbarian Health Lost " << strengthLost << endl;
 
         restoreHealth = ((rand() % 10 + 1) / 10) * strengthLost;
+        cout << "Random num generated " << ((rand() % 10 + 1) / 10) << endl;
         cout << "Health to restore " << restoreHealth << endl;
 
         restoreHealth += player->hero->getStrength();
@@ -275,6 +277,7 @@ int HeroList::restoreHealth(const HeroList::HeroNode *player) {
         cout << "Blue Men Health Lost " << strengthLost << endl;
 
         restoreHealth = ((rand() % 10 + 1) / 10) * strengthLost;
+        cout << "Random num generated " << ((rand() % 10 + 1) / 10) << endl;
         cout << "Health to restore " << restoreHealth << endl;
 
         restoreHealth += player->hero->getStrength();
@@ -288,6 +291,7 @@ int HeroList::restoreHealth(const HeroList::HeroNode *player) {
         cout << "Medusa Health Lost " << strengthLost << endl;
 
         restoreHealth = ((rand() % 10 + 1) / 10) * strengthLost;
+        cout << "Random num generated " << ((rand() % 10 + 1) / 10) << endl;
         cout << "Health to restore " << restoreHealth << endl;
 
         restoreHealth += player->hero->getStrength();
@@ -301,6 +305,7 @@ int HeroList::restoreHealth(const HeroList::HeroNode *player) {
         cout << "Harry Potter Health Lost " << strengthLost << endl;
 
         restoreHealth = ((rand() % 10 + 1) / 10) * strengthLost;
+        cout << "Random num generated " << ((rand() % 10 + 1) / 10) << endl;
         cout << "Health to restore " << restoreHealth << endl;
 
         restoreHealth += player->hero->getStrength();
