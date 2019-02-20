@@ -69,7 +69,9 @@ void Menu::menuDisplayPlayers() {
 **                  combat round
 *********************************************************************/
 void Menu::menuRound(int round, Character *playerOne, Character *playerTwo) {
-    cout << playerOne->getType() << " vs. " << playerTwo->getType() << "\n";
+    cout << playerOne->getName() << " - " << playerOne->getType();
+    cout << " vs. ";
+    cout << playerTwo->getType() << endl;
     cout << "\n COMBAT ROUND " << round << "        ====)-------------\n";
     cout << "+--------------------------------------------------+\n";
 }
