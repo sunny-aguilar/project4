@@ -196,7 +196,7 @@ void HeroList::moveBack(HeroNode *&winnerTeam) {
     }
 
     // restore player strength
-    head->hero->setStrength( restoreHealth(head); );
+    head->hero->setStrength( restoreHealth(head) );
     cout << "Hero Health " << head->hero->getStrength() << endl;
 
     // make player last node on list
