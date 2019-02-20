@@ -196,7 +196,7 @@ void HeroList::moveBack(HeroNode *&winnerTeam) {
     }
 
     // restore player strength
-    int restoreHealth = ((rand() % 10 + 1) / 100) * head->hero->getStrength();
+    int restoreHealth = ((rand() % 10 + 1) / 10) * head->hero->getStrength();
     cout << "Health to restore " << restoreHealth << endl;
     cout << "Current health " << head->hero->getStrength() << endl;
     head->hero->setStrength(restoreHealth + head->hero->getStrength());
