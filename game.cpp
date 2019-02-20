@@ -156,10 +156,13 @@ void Game::startCombat(Character *playerOne, Character *playerTwo) {
     bool playerTwoWon = false;
 
     do {
-        // display banner for each round played
-        cout << playerOne->getName() << " - " << playerOne->getType();
-        cout << " vs. ";
-        cout << playerTwo->getName() << " - " << playerTwo->getType() << endl;
+        // display match banner
+        menu.menuDisplayMatch( playerOne->getName(),
+                               playerOne->getType(),
+                               playerTwo->getName(),
+                               playerTwo->getType() );
+
+        // display combat banner for each round played
         rounds++;
         menu.menuRound(rounds);
 

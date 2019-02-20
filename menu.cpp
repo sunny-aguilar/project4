@@ -64,6 +64,12 @@ void Menu::menuDisplayPlayers() {
             "+--------------------------------------------------+\n";
 }
 
+void Menu::menuDisplayMatch( string p1Name, string p1Type,
+                             string p2Name, string p2Type ) {
+    cout << p1Name << " - " << p2Type << " vs. ";
+    cout << p2Name << " - " << p2Type << endl;
+}
+
 /*********************************************************************
 ** Description:     displays banner and combat round number for each
 **                  combat round
