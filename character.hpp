@@ -25,7 +25,7 @@ using std::setw;
 class Character {
 public:
     Character();
-    Character(string name, int attack, int defense, int armor, int strength);
+    Character(string name, string type, int attack, int defense, int armor, int strength);
     virtual ~Character();
     string getName();
     virtual void initializeDice() = 0;

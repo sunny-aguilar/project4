@@ -16,7 +16,7 @@
 **                  name / attack / defense / armor / strength
 **                  Attack Dice: 2d6, Defense Dice: 1d6
 *********************************************************************/
-Medusa::Medusa(string name) : Character{name,0,0,3,8} {
+Medusa::Medusa(string name) : Character{name,"Medusa",0,0,3,8} {
     attackDice = new Dice*[2];
     defenseDice = new Dice*[3];
     initializeDice();

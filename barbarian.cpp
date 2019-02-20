@@ -12,7 +12,7 @@
 **                  name / attack / defense / armor / strength
 **                  Attack Dice: 2d6, Defense Dice: 2d6
 *********************************************************************/
-Barbarian::Barbarian(string name) : Character{name,0,0,0,12} {
+Barbarian::Barbarian(string name) : Character{name,"Barbarian",0,0,0,12} {
     attackDice = new Dice*[2];
     defenseDice = new Dice*[2];
     initializeDice();

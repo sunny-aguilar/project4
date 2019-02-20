@@ -15,7 +15,7 @@
 **                  name / attack / defense / armor / strength
 **                  Attack Dice: 2d10, Defense Dice: 3d6
 *********************************************************************/
-BlueMen::BlueMen(string name) : Character{name,0,0,3,12} {
+BlueMen::BlueMen(string name) : Character{name,"Blue Men",0,0,3,12} {
     attackDice = new Dice*[2];
     defenseDice = new Dice*[3];
     initializeDice();
