@@ -98,7 +98,7 @@ void Game::gameFlow() {
         }
 
         // reset match
-        match = 0;
+        match = 1;
 
     } while (playAgain());
 }
