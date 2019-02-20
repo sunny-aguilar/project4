@@ -157,8 +157,11 @@ void Game::startCombat(Character *playerOne, Character *playerTwo) {
 
     do {
         // display banner for each round played
+        cout << playerOne->getName() << " - " << playerOne->getType();
+        cout << " vs. ";
+        cout << playerTwo->getName() << " - " << playerTwo->getType() << endl;
         rounds++;
-        menu.menuRound(rounds, playerOne, playerTwo);
+        menu.menuRound(rounds);
 
         // first player attacks
         if (!playerDead) {

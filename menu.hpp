@@ -30,7 +30,7 @@ public:
     void menuEnterHeroName();
     int validateNumber(int min, int max);
     void menuDisplayPlayers();
-    void menuRound(int round, Character *playerOne, Character *playerTwo);
+    void menuRound(int round);
     void menuDeath(string type);
     void menuPlayAgain();
     void menuExitGame();
