@@ -66,8 +66,12 @@ void Menu::menuDisplayPlayers() {
 
 void Menu::menuDisplayMatch( string p1Name, string p1Type,
                              string p2Name, string p2Type ) {
-    cout << p1Name << " - " << p2Type << " vs. ";
-    cout << p2Name << " - " << p2Type << endl;
+
+    cout << "+-------------------------------------------------------------+\n";
+    cout << "                         MATCH #1                              \n";
+    cout << "         " << p1Name << " - " << p2Type << " vs. ";
+    cout << "         " << p2Name << " - " << p2Type << endl;
+    cout << "+-------------------------------------------------------------+";
 }
 
 /*********************************************************************
