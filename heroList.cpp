@@ -18,7 +18,37 @@ HeroList::HeroList() :
 /*********************************************************************
 ** Description:     node list destructor
 *********************************************************************/
-HeroList::~HeroList() {}
+HeroList::~HeroList() {
+    HeroNode *garbage = nullptr;
+
+    // delete player one
+    if (headTeamOne != nullptr) {
+        while (headTeamOne != nullptr) {
+            garbage = headTeamOne;
+            headTeamOne = headTeamOne->next;
+            delete garbage;
+        }
+    }
+
+    // delete player two
+    if (headTeamTwo != nullptr) {
+        while (headTeamTwo != nullptr) {
+            garbage = headTeamTwo;
+            headTeamTwo = headTeamTwo->next;
+            delete garbage;
+        }
+    }
+
+    // delete loser list
+    if (losers != nullptr) {
+        while (losers != nullptr) {
+            garbage = losers;
+            losers = losers->next;
+            delete garbage;
+        }
+    }
+
+}
 
 /*********************************************************************
 ** Description:     adds heroes to the linked list for player 1 and
@@ -167,7 +197,10 @@ void HeroList::moveBack(HeroNode *&winnerTeam) {
 
     // restore player strength
     int restoreHealth = ((rand() % 10 + 1) / 100) * head->hero->getStrength();
+    cout << "Health to restore " << restoreHealth << endl;
+    cout << "Current health " << head->hero->getStrength() << endl;
     head->hero->setStrength(restoreHealth + head->hero->getStrength());
+    cout << "Hero Health " << head->hero->getStrength() << endl;
 
     // make player last node on list
     winnerTeam->next = head;
