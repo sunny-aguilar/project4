@@ -256,18 +256,22 @@ int HeroList::restoreHealth(const HeroList::HeroNode *player) {
     }
     else if ( player->hero->getType() == "Barbarian" ) {
         // max strength is 12
+        cout << "Barbarian health before recover " << player->hero->getStrength() << endl;
 
     }
     else if ( player->hero->getType() == "Blue Men" ) {
         // max strength is 12
+        cout << "Blue Men health before recover " << player->hero->getStrength() << endl;
 
     }
     else if ( player->hero->getType() == "Medusa" ) {
         // max strength is 8
+        cout << "Medusa health before recover " << player->hero->getStrength() << endl;
 
     }
     else if ( player->hero->getType() == "Harry Potter" ) {
         // max strength is 10/20
+        cout << "Harry Potter health before recover " << player->hero->getStrength() << endl;
 
     }
 
