@@ -254,7 +254,7 @@ int HeroList::restoreHealth(const HeroList::HeroNode *player) {
         // max strength is 12
     }
     else if ( player->hero->getType() == "Medusa" ) {
-        // max strength is 18
+        // max strength is 8
     }
     else if ( player->hero->getType() == "Harry Potter" ) {
         // max strength is 18
