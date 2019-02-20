@@ -77,6 +77,7 @@ void Game::gameFlow() {
 
         // create combatant dice
         // auto created inside hero classes in constructor
+        // memory leak??????
 
         // start combat
         //heroes.startTournament();
