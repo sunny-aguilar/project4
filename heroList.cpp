@@ -235,7 +235,11 @@ void HeroList::addLoser(HeroNode *&loserTeam) {
 }
 
 /*********************************************************************
-** Description:     calculates health to restore
+** Description:     calculates health to restore. Takes in a constant
+ *                  player hero and calculates the max health a
+ *                  player can have. Then health to restore is
+ *                  randomly selected and calculated. Functions
+ *                  returns the total player health to restore.
 *********************************************************************/
 int HeroList::restoreHealth(const HeroList::HeroNode *player) {
     int restoreHealth = 0;
@@ -248,13 +252,13 @@ int HeroList::restoreHealth(const HeroList::HeroNode *player) {
     if ( player->hero->getType() == "Medusa" ) { maxHealth = 18; }
     if ( player->hero->getType() == "Harry Potter" ) { maxHealth = 18; }
 
-
+    // determine health lost
     int strengthLost = maxHealth - player->hero->getStrength();
-    // calculate health to restore
+    // calculate health to restore not to exceed strength lost
     restoreHealth = ((rand() % 10 + 1) / 10.0) * strengthLost;
     // increase player health
     restoreHealth += player->hero->getStrength();
 
-
+    // return player health to restore
     return restoreHealth;
 }
