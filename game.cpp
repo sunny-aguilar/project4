@@ -83,6 +83,8 @@ void Game::gameFlow() {
         while (!heroes.isTeamEmpty(FIRSTPLAYER) && !heroes.isTeamEmpty(SECONDPLAYER)) {
             // start combat rounds
             startCombat(heroes.getHero(FIRSTPLAYER), heroes.getHero(SECONDPLAYER));
+            // next match count
+            match++;
 
             cout << "NEXT MATCH\n";
             // determine who lost - in startCombat()
@@ -95,7 +97,8 @@ void Game::gameFlow() {
 
         }
 
-
+        // reset match
+        match = 0;
 
     } while (playAgain());
 }
@@ -160,7 +163,7 @@ void Game::startCombat(Character *playerOne, Character *playerTwo) {
         menu.menuDisplayMatch( playerOne->getName(),
                                playerOne->getType(),
                                playerTwo->getName(),
-                               playerTwo->getType() );
+                               playerTwo->getType(), match );
 
         // display combat banner for each round played
         rounds++;

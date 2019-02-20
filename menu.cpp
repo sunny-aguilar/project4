@@ -65,11 +65,11 @@ void Menu::menuDisplayPlayers() {
 }
 
 void Menu::menuDisplayMatch( string p1Name, string p1Type,
-                             string p2Name, string p2Type ) {
+                             string p2Name, string p2Type, int match ) {
 
     cout << "+-------------------------------------------------------------+\n";
-    cout << "                         MATCH #1                              \n";
-    cout << "          " << p1Name << " - " << p2Type << "  vs.  ";
+    cout << "                         MATCH #" << match << endl;
+    cout << "          " << p1Name << " - " << p1Type << "  vs.  ";
     cout << p2Name << " - " << p2Type << endl;
     cout << "+-------------------------------------------------------------+\n";
 }
@@ -79,7 +79,7 @@ void Menu::menuDisplayMatch( string p1Name, string p1Type,
 **                  combat round
 *********************************************************************/
 void Menu::menuRound(int round) {
-    cout << "\n                   COMBAT ROUND #" << round << endl;
+    cout << "                     COMBAT ROUND #" << round << endl;
     cout << "+-------------------------------------------------------------+\n";
 }
 
