@@ -248,7 +248,7 @@ int HeroList::restoreHealth(const HeroList::HeroNode *player) {
         int strengthLost = 18 - player->hero->getStrength();
         cout << "Vampire Health Lost " << strengthLost << endl;
 
-        restoreHealth = ((rand() % 10 - 2 + 1) + 2 / 10.0) * strengthLost;
+        restoreHealth = ((rand() % 10 + 1) / 10.0) * strengthLost;
         cout << "Health to restore " << restoreHealth << endl;
 
         restoreHealth += player->hero->getStrength();
@@ -261,7 +261,7 @@ int HeroList::restoreHealth(const HeroList::HeroNode *player) {
         int strengthLost = 12 - player->hero->getStrength();
         cout << "Barbarian Health Lost " << strengthLost << endl;
 
-        restoreHealth = ((rand() % 10 - 2 + 1) + 2 / 10.0) * strengthLost;
+        restoreHealth = ((rand() % 10 + 1) / 10.0) * strengthLost;
         cout << "Health to restore " << restoreHealth << endl;
 
         restoreHealth += player->hero->getStrength();
@@ -274,7 +274,7 @@ int HeroList::restoreHealth(const HeroList::HeroNode *player) {
         int strengthLost = 12 - player->hero->getStrength();
         cout << "Blue Men Health Lost " << strengthLost << endl;
 
-        restoreHealth = ((rand() % 10 - 2 + 1) + 2 / 10.0) * strengthLost;
+        restoreHealth = ((rand() % 10 + 1) / 10.0) * strengthLost;
         cout << "Health to restore " << restoreHealth << endl;
 
         restoreHealth += player->hero->getStrength();
@@ -287,7 +287,7 @@ int HeroList::restoreHealth(const HeroList::HeroNode *player) {
         int strengthLost = 8 - player->hero->getStrength();
         cout << "Medusa Health Lost " << strengthLost << endl;
 
-        restoreHealth = ((rand() % 10 - 2 + 1) + 2 / 10.0) * strengthLost;
+        restoreHealth = ((rand() % 10 + 1) / 10.0) * strengthLost;
         cout << "Health to restore " << restoreHealth << endl;
 
         restoreHealth += player->hero->getStrength();
@@ -300,7 +300,7 @@ int HeroList::restoreHealth(const HeroList::HeroNode *player) {
         int strengthLost = 18 - player->hero->getStrength();
         cout << "Harry Potter Health Lost " << strengthLost << endl;
 
-        restoreHealth = ((rand() % 10 - 2 + 1) + 2 / 10.0) * strengthLost;
+        restoreHealth = ((rand() % 10 + 1) / 10.0) * strengthLost;
         cout << "Health to restore " << restoreHealth << endl;
 
         restoreHealth += player->hero->getStrength();
