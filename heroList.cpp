@@ -236,7 +236,7 @@ void HeroList::addLoser(HeroNode *&loserTeam) {
 
 /*********************************************************************
 ** Description:     calculates health to restore. Takes in a constant
- *                  player hero and calculates the max health a
+**                  player hero and calculates the max health a
  *                  player can have. Then health to restore is
  *                  randomly selected and calculated. Functions
  *                  returns the total player health to restore.
