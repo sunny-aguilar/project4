@@ -243,53 +243,68 @@ int HeroList::restoreHealth(const HeroList::HeroNode *player) {
 
     if ( player->hero->getType() == "Vampire" ) {
         // max strength is 18
-        cout << "Vampire health before recover " << player->hero->getStrength() << endl;
+        cout << "Vampire health before recovery " << player->hero->getStrength() << endl;
 
         int strengthLost = 18 - player->hero->getStrength();
         cout << "Vampire Health Lost " << strengthLost << endl;
 
         restoreHealth = ((rand() % 10 + 1) / 10) * strengthLost;
         cout << "Health to restore " << restoreHealth << endl;
+
+        restoreHealth += player->hero->getStrength();
+        cout << "New Vampire health " << restoreHealth << endl;
     }
     else if ( player->hero->getType() == "Barbarian" ) {
         // max strength is 12
-        cout << "Barbarian health before recover " << player->hero->getStrength() << endl;
+        cout << "Barbarian health before recovery " << player->hero->getStrength() << endl;
 
         int strengthLost = 12 - player->hero->getStrength();
         cout << "Barbarian Health Lost " << strengthLost << endl;
 
         restoreHealth = ((rand() % 10 + 1) / 10) * strengthLost;
         cout << "Health to restore " << restoreHealth << endl;
+
+        restoreHealth += player->hero->getStrength();
+        cout << "New Barbarian health " << restoreHealth << endl;
     }
     else if ( player->hero->getType() == "Blue Men" ) {
         // max strength is 12
-        cout << "Blue Men health before recover " << player->hero->getStrength() << endl;
+        cout << "Blue Men health before recovery " << player->hero->getStrength() << endl;
 
         int strengthLost = 12 - player->hero->getStrength();
         cout << "Blue Men Health Lost " << strengthLost << endl;
 
         restoreHealth = ((rand() % 10 + 1) / 10) * strengthLost;
         cout << "Health to restore " << restoreHealth << endl;
+
+        restoreHealth += player->hero->getStrength();
+        cout << "New Blue Men health " << restoreHealth << endl;
     }
     else if ( player->hero->getType() == "Medusa" ) {
         // max strength is 8
-        cout << "Medusa health before recover " << player->hero->getStrength() << endl;
+        cout << "Medusa health before recovery " << player->hero->getStrength() << endl;
 
         int strengthLost = 8 - player->hero->getStrength();
         cout << "Medusa Health Lost " << strengthLost << endl;
 
         restoreHealth = ((rand() % 10 + 1) / 10) * strengthLost;
         cout << "Health to restore " << restoreHealth << endl;
+
+        restoreHealth += player->hero->getStrength();
+        cout << "Medusa Men health " << restoreHealth << endl;
     }
     else if ( player->hero->getType() == "Harry Potter" ) {
         // max strength is 10/20
-        cout << "Harry Potter health before recover " << player->hero->getStrength() << endl;
+        cout << "Harry Potter health before recovery " << player->hero->getStrength() << endl;
 
         int strengthLost = 18 - player->hero->getStrength();
         cout << "Harry Potter Health Lost " << strengthLost << endl;
 
         restoreHealth = ((rand() % 10 + 1) / 10) * strengthLost;
         cout << "Health to restore " << restoreHealth << endl;
+
+        restoreHealth += player->hero->getStrength();
+        cout << "Harry Potter Men health " << restoreHealth << endl;
     }
 
     return restoreHealth;
