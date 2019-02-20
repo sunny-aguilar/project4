@@ -199,7 +199,7 @@ void HeroList::moveBack(HeroNode *&winnerTeam) {
     restoreHealth(head);
 
 
-    head->hero->setStrength(restoreHealth + head->hero->getStrength());
+    head->hero->setStrength(  );
     cout << "Hero Health " << head->hero->getStrength() << endl;
 
     // make player last node on list
@@ -258,21 +258,29 @@ int HeroList::restoreHealth(const HeroList::HeroNode *player) {
         // max strength is 12
         cout << "Barbarian health before recover " << player->hero->getStrength() << endl;
 
+        int strengthLost = 12 - player->hero->getStrength();
+        cout << "Barbarian Health Lost " << strengthLost << endl;
     }
     else if ( player->hero->getType() == "Blue Men" ) {
         // max strength is 12
         cout << "Blue Men health before recover " << player->hero->getStrength() << endl;
 
+        int strengthLost = 12 - player->hero->getStrength();
+        cout << "Blue Men Health Lost " << strengthLost << endl;
     }
     else if ( player->hero->getType() == "Medusa" ) {
         // max strength is 8
         cout << "Medusa health before recover " << player->hero->getStrength() << endl;
 
+        int strengthLost = 8 - player->hero->getStrength();
+        cout << "Medusa Health Lost " << strengthLost << endl;
     }
     else if ( player->hero->getType() == "Harry Potter" ) {
         // max strength is 10/20
         cout << "Harry Potter health before recover " << player->hero->getStrength() << endl;
 
+        int strengthLost = 18 - player->hero->getStrength();
+        cout << "Harry Potter Health Lost " << strengthLost << endl;
     }
 
     return restoreHealth;
