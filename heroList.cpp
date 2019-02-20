@@ -239,7 +239,7 @@ void HeroList::addLoser(HeroNode *&loserTeam) {
 ** Description:     calculates health to restore
 *********************************************************************/
 int HeroList::restoreHealth(const HeroList::HeroNode *player) {
-    int restoreHealth = 0;
+    double restoreHealth = 0;
 
     if ( player->hero->getType() == "Vampire" ) {
         // max strength is 18
@@ -248,7 +248,7 @@ int HeroList::restoreHealth(const HeroList::HeroNode *player) {
         int strengthLost = 18 - player->hero->getStrength();
         cout << "Vampire Health Lost " << strengthLost << endl;
 
-        restoreHealth = ((rand() % 10 + 1) / 10) * strengthLost;
+        restoreHealth = ((rand() % 10 + 1) / 10.0) * strengthLost;
         cout << "Random num generated " << ((rand() % 10 + 1) / 10) << endl;
         cout << "Health to restore " << restoreHealth << endl;
 
@@ -262,7 +262,7 @@ int HeroList::restoreHealth(const HeroList::HeroNode *player) {
         int strengthLost = 12 - player->hero->getStrength();
         cout << "Barbarian Health Lost " << strengthLost << endl;
 
-        restoreHealth = ((rand() % 10 + 1) / 10) * strengthLost;
+        restoreHealth = ((rand() % 10 + 1) / 10.0) * strengthLost;
         cout << "Random num generated " << ((rand() % 10 + 1) / 10) << endl;
         cout << "Health to restore " << restoreHealth << endl;
 
@@ -276,7 +276,7 @@ int HeroList::restoreHealth(const HeroList::HeroNode *player) {
         int strengthLost = 12 - player->hero->getStrength();
         cout << "Blue Men Health Lost " << strengthLost << endl;
 
-        restoreHealth = ((rand() % 10 + 1) / 10) * strengthLost;
+        restoreHealth = ((rand() % 10 + 1) / 10.0) * strengthLost;
         cout << "Random num generated " << ((rand() % 10 + 1) / 10) << endl;
         cout << "Health to restore " << restoreHealth << endl;
 
@@ -290,7 +290,7 @@ int HeroList::restoreHealth(const HeroList::HeroNode *player) {
         int strengthLost = 8 - player->hero->getStrength();
         cout << "Medusa Health Lost " << strengthLost << endl;
 
-        restoreHealth = ((rand() % 10 + 1) / 10) * strengthLost;
+        restoreHealth = ((rand() % 10 + 1) / 10.0) * strengthLost;
         cout << "Random num generated " << ((rand() % 10 + 1) / 10) << endl;
         cout << "Health to restore " << restoreHealth << endl;
 
@@ -304,7 +304,7 @@ int HeroList::restoreHealth(const HeroList::HeroNode *player) {
         int strengthLost = 18 - player->hero->getStrength();
         cout << "Harry Potter Health Lost " << strengthLost << endl;
 
-        restoreHealth = ((rand() % 10 + 1) / 10) * strengthLost;
+        restoreHealth = ((rand() % 10 + 1) / 10.0) * strengthLost;
         cout << "Random num generated " << ((rand() % 10 + 1) / 10) << endl;
         cout << "Health to restore " << restoreHealth << endl;
 
