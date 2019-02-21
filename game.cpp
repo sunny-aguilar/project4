@@ -273,7 +273,7 @@ void Game::displayLoserList() {
         case 2:
             return;
         default:
-            "Unable to determine list to display!\n";
+            cout << "Unable to determine list to display!\n";
     }
 }
 
