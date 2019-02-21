@@ -270,3 +270,8 @@ int HeroList::restoreHealth(const HeroList::HeroNode *player) {
     // return player health to restore
     return restoreHealth;
 }
+
+/*********************************************************************
+** Description:     displays loser list
+*********************************************************************/
+
