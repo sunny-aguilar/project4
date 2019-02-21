@@ -37,6 +37,7 @@ public:
     bool checkDeath(Character *defender);
     void teamScore(bool playerOneResult, bool playerTwoResult);
     Player getLoser(bool playerOneResult, bool playerTwoResult);
+    void displayLoserList();
     bool playAgain();
     void exitGame();
 

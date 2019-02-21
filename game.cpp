@@ -99,7 +99,7 @@ void Game::gameFlow() {
         }
 
         // display loser list
-        menu.displayLosers();
+        displayLoserList();
 
         // reset match
         match = 1;
@@ -206,6 +206,9 @@ void Game::startCombat(Character *playerOne, Character *playerTwo) {
         // calculate team scores
         teamScore(playerOneWon, playerTwoWon);
 
+        // display team scores and winning team
+
+
         // set round loser
         roundLoser = getLoser(playerOneWon, playerTwoWon);
 
@@ -254,6 +257,23 @@ Player Game::getLoser(bool playerOneResult, bool playerTwoResult) {
     }
     else if (!playerTwoResult) {
         return SECONDPLAYER;
+    }
+}
+
+/*********************************************************************
+** Description:     prompts the user to see if they want to see the
+**                  loser list by calling the appropriate functions
+*********************************************************************/
+void Game::displayLoserList() {
+    menu.displayLosers();
+    switch () {
+        case 1:
+
+            break;
+        case 2:
+            return;
+        default:
+            "Unable to determine list to display!\n";
     }
 }
 
