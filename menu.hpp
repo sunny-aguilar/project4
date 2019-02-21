@@ -34,6 +34,7 @@ public:
                            string p2Name, string p2Type, int match);
     void menuRound(int round);
     void menuDeath(string type);
+    void displayLosers();
     void menuPlayAgain();
     void menuExitGame();
 

@@ -98,6 +98,9 @@ void Game::gameFlow() {
 
         }
 
+        // display loser list
+        menu.displayLosers();
+
         // reset match
         match = 1;
 

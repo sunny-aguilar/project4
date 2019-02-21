@@ -110,6 +110,17 @@ void Menu::menuDeath(string type) {
 }
 
 /*********************************************************************
+** Description:     prompt user to display loser list
+*********************************************************************/
+void Menu::displayLosers() {
+    cout << "\n WOULD YOU LIKE TO SEE THE LOSER LIST?\n"
+            "+--------------------------------------------------+\n";
+    cout << "1. Yes\n";
+    cout << "2. No\n";
+    cout << ">> ";
+}
+
+/*********************************************************************
 ** Description:     prompts user if they want to play again
 *********************************************************************/
 void Menu::menuPlayAgain() {
