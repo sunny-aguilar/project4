@@ -116,7 +116,7 @@ void Menu::displayLosers() {
     cout << "\n LOSER LIST DISPLAY\n"
             "+--------------------------------------------------+\n";
     cout << "1. Display Loser List\n";
-    cout << "2. No\n";
+    cout << "2. Do Not Display\n";
     cout << ">> ";
 }
 

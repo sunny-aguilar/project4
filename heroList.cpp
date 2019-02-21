@@ -274,4 +274,7 @@ int HeroList::restoreHealth(const HeroList::HeroNode *player) {
 /*********************************************************************
 ** Description:     displays loser list
 *********************************************************************/
+void HeroList::displayLoserList(Menu &obj) {
+    obj.displayLosers();
 
+}
