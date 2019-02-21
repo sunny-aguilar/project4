@@ -266,7 +266,7 @@ Player Game::getLoser(bool playerOneResult, bool playerTwoResult) {
 *********************************************************************/
 void Game::displayLoserList() {
     menu.displayLosers();
-    switch () {
+    switch (menu.validateNumber(1,2)) {
         case 1:
 
             break;
