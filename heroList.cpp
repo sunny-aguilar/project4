@@ -225,8 +225,12 @@ void HeroList::moveBack(HeroNode *&winnerTeam) {
 *********************************************************************/
 void HeroList::addLoser(HeroNode *&loserTeam) {
     // implement a stack for the losers list
+    HeroNode *temp = losers;
+    HeroNode *newHead = loserTeam;
+    newHead->next = temp;
+    losers = newHead;
 
-
+    // delete this method if its not a stack
     cout << "add losing hero to list fx\n";
     HeroNode *head = loserTeam;
 
