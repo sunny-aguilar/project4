@@ -135,7 +135,8 @@ bool HeroList::isEmpty(HeroNode *team) {
 }
 
 /*********************************************************************
-** Description:     checks to see if a team list is empty
+** Description:     checks to see whether a particular team list is
+**                  empty
 *********************************************************************/
 bool HeroList::isTeamEmpty(Player player) {
     switch (player) {
