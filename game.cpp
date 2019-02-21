@@ -268,7 +268,7 @@ void Game::displayLoserList() {
     menu.displayLosers();
     switch (menu.validateNumber(1,2)) {
         case 1:
-            heroes.displayLoserList(menu);
+            heroes.displayLoserList();
             break;
         case 2:
             return;

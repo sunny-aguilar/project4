@@ -48,7 +48,7 @@ public:
     void moveBack(HeroNode *&winnerTeam);
     void addLoser(HeroNode *&loserTeam);
     int restoreHealth(const HeroNode *player);
-    void displayLoserList(Menu &obj);
+    void displayLoserList();
 
 };
 

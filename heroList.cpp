@@ -112,14 +112,19 @@ void HeroList::traverseForward(HeroNode *team) {
     HeroNode *nodePtr = team;
 
     if (isEmpty(team)) {
-        cout << "There are no players in the team!\n";
+        cout << "There are no losers in the list!\n";
         return;
     }
-
-    while (nodePtr != nullptr) {
-        cout << "Hero name is " <<nodePtr->hero->getName() << endl;
-        nodePtr = nodePtr->next;
+    else {
+        cout << "\n LOSER LIST\n"
+                "+--------------------------------------------------+\n";
+        while (nodePtr != nullptr) {
+            cout << "Hero name is " <<nodePtr->hero->getName() << endl;
+            nodePtr = nodePtr->next;
+        }
     }
+
+
 }
 
 /*********************************************************************
@@ -274,7 +279,6 @@ int HeroList::restoreHealth(const HeroList::HeroNode *player) {
 /*********************************************************************
 ** Description:     displays loser list
 *********************************************************************/
-void HeroList::displayLoserList(Menu &obj) {
-    obj.displayLosers();
-
+void HeroList::displayLoserList() {
+    traverseForward(losers);
 }

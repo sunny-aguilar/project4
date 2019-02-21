@@ -113,7 +113,7 @@ void Menu::menuDeath(string type) {
 ** Description:     prompt user to display loser list
 *********************************************************************/
 void Menu::displayLosers() {
-    cout << "\n LOSER LIST DISPLAY\n"
+    cout << "\n LOSER LIST\n"
             "+--------------------------------------------------+\n";
     cout << "1. Display Loser List\n";
     cout << "2. Do Not Display\n";
