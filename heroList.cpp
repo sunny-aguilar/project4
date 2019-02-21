@@ -86,7 +86,8 @@ Character *HeroList::pickHero(int heroType, string heroName) {
 }
 
 /*********************************************************************
-** Description:     adds a hero node to the back of the node list
+** Description:     adds a hero node to the back of the node list for
+**                  a hero team
 *********************************************************************/
 void HeroList::addHeroNode(int heroType, string heroName, HeroNode *&team) {
     if (team == nullptr) {
