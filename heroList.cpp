@@ -116,10 +116,10 @@ void HeroList::traverseForward(HeroNode *team) {
         return;
     }
     else {
-        cout << "\n LOSER LIST\n"
+        cout << "\n BRAVE HEROES THAT FOUGHT BRAVELY - RIP\n"
                 "+--------------------------------------------------+\n";
         while (nodePtr != nullptr) {
-            cout << "Hero name is " <<nodePtr->hero->getName() << endl;
+            cout << "Hero name is " << nodePtr->hero->getName() << endl;
             nodePtr = nodePtr->next;
         }
     }
