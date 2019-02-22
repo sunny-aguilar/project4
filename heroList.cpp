@@ -240,7 +240,6 @@ void HeroList::addLoser(HeroNode *&loserTeam) {
         traverseForward(losersList);
     }
 
-
     // remove loser from team
 //    cout << "add losing hero to list fx\n";
 //    HeroNode *head = loserTeam;
