@@ -220,8 +220,8 @@ void HeroList::moveBack(HeroNode *&winnerTeam) {
 }
 
 /*********************************************************************
-** Description:     adds loser hero to loser list implemented as a
-**                  stack
+** Description:     adds defeated hero to loser list implemented as
+**                  a stack
 *********************************************************************/
 void HeroList::addLoser(HeroNode *&loserTeam) {
     // remove hero from team
