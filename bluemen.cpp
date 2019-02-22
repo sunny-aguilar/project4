@@ -97,9 +97,9 @@ void BlueMen::attackPlayer(Character *defender) {
     attack = 0;
     // roll attack dice
     attack = rollDice("attack");
-    cout << ">>Blue Men attacks!    -|---" << endl;
-    cout << "Swarm their opponent with an attack power of " << attack
-         << " points (2d10)" << endl << endl;
+    // cout << ">>Blue Men attacks!    -|---" << endl;
+    // cout << "Swarm their opponent with an attack power of " << attack
+    //      << " points (2d10)" << endl << endl;
 
     // send attack value to defender object
     defender->setAttackVal(attack);
@@ -115,8 +115,8 @@ void BlueMen::attackPlayer(Character *defender) {
 **                  to reduce their defensive dice.
 *********************************************************************/
 void BlueMen::defend() {
-    cout << ">>Blue Men defends!    )))" << endl;
-    cout << setw(2) << strength << " - Starting strength points " << endl << endl;
+    // cout << ">>Blue Men defends!    )))" << endl;
+    // cout << setw(2) << strength << " - Starting strength points " << endl << endl;
     int defendValue = 0;
 
     // special defense **Mob**
@@ -131,7 +131,7 @@ void BlueMen::defend() {
     if (damage < 0) { damage = 0; }
 
     // display damage received report
-    cout << "Defense blocked " << defendValue << " attack points\n";
+    // cout << "Defense blocked " << defendValue << " attack points\n";
     cout << setw(2) << attack << " - attack points\n";
     cout << setw(2) << defendValue << " - defense block\n";
     cout << setw(2) << armor << " - armor block\n";
