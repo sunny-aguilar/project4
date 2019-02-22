@@ -224,11 +224,12 @@ void HeroList::moveBack(HeroNode *&winnerTeam) {
 **                  stack
 *********************************************************************/
 void HeroList::addLoser(HeroNode *&loserTeam) {
-    // implement a stack for the losers list
+    // remove hero from team
     HeroNode *head = loserTeam;
     loserTeam = head->next;
     head->next = nullptr;
 
+    // add hero to top of stack
     if (losersList == nullptr) {
         losersList = head;
     }
