@@ -87,9 +87,6 @@ void Game::gameFlow() {
             // next match count
             match++;
 
-            cout << "NEXT MATCH\n";
-            // determine who lost - in startCombat()
-
             // send heroes to their proper destination
             heroes.sortHeroes(roundLoser);
 
