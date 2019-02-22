@@ -89,8 +89,8 @@ void Medusa::attackPlayer(Character *defender) {
     attack = 0;
     // roll attack dice
     attack = rollDice("attack");
-    cout << ">>Medusa attacks!    -|---" << endl;
-    cout << "Places a curse with an attack power of " << attack << " points (2d6)" << endl << endl;
+    // cout << ">>Medusa attacks!    -|---" << endl;
+    // cout << "Places a curse with an attack power of " << attack << " points (2d6)" << endl << endl;
 
     // special attack **Glare**
     specialAbility();
