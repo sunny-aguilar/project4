@@ -232,16 +232,11 @@ void HeroList::addLoser(HeroNode *&loserTeam) {
 
     if (losersList == nullptr) {
         losersList = head;
-        cout << "First loser added to loser list\n";
     }
     else {
         HeroNode *loserHead = losersList;
-        cout << "Old loser head is " << losersList->hero->getName() << endl;
-        cout << "New loser to add on stack " << head->hero->getName() << endl;
         head->next = loserHead;
         losersList = head;
-
-        cout << "Traverse loser list\n";
         traverseForward(losersList);
 
     }
