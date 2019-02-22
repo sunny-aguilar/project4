@@ -118,7 +118,10 @@ void Menu::menuDisplayScores(int p1Score, int p2Score) {
         winner = "WINNER - IT'S A TIE!";
     }
     else if (p1Score > p2Score) {
-        winner = "";
+        winner = "WINNER - TEAM ONE!";
+    }
+    else if (p1Score < p2Score) {
+        winner = "WINNER - TEAM TWO!";
     }
 
 
@@ -126,7 +129,7 @@ void Menu::menuDisplayScores(int p1Score, int p2Score) {
     cout << "+-------------------------------------------------------------+\n";
     cout << "        Team 1 Score: " << p1Score;
     cout << "           Team 2 Score: " << p2Score << "\n";
-    cout << "                WINNER " << ;
+    cout << "                " << winner << endl;
     cout << "+-------------------------------------------------------------+\n";
 }
 
