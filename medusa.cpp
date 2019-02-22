@@ -111,8 +111,8 @@ void Medusa::attackPlayer(Character *defender) {
  *                  to show calculations.
 *********************************************************************/
 void Medusa::defend() {
-    cout << ">>Medusa defends!    )))" << endl;
-    cout << setw(2) << strength << " - Starting strength points " << endl << endl;
+    // cout << ">>Medusa defends!    )))" << endl;
+    // cout << setw(2) << strength << " - Starting strength points " << endl << endl;
     int defendValue = 0;
 
     // roll dice
@@ -123,12 +123,12 @@ void Medusa::defend() {
     if (damage < 0) { damage = 0; }
 
     // display damage received report
-    cout << "Defense blocked " << defendValue << " attack points (1d6)\n";
-    cout << setw(2) << attack << " - attack points\n";
-    cout << setw(2) << defendValue << " - defense block (1d6)\n";
-    cout << setw(2) << armor << " - armor block\n";
-    cout << setw(2) << damage << " - net damage inflicted\n";
-    cout << setw(2) << strength - damage << " - ending strength points\n\n";
+    // cout << "Defense blocked " << defendValue << " attack points (1d6)\n";
+    // cout << setw(2) << attack << " - attack points\n";
+    // cout << setw(2) << defendValue << " - defense block (1d6)\n";
+    // cout << setw(2) << armor << " - armor block\n";
+    // cout << setw(2) << damage << " - net damage inflicted\n";
+    // cout << setw(2) << strength - damage << " - ending strength points\n\n";
 
     // update player strength
     damageReceived = damage;
@@ -141,7 +141,7 @@ void Medusa::defend() {
 void Medusa::specialAbility() {
     if (attack == 12) {
         useSpecial = true;
-        cout << "Opponent has caught Medusa's glare "
-                "and turned into stone!\n";
+        cout << "Opponent has caught Medusa's glare \n";
+        cout << "and turned into stone!\n";
     }
 }
