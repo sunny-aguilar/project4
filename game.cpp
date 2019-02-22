@@ -99,7 +99,7 @@ void Game::gameFlow() {
         }
 
         // display team scores and winning team
-        
+
 
         // display loser list
         displayLoserList();
@@ -212,7 +212,7 @@ void Game::startCombat(Character *playerOne, Character *playerTwo) {
         // set round loser
         roundLoser = getLoser(playerOneWon, playerTwoWon);
 
-        // pause between rounds - COMMENT OUT
+        // TODO pause between rounds - COMMENT OUT
         cout << "\nHit [ENTER] to continue to next round\n";
         cin.ignore();
 
