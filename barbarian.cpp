@@ -78,8 +78,8 @@ void Barbarian::attackPlayer(Character *defender) {
     attack = 0;
     // roll attack dice
     attack = rollDice("attack");
-    cout << getName() << " Barbarian attacks!    -|---" << endl;
-    cout << getName() << " Swings his mighty sword with an attack strength of " << attack << " points (2d6)" << endl << endl;
+    // cout << getName() << " Barbarian attacks!    -|---" << endl;
+    // cout << getName() << " Swings his mighty sword with an attack strength of " << attack << " points (2d6)" << endl << endl;
 
     // send attack value to defender object
     defender->setAttackVal(attack);
@@ -89,8 +89,8 @@ void Barbarian::attackPlayer(Character *defender) {
 ** Description:     d
 *********************************************************************/
 void Barbarian::defend() {
-    cout << getName() << ">>Barbarian defends!    )))" << endl;
-    cout << setw(2) << strength << " - Starting strength points " << endl << endl;
+    // cout << getName() << ">>Barbarian defends!    )))" << endl;
+    // cout << setw(2) << strength << " - Starting strength points " << endl << endl;
     int defendValue = 0;
 
     // roll dice
@@ -101,12 +101,12 @@ void Barbarian::defend() {
     if (damage < 0) { damage = 0; }
 
     // display damage received report
-    cout << "Defense blocked " << defendValue << " attack points (2d6)\n";
-    cout << setw(2) << attack << " - attack points\n";
-    cout << setw(2) << defendValue << " - defense block\n";
-    cout << setw(2) << armor << " - armor block\n";
-    cout << setw(2) << damage << " - net damage inflicted\n";
-    cout << setw(2) << strength - damage << " - ending strength points\n\n";
+    // cout << "Defense blocked " << defendValue << " attack points (2d6)\n";
+    // cout << setw(2) << attack << " - attack points\n";
+    // cout << setw(2) << defendValue << " - defense block\n";
+    // cout << setw(2) << armor << " - armor block\n";
+    // cout << setw(2) << damage << " - net damage inflicted\n";
+    // cout << setw(2) << strength - damage << " - ending strength points\n\n";
 
     // update player strength
     damageReceived = damage;
