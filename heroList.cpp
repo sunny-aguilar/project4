@@ -238,20 +238,6 @@ void HeroList::addLoser(HeroNode *&loserTeam) {
         head->next = loserHead;
         losersList = head;
     }
-
-//    // add loser to losers team list
-
-//    else {
-//        HeroNode *loserHead = losersList;
-//
-//        while (losersList->next != nullptr) {
-//            losersList = losersList->next;
-//        }
-//
-//        losersList->next = head;
-//
-//        losersList = loserHead;
-//    }
 }
 
 /*********************************************************************
