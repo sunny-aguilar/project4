@@ -235,10 +235,14 @@ void HeroList::addLoser(HeroNode *&loserTeam) {
         cout << "First loser added to loser list\n";
     }
     else {
-        HeroNode *loserHead = losersList;
-        cout << "Old loser head is " << loserHead->hero->getName() << endl;
+        //HeroNode *loserHead = losersList;
+        cout << "Old loser head is " << losersList->hero->getName() << endl;
         cout << "New loser to add on stack " << head->hero->getName() << endl;
-        head->next = loserHead;
+        head->next = losersList;
+
+        cout << "Traverse loser list\n";
+        traverseForward(losersList);
+
     }
 
 
