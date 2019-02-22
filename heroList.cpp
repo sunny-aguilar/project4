@@ -228,12 +228,14 @@ void HeroList::addLoser(HeroNode *&loserTeam) {
     HeroNode *head = loserTeam;
     loserTeam = head->next;
     head->next = nullptr;
+    cout << "Loser is " << head->hero->getName() << endl;
 
     if (losersList == nullptr) {
         losersList = head;
     }
     else {
         HeroNode *loserHead = losersList;
+        cout << "Old loser head is " << loserHead->hero->getName() << endl;
         head->next = loserHead;
     }
 
