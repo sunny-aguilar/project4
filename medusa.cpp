@@ -141,7 +141,7 @@ void Medusa::defend() {
 void Medusa::specialAbility() {
     if (attack == 12) {
         useSpecial = true;
-        cout << "Opponent has caught Medusa's glare \n";
-        cout << "and turned into stone!\n";
+        // cout << "Opponent has caught Medusa's glare \n";
+        // cout << "and turned into stone!\n";
     }
 }
