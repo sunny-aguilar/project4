@@ -113,7 +113,7 @@ void Menu::menuDeath(string type) {
 ** Description:     displays who won the game and the scores
 *********************************************************************/
 void Menu::menuDisplayScores() {
-    
+
 }
 
 /*********************************************************************
