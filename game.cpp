@@ -91,7 +91,7 @@ void Game::gameFlow() {
             // determine who lost - in startCombat()
 
             // send heroes to their proper destination
-            heroes.sortHeros(roundLoser);
+            heroes.sortHeroes(roundLoser);
 
             // continue with rounds again
             rounds = 0;     // reset round number
