@@ -233,7 +233,8 @@ bool Game::checkDeath(Character *defender) {
 }
 
 /*********************************************************************
-** Description:     calculates the team score
+** Description:     calculates the team score. Score can go negative
+**                  if player has too many losses.
 *********************************************************************/
 void Game::teamScore(bool playerOneResult, bool playerTwoResult) {
     if (playerOneResult) {
