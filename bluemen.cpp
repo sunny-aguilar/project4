@@ -132,11 +132,11 @@ void BlueMen::defend() {
 
     // display damage received report
     // cout << "Defense blocked " << defendValue << " attack points\n";
-    cout << setw(2) << attack << " - attack points\n";
-    cout << setw(2) << defendValue << " - defense block\n";
-    cout << setw(2) << armor << " - armor block\n";
-    cout << setw(2) << damage << " - net damage inflicted\n";
-    cout << setw(2) << strength - damage << " - ending strength points\n\n";
+    // cout << setw(2) << attack << " - attack points\n";
+    // cout << setw(2) << defendValue << " - defense block\n";
+    // cout << setw(2) << armor << " - armor block\n";
+    // cout << setw(2) << damage << " - net damage inflicted\n";
+    // cout << setw(2) << strength - damage << " - ending strength points\n\n";
 
     // update player strength
     damageReceived = damage;
