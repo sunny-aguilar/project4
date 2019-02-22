@@ -113,7 +113,8 @@ void HeroList::traverseForward(HeroNode *team) {
     HeroNode *nodePtr = team;
 
     if (isEmpty(team)) {
-        cout << "There are no losers in the list!\n";
+        cout << " There are no losers in the list!\n"
+                "+--------------------------------------------------+\n";
         return;
     }
     else {
