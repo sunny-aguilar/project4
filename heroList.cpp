@@ -237,7 +237,7 @@ void HeroList::addLoser(HeroNode *&loserTeam) {
         HeroNode *loserHead = losersList;
         head->next = loserHead;
         losersList = head;
-        traverseForward(losersList);
+        //traverseForward(losersList);
     }
 
     // remove loser from team
