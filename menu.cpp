@@ -112,9 +112,9 @@ void Menu::menuDeath(string type) {
 /*********************************************************************
 ** Description:     displays who won the game and the scores
 *********************************************************************/
-void Menu::menuDisplayScores() {
+void Menu::menuDisplayScores(int p1Score, int p2Score) {
     cout << "+-------------------------------------------------------------+\n";
-    cout << "\n";
+    cout << "   Team 1 Score: " <<  << "\n";
     cout << "\n";
     cout << "+-------------------------------------------------------------+\n";
 }
