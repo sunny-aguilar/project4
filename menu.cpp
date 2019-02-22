@@ -110,8 +110,11 @@ void Menu::menuDeath(string type) {
 }
 
 /*********************************************************************
-** Description:     prompt user to display loser list
+** Description:     displays who won the game and the scores
 *********************************************************************/
+void Menu::menuDisplayScores() {
+    
+}
 
 /*********************************************************************
 ** Description:     prompt user to display loser list
