@@ -59,11 +59,9 @@ void HeroList::addHeroes(Player player, int heroType, string heroName) {
         case FIRSTPLAYER:
             // assign pickHero to the right team list
             addHeroNode(heroType, heroName, headTeamOne);
-            traverseForward(headTeamOne);   // delete this function
             break;
         case SECONDPLAYER:
             addHeroNode(heroType, heroName, headTeamTwo);
-            traverseForward(headTeamTwo);   // delete, not needed
             break;
         default:
             cout << "Unable to determine player!\n";
