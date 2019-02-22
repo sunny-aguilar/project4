@@ -98,6 +98,9 @@ void Game::gameFlow() {
 
         }
 
+        // display team scores and winning team
+        
+
         // display loser list
         displayLoserList();
 
@@ -206,14 +209,10 @@ void Game::startCombat(Character *playerOne, Character *playerTwo) {
         // calculate team scores
         teamScore(playerOneWon, playerTwoWon);
 
-        // display team scores and winning team
-
-
         // set round loser
         roundLoser = getLoser(playerOneWon, playerTwoWon);
 
-
-        // pause between rounds
+        // pause between rounds - COMMENT OUT
         cout << "\nHit [ENTER] to continue to next round\n";
         cin.ignore();
 
