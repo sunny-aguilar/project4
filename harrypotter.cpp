@@ -87,8 +87,8 @@ void HarryPotter::attackPlayer(Character *defender) {
     attack = 0;
     // roll attack dice
     attack = rollDice("attack");
-    cout << ">>Harry Potter attacks!    -|---" << endl;
-    cout << "Conjures a spell with an attack strength of " << attack << " points (2d6)" << endl << endl;
+    // cout << ">>Harry Potter attacks!    -|---" << endl;
+    // cout << "Conjures a spell with an attack strength of " << attack << " points (2d6)" << endl << endl;
 
     // send attack value to defender object
     defender->setAttackVal(attack);
@@ -104,8 +104,8 @@ void HarryPotter::attackPlayer(Character *defender) {
 **                  called during its defense.
 *********************************************************************/
 void HarryPotter::defend() {
-    cout << ">>Harry Potter defends!    )))" << endl;
-    cout << setw(2) << strength << " - Starting strength points " << endl << endl;
+    // cout << ">>Harry Potter defends!    )))" << endl;
+    // cout << setw(2) << strength << " - Starting strength points " << endl << endl;
     int defendValue = 0;
 
     // roll dice
@@ -116,18 +116,18 @@ void HarryPotter::defend() {
     if (damage < 0) { damage = 0; }
 
     // display damage received report
-    cout << "Defense blocked " << defendValue << " attack points (2d6)\n";
-    cout << setw(2) << attack << " - attack points\n";
-    cout << setw(2) << defendValue << " - defense block\n";
-    cout << setw(2) << armor << " - armor block\n";
-    cout << setw(2) << damage << " - damage inflicted\n";
-    cout << setw(2) << strength - damage << " - net ending strength points\n\n";
+    // cout << "Defense blocked " << defendValue << " attack points (2d6)\n";
+    // cout << setw(2) << attack << " - attack points\n";
+    // cout << setw(2) << defendValue << " - defense block\n";
+    // cout << setw(2) << armor << " - armor block\n";
+    // cout << setw(2) << damage << " - damage inflicted\n";
+    // cout << setw(2) << strength - damage << " - net ending strength points\n\n";
 
     // special defense **Hogwarts**
     if ((strength - damage < 1) && !hogwartsUsed) {
         specialAbility();
-        cout << "Harry Potter's strength points have dropped below 1 and has died!\n";
-        cout << "Harry Potter has used Hogwarts and is alive again with strength 20!\n";
+        // cout << "Harry Potter's strength points have dropped below 1 and has died!\n";
+        // cout << "Harry Potter has used Hogwarts and is alive again with strength 20!\n";
         strength = 20;
         hogwartsUsed = true;
     }
@@ -137,7 +137,7 @@ void HarryPotter::defend() {
 
         // if Hogwarts ability already used, prompt user
         if (hogwartsUsed) {
-            cout << "Harry Potter cannot used Hogwarts again!\n";
+            // cout << "Harry Potter cannot used Hogwarts again!\n";
         }
     }
 }
