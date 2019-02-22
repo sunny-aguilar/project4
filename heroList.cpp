@@ -13,7 +13,7 @@
 HeroList::HeroList() :
     headTeamOne{nullptr},
     headTeamTwo{nullptr},
-    losers{nullptr} {}
+    losersList{nullptr} {}
 
 /*********************************************************************
 ** Description:     node list destructor
@@ -40,10 +40,10 @@ HeroList::~HeroList() {
     }
 
     // delete loser list
-    if (losers != nullptr) {
-        while (losers != nullptr) {
-            garbage = losers;
-            losers = losers->next;
+    if (losersList != nullptr) {
+        while (losersList != nullptr) {
+            garbage = losersList;
+            losersList = losersList->next;
             delete garbage;
         }
     }
@@ -185,7 +185,7 @@ Character *HeroList::getHero(Player player) {
 **                  the team list and the winner is sent to the back
 **                  of their team list.
 *********************************************************************/
-void HeroList::sortHeros(Player player) {
+void HeroList::sortHeroes(Player player) {
     if (player == FIRSTPLAYER) {
         addLoser(headTeamOne);
         moveBack(headTeamTwo);
@@ -227,33 +227,38 @@ void HeroList::addLoser(HeroNode *&loserTeam) {
     // implement a stack for the losers list
     HeroNode *head = loserTeam;
     loserTeam = head->next;
-
-    HeroNode *temp = losers;
-
-    newHead->next = temp;
-    losers = newHead;
-
-    // delete this method if its not a stack
-    cout << "add losing hero to list fx\n";
-    HeroNode *head = loserTeam;
-
-    loserTeam = head->next;
-
     head->next = nullptr;
 
-    if (losers == nullptr) {
-        losers = head;
+    if (losersList == nullptr) {
+        losersList = head;
     }
     else {
-        HeroNode *loserHead = losers;
+        HeroNode *loserHead = losersList;
+    }
 
-        while (losers->next != nullptr) {
-            losers = losers->next;
+
+
+
+    // remove loser from team
+    cout << "add losing hero to list fx\n";
+    HeroNode *head = loserTeam;
+    loserTeam = head->next;
+    head->next = nullptr;
+
+    // add loser to losers team list
+    if (losersList == nullptr) {
+        losersList = head;
+    }
+    else {
+        HeroNode *loserHead = losersList;
+
+        while (losersList->next != nullptr) {
+            losersList = losersList->next;
         }
 
-        losers->next = head;
+        losersList->next = head;
 
-        losers = loserHead;
+        losersList = loserHead;
     }
 }
 
@@ -290,5 +295,5 @@ int HeroList::restoreHealth(const HeroList::HeroNode *player) {
 ** Description:     displays loser list
 *********************************************************************/
 void HeroList::displayLoserList() {
-    traverseForward(losers);
+    traverseForward(losersList);
 }

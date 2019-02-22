@@ -32,7 +32,7 @@ private:
     Player player;
     HeroNode *headTeamOne;
     HeroNode *headTeamTwo;
-    HeroNode *losers;
+    HeroNode *losersList;
 
 public:
     HeroList();
@@ -44,7 +44,7 @@ public:
     bool isEmpty(HeroNode *team);
     bool isTeamEmpty(Player player);
     Character *getHero(Player player);
-    void sortHeros(Player player);
+    void sortHeroes(Player player);
     void moveBack(HeroNode *&winnerTeam);
     void addLoser(HeroNode *&loserTeam);
     int restoreHealth(const HeroNode *player);
