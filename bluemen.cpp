@@ -150,12 +150,12 @@ void BlueMen::defend() {
 void BlueMen::specialAbility() {
     useSpecial = true;
     if (strength > 8) {
-        cout << "Blue men defends with 3d6 defense dice\n";
+        // cout << "Blue men defends with 3d6 defense dice\n";
     }
     else if (strength <= 8 && strength > 4) {
-        cout << "Blue men defends with 2d6 defense dice\n";
+        // cout << "Blue men defends with 2d6 defense dice\n";
     }
     else if (strength <= 4) {
-        cout << "Blue men defends with 1d6 defense dice\n";
+        // cout << "Blue men defends with 1d6 defense dice\n";
     }
 }
