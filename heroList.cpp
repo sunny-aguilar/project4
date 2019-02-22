@@ -239,8 +239,6 @@ void HeroList::addLoser(HeroNode *&loserTeam) {
         losersList = head;
     }
 
-    // remove loser from team
-//
 //    // add loser to losers team list
 //    if (losersList == nullptr) {
 //        losersList = head;
