@@ -240,9 +240,7 @@ void HeroList::addLoser(HeroNode *&loserTeam) {
     }
 
 //    // add loser to losers team list
-//    if (losersList == nullptr) {
-//        losersList = head;
-//    }
+
 //    else {
 //        HeroNode *loserHead = losersList;
 //
