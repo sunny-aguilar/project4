@@ -99,9 +99,7 @@ void Game::gameFlow() {
         }
 
         // display team scores and winning team
-        menu.menuDisplayScores() {
-            
-        }
+        menu.menuDisplayScores();
 
         // display loser list
         displayLoserList();
