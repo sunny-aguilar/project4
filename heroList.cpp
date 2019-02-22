@@ -229,7 +229,7 @@ void HeroList::addLoser(HeroNode *&loserTeam) {
     loserTeam = head->next;
     head->next = nullptr;
 
-    // add hero to top of stack
+    // add defeat hero to top of stack
     if (losersList == nullptr) {
         losersList = head;
     }
