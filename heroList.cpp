@@ -301,12 +301,11 @@ void HeroList::displayLoserList() {
 ** Description:     displays loser list by traversing it
 *********************************************************************/
 void HeroList::resetLoserList() {
-    HeroNode *temp = losersList;
-    if (temp == nullptr) {
-        cout << "The loser list is empty\n";
+    HeroNode *head = losersList;
+    while (head != nullptr) {
+        HeroNode *garbage = head;
+        head = head->next;
+        delete garbage;
     }
-    else {
-        
-    }
-
+    losersList = nullptr;
 }
