@@ -300,7 +300,7 @@ void HeroList::displayLoserList() {
 /*********************************************************************
 ** Description:     displays loser list by traversing it
 *********************************************************************/
-void HeroList::resetLoserList() {
+void HeroList::emptyLoserList() {
     HeroNode *head = losersList;
     while (head != nullptr) {
         HeroNode *garbage = head;
