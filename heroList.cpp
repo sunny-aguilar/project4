@@ -89,11 +89,9 @@ Character *HeroList::pickHero(int heroType, string heroName) {
 *********************************************************************/
 void HeroList::addHeroNode(int heroType, string heroName, HeroNode *&team) {
     if (team == nullptr) {
-        cout << "No heroes in the list\n";
         team = new HeroNode( pickHero(heroType, heroName) );
     }
     else {
-        cout << "Heroes already in the list\n";
         HeroNode *heroPtr = team;
 
         while (heroPtr->next != nullptr) {
@@ -308,4 +306,6 @@ void HeroList::emptyLoserList() {
         delete garbage;
     }
     losersList = nullptr;
+
+    traverseForward(losersList);
 }
