@@ -309,6 +309,4 @@ void HeroList::emptyLoserList() {
         delete garbage;
     }
     losersList = nullptr;
-
-    traverseForward(losersList);
 }
