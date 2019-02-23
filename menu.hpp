@@ -29,7 +29,6 @@ public:
     void menuSelectFighter(int player, int heroNum);
     void menuEnterHeroName();
     int validateNumber(int min, int max);
-    void menuDisplayPlayers();
     void menuDisplayMatch( string p1Name, string p1Type,
                            string p2Name, string p2Type, int match);
     void menuRound(int round);

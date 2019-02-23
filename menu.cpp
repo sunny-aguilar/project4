@@ -56,14 +56,6 @@ void Menu::menuEnterHeroName() {
     cout << ">> ";
 }
 
-/*********************************************************************
-** Description:     displays characters chosen for battle
-*********************************************************************/
-void Menu::menuDisplayPlayers() {
-    cout << "\n TEAM #1 HEROES\n"
-            "+--------------------------------------------------+\n";
-}
-
 void Menu::menuDisplayMatch( string p1Name, string p1Type,
                              string p2Name, string p2Type, int match ) {
 

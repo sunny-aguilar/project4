@@ -167,14 +167,14 @@ void Game::startCombat(Character *playerOne, Character *playerTwo) {
 
     do {
         // display match banner
-        menu.menuDisplayMatch( playerOne->getName(),
-                               playerOne->getType(),
-                               playerTwo->getName(),
-                               playerTwo->getType(), match );
+        //menu.menuDisplayMatch( playerOne->getName(),
+        //                       playerOne->getType(),
+        //                       playerTwo->getName(),
+        //                       playerTwo->getType(), match );
 
         // display combat banner for each round played
-        rounds++;
-        menu.menuRound(rounds);
+        //rounds++;
+        //menu.menuRound(rounds);
 
         // first player attacks
         if (!playerDead) {
@@ -226,7 +226,7 @@ void Game::startCombat(Character *playerOne, Character *playerTwo) {
 bool Game::checkDeath(Character *defender) {
     bool playerDied = false;
     if (defender->playerStatus()) {
-        menu.menuDeath(defender->getName());
+        //menu.menuDeath(defender->getName());
         playerDied = true;
     }
     return playerDied;
