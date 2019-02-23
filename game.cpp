@@ -105,7 +105,7 @@ void Game::gameFlow() {
         match = 1;
 
         // reset/clear losers list
-
+        heroes.resetLoserList();
 
     } while (playAgain());
 }

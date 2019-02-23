@@ -291,12 +291,22 @@ int HeroList::restoreHealth(const HeroList::HeroNode *player) {
 }
 
 /*********************************************************************
-** Description:     displays loser list  by
+** Description:     displays loser list by traversing the list
 *********************************************************************/
 void HeroList::displayLoserList() {
     traverseForward(losersList);
 }
 
 /*********************************************************************
-** Description:     displays loser list
+** Description:     displays loser list by traversing it
 *********************************************************************/
+void HeroList::resetLoserList() {
+    HeroNode *temp = losersList;
+    if (temp == nullptr) {
+        cout << "The loser list is empty\n";
+    }
+    else {
+        
+    }
+
+}
