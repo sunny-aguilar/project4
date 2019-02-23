@@ -29,6 +29,7 @@ HeroList::~HeroList() {
             delete garbage;
         }
     }
+    headTeamOne = nullptr;
 
     // delete player two
     if (headTeamTwo != nullptr) {
@@ -38,6 +39,7 @@ HeroList::~HeroList() {
             delete garbage;
         }
     }
+    headTeamTwo = nullptr;
 
     // delete loser list
     if (losersList != nullptr) {
@@ -47,6 +49,7 @@ HeroList::~HeroList() {
             delete garbage;
         }
     }
+    losersList = nullptr;
 
 }
 
