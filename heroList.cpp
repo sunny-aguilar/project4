@@ -299,7 +299,7 @@ void HeroList::displayLoserList() {
 }
 
 /*********************************************************************
-** Description:     displays loser list by traversing it
+** Description:     empties the loser list
 *********************************************************************/
 void HeroList::emptyLoserList() {
     HeroNode *head = losersList;
