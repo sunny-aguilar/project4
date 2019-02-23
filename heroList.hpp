@@ -50,7 +50,6 @@ public:
     int restoreHealth(const HeroNode *player);
     void displayLoserList();
     void emptyLoserList();
-
 };
 
 #endif //PROJECT4_HEROLIST_HPP
