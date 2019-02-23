@@ -104,6 +104,9 @@ void Game::gameFlow() {
         // reset match
         match = 1;
 
+        // reset/clear losers list
+
+
     } while (playAgain());
 }
 
@@ -210,8 +213,8 @@ void Game::startCombat(Character *playerOne, Character *playerTwo) {
         roundLoser = getLoser(playerOneWon, playerTwoWon);
 
         // TODO pause between rounds - COMMENT OUT
-        cout << "\nHit [ENTER] to continue to next round\n";
-        cin.ignore();
+        // cout << "\nHit [ENTER] to continue to next round\n";
+        // cin.ignore();
 
     } while (!playerDead);
 }
