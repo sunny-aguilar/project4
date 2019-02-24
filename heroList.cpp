@@ -326,6 +326,7 @@ void HeroList::emptyLoserList() {
             headTeam1 = headTeam1->next;
             cout << "T1 Hero deleted - " << garbageT1->getName() << endl;
             delete garbageT1;
+            delete headTeam1;
         }
     }
 
@@ -337,6 +338,7 @@ void HeroList::emptyLoserList() {
             headTeam2 = headTeam2->next;
             cout << "T2 Hero deleted - " << garbageT2->getName() << endl;
             delete garbageT2;
+            delete headTeam1;
         }
     }
 
