@@ -316,10 +316,10 @@ void HeroList::emptyLoserList() {
     if (head != nullptr) {
         while (head != nullptr) {
             HeroNode *garbage = head;
-            Character *garbage1 = head->hero; // delete chracter
+            Character *garbage1 = head->hero; // delete character
             head = head->next;
             cout << "Loser hero deleted - " << garbage->hero->getName() << endl; // delete chracter
-            delete garbage1; // delete chracter
+            delete garbage1; // delete character
             delete garbage;
         }
     }
