@@ -19,6 +19,15 @@ HeroList::HeroList() :
 ** Description:     node list destructor
 *********************************************************************/
 HeroList::~HeroList() {
+    // delete team 1 characters
+    HeroNode *teamOne = headTeamOne;
+    while (teamOne != nullptr) {
+        Character *garbage1 = teamOne->hero;
+        teamOne = teamOne->next;
+        delete garbage1;
+    }
+
+
     HeroNode *garbage = nullptr;
 
     // delete player one
@@ -50,7 +59,6 @@ HeroList::~HeroList() {
         }
     }
     losersList = nullptr;
-
 }
 
 /*********************************************************************
