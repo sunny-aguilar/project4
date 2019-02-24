@@ -314,7 +314,6 @@ void HeroList::emptyLoserList() {
             delete garbage1; // delete chracter
             delete garbage;
         }
-        cout << "after while reached\n";
     }
     losersList = nullptr;
 
