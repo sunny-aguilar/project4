@@ -19,10 +19,11 @@ HeroList::HeroList() :
 ** Description:     node list destructor
 *********************************************************************/
 HeroList::~HeroList() {
-    // delete team 1 characters
+    // TODO - delete team 1 characters; debug first
     HeroNode *teamOne = headTeamOne;
     while (teamOne != nullptr) {
         Character *garbage1 = teamOne->hero;
+        cout << "Deleting character " << garbage1->getName() << endl;
         teamOne = teamOne->next;
         delete garbage1;
     }
@@ -287,6 +288,16 @@ void HeroList::displayLoserList() {
 ** Description:     empties the loser list
 *********************************************************************/
 void HeroList::emptyLoserList() {
+    // TODO - make sure this deletes the characters
+//    HeroNode *loserHead = losersList;
+//    while (loserHead != nullptr) {
+//        Character *garbage1 = loserHead->hero;
+//        cout << "Deleting character " << garbage1->getName() << endl;
+//        loserHead = loserHead->next;
+//        delete garbage1;
+//    }
+
+    // delete loser node list
     HeroNode *head = losersList;
     while (head != nullptr) {
         HeroNode *garbage = head;
