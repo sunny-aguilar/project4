@@ -36,6 +36,7 @@ public:
     void startCombat(Character *playerOne, Character *playerTwo);
     bool checkDeath(Character *defender);
     void teamScore(bool playerOneResult, bool playerTwoResult);
+    void resetScore();
     Player getLoser(bool playerOneResult, bool playerTwoResult);
     void displayLoserList();
     bool playAgain();

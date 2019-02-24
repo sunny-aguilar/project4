@@ -104,7 +104,10 @@ void Game::gameFlow() {
         // reset match
         match = 1;
 
-        // reset/clear losers list
+        // reset team scores
+        resetScore();
+
+        // TODO - reset/clear losers list
         heroes.emptyLoserList();
 
     } while (playAgain());
@@ -248,16 +251,16 @@ void Game::teamScore(bool playerOneResult, bool playerTwoResult) {
 }
 
 /*********************************************************************
-** Description:     returns enum that states which player lost the
-**                  combat round
+** Description:     calculates the team score. Score can go negative
+**                  if player has too many losses.
 *********************************************************************/
-Player Game::getLoser(bool playerOneResult, bool playerTwoResult) {
-    if (!playerOneResult) {
-        return FIRSTPLAYER;
-    }
-    else if (!playerTwoResult) {
-        return SECONDPLAYER;
-    }
+
+/*********************************************************************
+** Description:     resets team scores after game is over
+*********************************************************************/
+void Game::resetScore() {
+    teamTwoScore = 0;
+    teamTwoScore = 0;
 }
 
 /*********************************************************************
