@@ -29,9 +29,17 @@ HeroList::~HeroList() {
 //            delete garbage1;
 //        }
 //    }
+
+    // display if lists exists
     cout << "Team One List " << headTeamOne << endl;
     cout << "Team Two List " << headTeamTwo << endl;
     cout << "LTeam List " << losersList << endl;
+
+    // display if characters exist
+    // cout << "Characters team 1 " << headTeamOne->hero << endl;
+    cout << "Characters team 2 " << headTeamTwo->hero << endl;
+
+
 
     HeroNode *garbage = nullptr;
     // delete player one
@@ -331,7 +339,7 @@ void HeroList::emptyLoserList() {
 
     // TODO delete team 2 heroes
     HeroNode *headTeam2 = headTeamTwo;
-    if (headTeam2 != nullptr) {
+    if (headTeamTwo != nullptr) {
         while (headTeam2 != nullptr) {
             Character *garbageT2 = headTeam2->hero;
             headTeam2 = headTeam2->next;
@@ -340,5 +348,6 @@ void HeroList::emptyLoserList() {
             delete headTeam2;
         }
     }
-
+    cout << "Team One List " << headTeamOne << endl;
+    cout << "Team Two List " << headTeamTwo << endl;
 }
