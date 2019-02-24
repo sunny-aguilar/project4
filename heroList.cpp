@@ -20,16 +20,18 @@ HeroList::HeroList() :
 *********************************************************************/
 HeroList::~HeroList() {
     // TODO - delete team 1 characters; debug first
-    HeroNode *teamOne = headTeamOne;
-    if (headTeamOne != nullptr) {
-        while (teamOne != nullptr) {
-            Character *garbage1 = teamOne->hero;
-            cout << "Deleting character " << garbage1->getName() << endl;
-            teamOne = teamOne->next;
-            delete garbage1;
-        }
-    }
-
+//    HeroNode *teamOne = headTeamOne;
+//    if (headTeamOne != nullptr) {
+//        while (teamOne != nullptr) {
+//            Character *garbage1 = teamOne->hero;
+//            cout << "Deleting character " << garbage1->getName() << endl;
+//            teamOne = teamOne->next;
+//            delete garbage1;
+//        }
+//    }
+    cout << "Team One List " << headTeamOne << endl;
+    cout << "Team Two List " << headTeamTwo << endl;
+    cout << "LTeam List " << losersList << endl;
 
     HeroNode *garbage = nullptr;
     // delete player one
@@ -290,15 +292,15 @@ void HeroList::displayLoserList() {
 *********************************************************************/
 void HeroList::emptyLoserList() {
     // TODO - make sure this deletes the characters
-    HeroNode *loserHead = losersList;
-    if (loserHead != nullptr) {
-        while (loserHead != nullptr) {
-            Character *garbage1 = loserHead->hero;
-            cout << "Deleting character " << garbage1->getName() << endl;
-            loserHead = loserHead->next;
-            delete garbage1;
-        }
-    }
+//    HeroNode *loserHead = losersList;
+//    if (loserHead != nullptr) {
+//        while (loserHead != nullptr) {
+//            Character *garbage1 = loserHead->hero;
+//            cout << "Deleting character " << garbage1->getName() << endl;
+//            loserHead = loserHead->next;
+//            delete garbage1;
+//        }
+//    }
 
 
     // delete loser node list
@@ -306,34 +308,36 @@ void HeroList::emptyLoserList() {
     if (head != nullptr) {
         while (head != nullptr) {
             HeroNode *garbage = head;
+            Character *garbage1 = head->hero; // delete chracter
             head = head->next;
-            cout << "Loser hero deleted - " << garbage->hero->getName() << endl;
+            cout << "Loser hero deleted - " << garbage->hero->getName() << endl; // delete chracter
+            delete garbage1; // delete chracter
             delete garbage;
         }
         cout << "after while reached\n";
     }
     losersList = nullptr;
 
-//    // TODO delete team 1 heroes
-//    HeroNode *headTeam1 = headTeamOne;
-//    if (headTeamOne != nullptr) {
-//        while (headTeam1 != nullptr) {
-//            Character *garbageT1 = headTeam1->hero;
-//            headTeam1 = headTeam1->next;
-//            cout << "T1 Hero deleted - " << garbageT1->getName() << endl;
-//            delete garbageT1;
-//        }
-//    }
-//
-//    // TODO delete team 2 heroes
-//    HeroNode *headTeam2 = headTeamTwo;
-//    if (headTeam2 != nullptr) {
-//        while (headTeam2 != nullptr) {
-//            Character *garbageT2 = headTeam2->hero;
-//            headTeam2 = headTeam2->next;
-//            cout << "T2 Hero deleted - " << garbageT2->getName() << endl;
-//            delete garbageT2;
-//        }
-//    }
+    // TODO delete team 1 heroes
+    HeroNode *headTeam1 = headTeamOne;
+    if (headTeamOne != nullptr) {
+        while (headTeam1 != nullptr) {
+            Character *garbageT1 = headTeam1->hero;
+            headTeam1 = headTeam1->next;
+            cout << "T1 Hero deleted - " << garbageT1->getName() << endl;
+            delete garbageT1;
+        }
+    }
+
+    // TODO delete team 2 heroes
+    HeroNode *headTeam2 = headTeamTwo;
+    if (headTeam2 != nullptr) {
+        while (headTeam2 != nullptr) {
+            Character *garbageT2 = headTeam2->hero;
+            headTeam2 = headTeam2->next;
+            cout << "T2 Hero deleted - " << garbageT2->getName() << endl;
+            delete garbageT2;
+        }
+    }
 
 }
