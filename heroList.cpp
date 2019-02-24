@@ -21,11 +21,13 @@ HeroList::HeroList() :
 HeroList::~HeroList() {
     // TODO - delete team 1 characters; debug first
     HeroNode *teamOne = headTeamOne;
-    while (teamOne != nullptr) {
-        Character *garbage1 = teamOne->hero;
-        cout << "Deleting character " << garbage1->getName() << endl;
-        teamOne = teamOne->next;
-        delete garbage1;
+    if (headTeamOne != nullptr) {
+        while (teamOne != nullptr) {
+            Character *garbage1 = teamOne->hero;
+            cout << "Deleting character " << garbage1->getName() << endl;
+            teamOne = teamOne->next;
+            delete garbage1;
+        }
     }
 
 
@@ -289,20 +291,26 @@ void HeroList::displayLoserList() {
 void HeroList::emptyLoserList() {
     // TODO - make sure this deletes the characters
     HeroNode *loserHead = losersList;
-    while (loserHead != nullptr) {
-        Character *garbage1 = loserHead->hero;
-        cout << "Deleting character " << garbage1->getName() << endl;
-        loserHead = loserHead->next;
-        delete garbage1;
+    if (loserHead != nullptr) {
+        while (loserHead != nullptr) {
+            Character *garbage1 = loserHead->hero;
+            cout << "Deleting character " << garbage1->getName() << endl;
+            loserHead = loserHead->next;
+            delete garbage1;
+        }
     }
+
 
     // delete loser node list
     HeroNode *head = losersList;
-    while (head != nullptr) {
-        HeroNode *garbage = head;
-        head = head->next;
-        cout << "Loser hero deleted - " << garbage->hero->getName() << endl;
-        delete garbage;
+    if (head != nullptr) {
+        while (head != nullptr) {
+            HeroNode *garbage = head;
+            head = head->next;
+            cout << "Loser hero deleted - " << garbage->hero->getName() << endl;
+            delete garbage;
+        }
+        cout << "after while reached\n";
     }
     losersList = nullptr;
 
