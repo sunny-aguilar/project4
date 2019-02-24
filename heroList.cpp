@@ -30,7 +30,6 @@ HeroList::~HeroList() {
 
 
     HeroNode *garbage = nullptr;
-
     // delete player one
     if (headTeamOne != nullptr) {
         while (headTeamOne != nullptr) {
@@ -289,13 +288,13 @@ void HeroList::displayLoserList() {
 *********************************************************************/
 void HeroList::emptyLoserList() {
     // TODO - make sure this deletes the characters
-//    HeroNode *loserHead = losersList;
-//    while (loserHead != nullptr) {
-//        Character *garbage1 = loserHead->hero;
-//        cout << "Deleting character " << garbage1->getName() << endl;
-//        loserHead = loserHead->next;
-//        delete garbage1;
-//    }
+    HeroNode *loserHead = losersList;
+    while (loserHead != nullptr) {
+        Character *garbage1 = loserHead->hero;
+        cout << "Deleting character " << garbage1->getName() << endl;
+        loserHead = loserHead->next;
+        delete garbage1;
+    }
 
     // delete loser node list
     HeroNode *head = losersList;
