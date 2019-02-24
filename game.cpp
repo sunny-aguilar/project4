@@ -259,6 +259,19 @@ void Game::resetScore() {
 }
 
 /*********************************************************************
+** Description:     returns enum that states which player lost the
+**                  combat round
+*********************************************************************/
+Player Game::getLoser(bool playerOneResult, bool playerTwoResult) {
+    if (!playerOneResult) {
+        return FIRSTPLAYER;
+    }
+    else if (!playerTwoResult) {
+        return SECONDPLAYER;
+    }
+}
+
+/*********************************************************************
 ** Description:     prompts the user to see if they want to see the
 **                  loser list by calling the appropriate functions
 *********************************************************************/
