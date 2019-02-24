@@ -251,11 +251,6 @@ void Game::teamScore(bool playerOneResult, bool playerTwoResult) {
 }
 
 /*********************************************************************
-** Description:     calculates the team score. Score can go negative
-**                  if player has too many losses.
-*********************************************************************/
-
-/*********************************************************************
 ** Description:     resets team scores after game is over
 *********************************************************************/
 void Game::resetScore() {
