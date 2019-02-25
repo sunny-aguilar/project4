@@ -6,7 +6,9 @@
 **                  controlled with various functions here and
 **                  the menu and character objects live inside the
 **                  Game class. Enums are used to provide for more
-**                  readable code where possible.
+**                  readable code where possible. The game class also
+**                  implements a Queue list used for holding
+**                  characters in a linked list.
 *********************************************************************/
 #ifndef GAME_HPP
 #define GAME_HPP
