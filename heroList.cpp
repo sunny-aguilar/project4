@@ -297,7 +297,7 @@ void HeroList::emptyLoserList() {
             HeroNode *garbage = head;
             Character *garbage1 = head->hero; // delete character
             head = head->next;
-            cout << "Loser hero deleted - " << garbage->hero->getName() << endl; // delete chracter
+            cout << "Loser hero deleted - " << garbage->hero->getName() << endl; // delete character
             delete garbage1; // delete character
             delete garbage;
         }
