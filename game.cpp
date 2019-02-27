@@ -77,10 +77,6 @@ void Game::gameFlow() {
         // select player
         selectPlayer();
 
-        // create combatant dice
-        // auto created inside hero classes in constructor
-        // memory leak??????
-
         // start combat
         //heroes.startTournament();
         while (!heroes.isTeamEmpty(FIRSTPLAYER) && !heroes.isTeamEmpty(SECONDPLAYER)) {
@@ -91,6 +87,9 @@ void Game::gameFlow() {
 
             // send heroes to their proper destination
             heroes.sortHeroes(roundLoser);
+
+            // TODO reset round loser; delete if not needed
+            roundLoser = NONE;
 
             // continue with rounds again
             rounds = 0;     // reset round number
@@ -171,15 +170,15 @@ void Game::startCombat(Character *playerOne, Character *playerTwo) {
     bool playerTwoWon = false;
 
     do {
-        // display match banner
-        //menu.menuDisplayMatch( playerOne->getName(),
-        //                       playerOne->getType(),
-        //                       playerTwo->getName(),
-        //                       playerTwo->getType(), match );
+        // TODO - COMMENT THIS MENU OUT -  display match banner
+        menu.menuDisplayMatch( playerOne->getName(),
+                               playerOne->getType(),
+                               playerTwo->getName(),
+                               playerTwo->getType(), match );
 
-        // display combat banner for each round played
-        //rounds++;
-        //menu.menuRound(rounds);
+        // TODO - COMMENT THIS MENU OUT - display combat banner for each round played
+        rounds++;
+        menu.menuRound(rounds);
 
         // first player attacks
         if (!playerDead) {
@@ -210,6 +209,10 @@ void Game::startCombat(Character *playerOne, Character *playerTwo) {
                 playerTwoWon = true;
             }
         }
+
+        // TODO - delete after debugging
+        if (playerOneWon) { cout << playerOne->getName() << " wins!\n"; }
+        else if (playerTwoWon) { cout << playerTwo->getName() << " wins!\n"; }
 
         // calculate team scores
         teamScore(playerOneWon, playerTwoWon);

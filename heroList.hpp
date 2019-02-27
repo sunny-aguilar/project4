@@ -16,7 +16,7 @@
 #include "medusa.hpp"
 #include "harrypotter.hpp"
 
-enum Player {FIRSTPLAYER, SECONDPLAYER};
+enum Player {FIRSTPLAYER, SECONDPLAYER, NONE};
 
 class HeroList {
 private:
