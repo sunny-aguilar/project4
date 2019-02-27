@@ -289,44 +289,46 @@ void HeroList::displayLoserList() {
 *********************************************************************/
 void HeroList::emptyLoserList() {
     // TODO - make sure this deletes the characters
+    cout << "Team One List " << headTeamOne << endl;
+    cout << "Team Two List " << headTeamTwo << endl;
 
     // delete loser node list
-    HeroNode *head = losersList;
-    if (head != nullptr) {
-        while (head != nullptr) {
-            HeroNode *garbage = head;
-            Character *garbage1 = head->hero; // delete character
-            head = head->next;
-            cout << "Loser hero deleted - " << garbage->hero->getName() << endl; // delete character
-            delete garbage1; // delete character
-            delete garbage;
+    if (losersList != nullptr) {
+        HeroNode *headLoser = losersList;
+        while (headLoser != nullptr) {
+            //HeroNode *garbage = head;
+            Character *garbageHero = headLoser->hero; // delete character
+            headLoser = headLoser->next;
+            //cout << "Loser hero deleted - " << garbage->hero->getName() << endl; // delete character
+            delete garbageHero; // delete character
+            //delete garbage;
         }
     }
     losersList = nullptr;
 
-//    // TODO delete team 1 heroes
-//    HeroNode *headTeam1 = headTeamOne;
-//    if (headTeamOne != nullptr) {
-//        while (headTeam1 != nullptr) {
-//            Character *garbageT1 = headTeam1->hero;
-//            headTeam1 = headTeam1->next;
-//            cout << "T1 Hero deleted - " << garbageT1->getName() << endl;
-//            delete garbageT1;
-//            delete headTeam1;
-//        }
-//    }
-//
-//    // TODO delete team 2 heroes
-//    HeroNode *headTeam2 = headTeamTwo;
-//    if (headTeamTwo != nullptr) {
-//        while (headTeam2 != nullptr) {
-//            Character *garbageT2 = headTeam2->hero;
-//            headTeam2 = headTeam2->next;
-//            cout << "T2 Hero deleted - " << garbageT2->getName() << endl;
-//            delete garbageT2;
-//            delete headTeam2;
-//        }
-//    }
+    // TODO delete team 1 heroes
+    if (headTeamOne != nullptr) {
+        HeroNode *headTeam1 = headTeamOne;
+        while (headTeam1 != nullptr) {
+            Character *garbageHero = headTeam1->hero;
+            headTeam1 = headTeam1->next;
+            cout << "T1 Hero deleted - " << garbageHero->getName() << endl;
+            delete garbageHero;
+            //delete headTeam1;
+        }
+    }
+
+    // TODO delete team 2 heroes
+    if (headTeamTwo != nullptr) {
+        HeroNode *headTeam2 = headTeamTwo;
+        while (headTeam2 != nullptr) {
+            Character *garbageHero = headTeam2->hero;
+            headTeam2 = headTeam2->next;
+            cout << "T2 Hero deleted - " << garbageHero->getName() << endl;
+            delete garbageHero;
+            //delete headTeam2;
+        }
+    }
     cout << "Team One List " << headTeamOne << endl;
     cout << "Team Two List " << headTeamTwo << endl;
 }

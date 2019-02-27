@@ -109,7 +109,7 @@ void Game::gameFlow() {
         // reset team scores
         resetScore();
 
-        // TODO - reset/clear losers list
+        // TODO - delete defeated heroes
         heroes.emptyLoserList();
 
     } while (playAgain());
