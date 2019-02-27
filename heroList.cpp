@@ -26,7 +26,7 @@ HeroList::~HeroList() {
 
     // display if characters exist
     // cout << "Characters team 1 " << headTeamOne->hero << endl;
-    cout << "Characters team 2 " << headTeamTwo->hero << endl;
+    // cout << "Characters team 2 " << headTeamTwo->hero << endl;
 
 
 
