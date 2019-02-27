@@ -369,18 +369,18 @@ void HeroList::emptyLoserList() {
     cout << endl;
 
     // TODO delete team 1 heroes
-//    cout << "\nDELETING Team One list:\n";
-//    if (headTeamOne != nullptr) {
-//        HeroNode *headTeam1 = headTeamOne;
-//        while (headTeam1 != nullptr) {
-//            Character *garbageHero = headTeam1->hero;
-//            headTeam1 = headTeam1->next;
-//            cout << "emptyLoserList() T1 Hero deleted - " << garbageHero->getName() << endl;
-//            delete garbageHero;
-//        }
-//        //delete headTeam1;
-//    }
-//
+    cout << "\nDELETING Team One list:\n";
+    if (headTeamOne != nullptr) {
+        while (headTeamOne != nullptr) {
+            HeroNode *headTeam1 = headTeamOne;
+            Character *garbageHero = headTeam1->hero;
+            cout << "Team One Hero deleted - " << headTeam1->hero->getName() << endl;
+            headTeamOne = headTeamOne->next;
+            delete garbageHero;
+            delete headTeam1;
+        }
+    }
+
 //    // TODO delete team 2 heroes
 //    cout << "\nDELETING Team Two list:\n";
 //    if (headTeamTwo != nullptr) {
