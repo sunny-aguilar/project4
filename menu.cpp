@@ -76,6 +76,14 @@ void Menu::menuRound(int round) {
 }
 
 /*********************************************************************
+** Description:     displays the winner and loser for each match.
+**                  Function receives player objects as parameters.
+*********************************************************************/
+void Menu::menuWinnerLoser() {
+
+}
+
+/*********************************************************************
 ** Description:     displays the death of the player that dies
 *********************************************************************/
 void Menu::menuDeath(string type) {
