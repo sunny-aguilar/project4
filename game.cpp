@@ -224,24 +224,22 @@ void Game::startCombat(Character *playerOne, Character *playerTwo) {
 
 
     // TODO - delete after debugging
-    menu.menuWinnerLoser(playerOne, playerTwo);
-    cout << "+-------------------------------------------------------------+\n";
-    cout << "|          ***WINNER***         |         ***LOSER***         |\n";
-    cout << "+-------------------------------------------------------------+\n";
-    if (playerOneWon) {
-        cout << "        " << playerOne->getName() << " - ";
-        cout << playerOne->getType() << " wins";
-        cout << "        " << playerTwo->getName() << " - ";
-        cout << playerTwo->getType() << " loses\n";
-    }
-    else if (playerTwoWon) {
-        cout << "        " << playerTwo->getName() << " - ";
-        cout << playerTwo->getType() << " wins";
-        cout << "        " << playerOne->getName() << " - ";
-        cout << playerOne->getType() << " loses\n";
-    }
-
-
+    menu.menuWinnerLoser(playerOne, playerTwo, playerOneWon, playerTwoWon);
+//    cout << "+-------------------------------------------------------------+\n";
+//    cout << "|          ***WINNER***         |         ***LOSER***         |\n";
+//    cout << "+-------------------------------------------------------------+\n";
+//    if (playerOneWon) {
+//        cout << "        " << playerOne->getName() << " - ";
+//        cout << playerOne->getType() << " wins";
+//        cout << "        " << playerTwo->getName() << " - ";
+//        cout << playerTwo->getType() << " loses\n";
+//    }
+//    else if (playerTwoWon) {
+//        cout << "        " << playerTwo->getName() << " - ";
+//        cout << playerTwo->getType() << " wins";
+//        cout << "        " << playerOne->getName() << " - ";
+//        cout << playerOne->getType() << " loses\n";
+//    }
 }
 
 /*********************************************************************
