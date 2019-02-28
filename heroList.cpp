@@ -178,6 +178,7 @@ bool HeroList::isTeamEmpty(Player player) {
             }
         default: cout << "Unable to return hero\n";
     }
+    return false; // unused return value
 }
 
 /*********************************************************************
