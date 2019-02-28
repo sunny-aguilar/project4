@@ -227,21 +227,7 @@ void Game::startCombat(Character *playerOne, Character *playerTwo) {
     menu.menuWinnerLoser( playerOne->getName(), playerTwo->getName(),
                           playerOne->getType(), playerTwo->getType(),
                           playerOneWon, playerTwoWon);
-//    cout << "+-------------------------------------------------------------+\n";
-//    cout << "|          ***WINNER***         |         ***LOSER***         |\n";
-//    cout << "+-------------------------------------------------------------+\n";
-//    if (playerOneWon) {
-//        cout << "        " << playerOne->getName() << " - ";
-//        cout << playerOne->getType() << " wins";
-//        cout << "        " << playerTwo->getName() << " - ";
-//        cout << playerTwo->getType() << " loses\n";
-//    }
-//    else if (playerTwoWon) {
-//        cout << "        " << playerTwo->getName() << " - ";
-//        cout << playerTwo->getType() << " wins";
-//        cout << "        " << playerOne->getName() << " - ";
-//        cout << playerOne->getType() << " loses\n";
-//    }
+
 }
 
 /*********************************************************************
