@@ -172,9 +172,9 @@ void Game::startCombat(Character *playerOne, Character *playerTwo) {
     do {
         // TODO - COMMENT THIS MENU OUT -  display match banner
         //menu.menuDisplayMatch( playerOne->getName(),
-                               playerOne->getType(),
-                               playerTwo->getName(),
-                               playerTwo->getType(), match );
+                               //playerOne->getType(),
+                               //playerTwo->getName(),
+                               //playerTwo->getType(), match );
 
         // TODO - COMMENT THIS MENU OUT - display combat banner for each round played
         //rounds++;
