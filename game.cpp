@@ -223,7 +223,7 @@ void Game::startCombat(Character *playerOne, Character *playerTwo) {
     } while (!playerDead);
 
 
-    // TODO - delete after debugging
+    // display match winner and loser
     menu.menuWinnerLoser( playerOne->getName(), playerTwo->getName(),
                           playerOne->getType(), playerTwo->getType(),
                           playerOneWon, playerTwoWon);
