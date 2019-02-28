@@ -224,8 +224,9 @@ void Game::startCombat(Character *playerOne, Character *playerTwo) {
 
 
     // TODO - delete after debugging
-    menu.menuWinnerLoser(playerOne->getName(), playerTwo->getName(),
-            playerOne->getType(), playerTwo->getType(), playerOneWon, playerTwoWon);
+    menu.menuWinnerLoser( playerOne->getName(), playerTwo->getName(),
+                          playerOne->getType(), playerTwo->getType(),
+                          playerOneWon, playerTwoWon);
 //    cout << "+-------------------------------------------------------------+\n";
 //    cout << "|          ***WINNER***         |         ***LOSER***         |\n";
 //    cout << "+-------------------------------------------------------------+\n";
