@@ -79,7 +79,7 @@ void Menu::menuRound(int round) {
 ** Description:     displays the winner and loser for each match.
 **                  Function receives player objects as parameters.
 *********************************************************************/
-void Menu::menuWinnerLoser() {
+void Menu::menuWinnerLoser(const Character *p1, const Character *p2) {
 
 }
 
