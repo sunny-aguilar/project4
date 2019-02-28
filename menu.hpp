@@ -33,7 +33,8 @@ public:
                            string p2Name, string p2Type, int match);
     void menuRound(int round);
     void menuDeath(string type);
-    void menuWinnerLoser( Character *p1, Character *p2,
+    void menuWinnerLoser( string p1Name, string p2Name,
+                          string p1Type, string p2Type,
                           bool p1Result, bool p2Result );
     void menuDisplayScores(int p1Score, int p2Score);
     void displayLosers();

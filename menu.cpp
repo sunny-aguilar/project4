@@ -79,7 +79,8 @@ void Menu::menuRound(int round) {
 ** Description:     displays the winner and loser for each match.
 **                  Function receives player objects as parameters.
 *********************************************************************/
-void Menu::menuWinnerLoser( Character *p1, Character *p2,
+void Menu::menuWinnerLoser( string p1Name, string p2Name,
+                            string p1Type, string p2Type,
                             bool p1Result, bool p2Result) {
     cout << "+-------------------------------------------------------------+\n";
     cout << "|          ***WINNER***         |         ***LOSER***         |\n";
