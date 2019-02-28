@@ -87,16 +87,16 @@ void Menu::menuWinnerLoser( string p1Name, string p2Name,
     cout << "+-------------------------------------------------------------+\n";
 
     if (p1Result) {
-        cout << "        " << p1->getName() << " - ";
-        cout << p1->getType() << " wins";
-        cout << "        " << p2->getName() << " - ";
-        cout << p2->getType() << " loses\n";
+        cout << "        " << p1Name << " - ";
+        cout << p1Type << " wins";
+        cout << "        " << p2Name << " - ";
+        cout << p2Type << " loses\n";
     }
     else if (p2Result) {
-        cout << "        " << p2->getName() << " - ";
-        cout << p2->getType() << " wins";
-        cout << "        " << p1->getName() << " - ";
-        cout << p1->getType() << " loses\n";
+        cout << "        " << p2Name << " - ";
+        cout << p2Type << " wins";
+        cout << "        " << p1Name << " - ";
+        cout << p1Type << " loses\n";
     }
 
 }
