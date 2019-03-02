@@ -202,7 +202,6 @@ Character *HeroList::getHero(Player player) {
 *********************************************************************/
 void HeroList::sortHeroes(Player player) {
     if (player == FIRSTPLAYER) {
-        cout << "sortHeroes() Loser: " << headTeamOne->hero->getName() << endl;
         addLoser(headTeamOne);
         moveBack(headTeamTwo);
     }
