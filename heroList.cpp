@@ -360,6 +360,7 @@ void HeroList::emptyLoserList() {
     }
     //losersList = nullptr;
 
+    // delete team one characters and node
     if (headTeamOne != nullptr) {
         while (headTeamOne != nullptr) {
             HeroNode *headTeam1 = headTeamOne;
