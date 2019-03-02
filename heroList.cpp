@@ -349,7 +349,6 @@ void HeroList::displayLoserList() {
 *********************************************************************/
 void HeroList::emptyLoserList() {
     // delete loser node list
-    cout << "DELETING loserList:\n";
     if (losersList != nullptr) {
         while (losersList != nullptr) {
             HeroNode *headLoser = losersList;
