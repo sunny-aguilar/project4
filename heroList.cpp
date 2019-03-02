@@ -279,16 +279,6 @@ void HeroList::addLoser(HeroNode *&loserTeam) {
         head->next = loserHead;
         losersList = head;
     }
-
-
-
-    // TODO - delete this after debugged
-    HeroNode *loserHead = losersList;
-    cout << "addLoser() Loser list heroes traversal\n";
-    while (loserHead != nullptr) {
-        cout << loserHead->hero->getName() << " - ";
-        loserHead = loserHead->next;
-    }
 }
 
 /*********************************************************************
