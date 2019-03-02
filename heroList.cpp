@@ -369,9 +369,7 @@ void HeroList::emptyLoserList() {
             delete headTeam1;
         }
     }
-
-    // TODO delete team 2 heroes
-    cout << "\nDELETING Team Two list:\n";
+    
     if (headTeamTwo != nullptr) {
         while (headTeamTwo != nullptr) {
             HeroNode *headTeam2 = headTeamTwo;
