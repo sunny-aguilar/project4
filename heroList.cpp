@@ -353,9 +353,7 @@ void HeroList::emptyLoserList() {
         while (losersList != nullptr) {
             HeroNode *headLoser = losersList;
             Character *garbageHero = headLoser->hero; // delete character
-            cout << "Loser hero deleted " << headLoser->hero->getName() << endl;
             losersList = losersList->next;
-            //cout << "emptyLoserList() Loser hero deleted - " << garbageHero->getName() << endl; // delete character
             delete garbageHero; // delete character
             delete headLoser;
         }
