@@ -218,7 +218,6 @@ void HeroList::sortHeroes(Player player) {
 *********************************************************************/
 void HeroList::moveBack(HeroNode *&winnerTeam) {
     HeroNode *head = winnerTeam;
-    cout << "Winner to move back " << head->hero->getName() << endl;
 
     while (winnerTeam->next != nullptr) {
         cout << "Move back ops, Scrolling past list " << winnerTeam->hero->getName() << endl;
@@ -227,7 +226,6 @@ void HeroList::moveBack(HeroNode *&winnerTeam) {
 
     // restore player strength
     head->hero->setStrength( restoreHealth(head) );
-
     // make player last node on list
     winnerTeam->next = head;
     // point back to head
