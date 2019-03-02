@@ -217,14 +217,7 @@ void HeroList::sortHeroes(Player player) {
 ** Description:     moves winner hero to the back of the queue
 *********************************************************************/
 void HeroList::moveBack(HeroNode *&winnerTeam) {
-    // TODO - delete this after debugged
-    HeroNode *oldHead = winnerTeam;
-    cout << "Original winner list\n";
-    while (oldHead != nullptr) {
-        cout << oldHead->hero->getName() << " - ";
-        oldHead = oldHead->next;
-    }
-    cout << endl;
+
 
 
     HeroNode *head = winnerTeam;
