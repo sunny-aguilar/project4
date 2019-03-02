@@ -244,20 +244,6 @@ void HeroList::moveBack(HeroNode *&winnerTeam) {
     winnerTeam = head->next;
     // point next pointer to null
     head->next = nullptr;
-
-
-
-
-    // TODO - delete this after debugged
-    HeroNode *newHead = winnerTeam;
-    cout << "Updated winner list\n";
-    while (newHead != nullptr) {
-        cout << newHead->hero->getName() << " - ";
-        newHead = newHead->next;
-    }
-    cout << endl;
-
-
 }
 
 /*********************************************************************
