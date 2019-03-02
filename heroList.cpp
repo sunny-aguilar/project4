@@ -366,8 +366,8 @@ void HeroList::emptyLoserList() {
             HeroNode *headTeam1 = headTeamOne;
             Character *garbageHero = headTeam1->hero;
             headTeamOne = headTeamOne->next;
-            delete garbageHero;
-            delete headTeam1;
+            delete garbageHero; // delete character
+            delete headTeam1;   // delete node
         }
     }
 
