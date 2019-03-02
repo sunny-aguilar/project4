@@ -352,10 +352,10 @@ void HeroList::emptyLoserList() {
     if (losersList != nullptr) {
         while (losersList != nullptr) {
             HeroNode *headLoser = losersList;
-            Character *garbageHero = headLoser->hero; // delete character
+            Character *garbageHero = headLoser->hero;
             losersList = losersList->next;
             delete garbageHero; // delete character
-            delete headLoser;
+            delete headLoser;   // delete character
         }
     }
     //losersList = nullptr;
