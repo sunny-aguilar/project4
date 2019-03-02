@@ -381,6 +381,5 @@ void HeroList::emptyLoserList() {
     }
 
 
-    cout << "Team Two List " << headTeamTwo << endl;
     cout << "Loser List " << losersList << endl << endl;
 }
