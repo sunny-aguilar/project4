@@ -299,7 +299,6 @@ void HeroList::addLoser(HeroNode *&loserTeam) {
         cout << newHead->hero->getName() << " - ";
         newHead = newHead->next;
     }
-    cout << endl << endl;
 
 }
 
