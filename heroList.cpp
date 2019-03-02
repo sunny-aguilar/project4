@@ -380,6 +380,5 @@ void HeroList::emptyLoserList() {
         }
     }
 
-
-
+    
 }
