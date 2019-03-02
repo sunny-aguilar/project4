@@ -370,6 +370,7 @@ void HeroList::emptyLoserList() {
         }
     }
 
+    // delete team two characters and node
     if (headTeamTwo != nullptr) {
         while (headTeamTwo != nullptr) {
             HeroNode *headTeam2 = headTeamTwo;
