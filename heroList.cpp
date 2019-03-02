@@ -220,7 +220,6 @@ void HeroList::moveBack(HeroNode *&winnerTeam) {
     HeroNode *head = winnerTeam;
 
     while (winnerTeam->next != nullptr) {
-        cout << "Move back ops, Scrolling past list " << winnerTeam->hero->getName() << endl;
         winnerTeam = winnerTeam->next;
     }
 
