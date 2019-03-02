@@ -348,7 +348,7 @@ void HeroList::displayLoserList() {
 ** Description:     empties the loser list
 *********************************************************************/
 void HeroList::emptyLoserList() {
-    // delete loser node list
+    // delete loser team characters and nodes
     if (losersList != nullptr) {
         while (losersList != nullptr) {
             HeroNode *headLoser = losersList;
