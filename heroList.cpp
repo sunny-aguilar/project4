@@ -289,16 +289,6 @@ void HeroList::addLoser(HeroNode *&loserTeam) {
         cout << loserHead->hero->getName() << " - ";
         loserHead = loserHead->next;
     }
-
-
-    // TODO - delete this after debugged
-    HeroNode *newHead = loserTeam;
-    cout << "\n\naddLoser() Updated team with loser removed\n";
-    if (newHead == nullptr) { cout << "loserTeam is now empty\n"; }
-    while (newHead != nullptr) {
-        cout << newHead->hero->getName() << " - ";
-        newHead = newHead->next;
-    }
 }
 
 /*********************************************************************
