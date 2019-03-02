@@ -41,7 +41,7 @@ HeroList::~HeroList() {
     }
     headTeamTwo = nullptr;
 
-    // delete loser list
+    // delete loser team nodes
     if (losersList != nullptr) {
         while (losersList != nullptr) {
             garbage = losersList;
