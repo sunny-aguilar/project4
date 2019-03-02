@@ -138,7 +138,7 @@ void Menu::menuDisplayScores(int p1Score, int p2Score) {
     }
 
 
-    cout << "\n\n FINAL TEAM SCORE\n";
+    cout << "\n\n\n FINAL TEAM SCORE\n";
     cout << "+-------------------------------------------------------------+\n";
     cout << "        Team 1 Score: " << p1Score;
     cout << "           Team 2 Score: " << p2Score << "\n";
