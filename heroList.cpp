@@ -381,5 +381,5 @@ void HeroList::emptyLoserList() {
     }
 
 
-    cout << "Loser List " << losersList << endl << endl;
+
 }
