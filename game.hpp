@@ -1,14 +1,15 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
-** Date:            Feb 22, 2019
-** Description:     Game class holds various classes in it and is the
-**                  main driver behind the game. The game flow is
-**                  controlled with various functions here and
-**                  the menu and character objects live inside the
-**                  Game class. Enums are used to provide for more
-**                  readable code where possible. The game class also
-**                  implements a Queue list used for holding
-**                  characters in a linked list.
+** Date:            Mar 1, 2019
+** Description:     PROJECT 4 - this program is a fantasy combat
+**                  simulation where two teams fight using
+**                  various attack power and special abilities.
+**                  The characters are implemented using an abstract
+**                  base class where each type of character is derived
+**                  from it. There are a total of 5 different
+**                  characters in the game. Two additional classes are
+**                  incorporated to implement dice as well as a menu
+**                  class. Teams are implemented using linked lists.
 *********************************************************************/
 #ifndef GAME_HPP
 #define GAME_HPP

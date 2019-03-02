@@ -1,6 +1,6 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
-** Date:            Feb 22, 2019
+** Date:            Mar 1, 2019
 ** Description:     Barbarian class is derived from Character class.
 **                  Barbarian has no special abilities to call.
 *********************************************************************/

@@ -1,6 +1,6 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
-** Date:            Feb 22, 2019
+** Date:            Mar 1, 2019
 ** Description:     Character class is an abstract class which is used
 **                  by the various characters to inherit common traits
 **                  as well as to implement their own versions of

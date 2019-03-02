@@ -1,6 +1,6 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
-** Date:            Feb 22, 2019
+** Date:            Mar 1, 2019
 ** Description:     Dice are implemented using a class which allows
 **                  each character to have their own type of dice
 **                  as an object inside of them. This allows characters

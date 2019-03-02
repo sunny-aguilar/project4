@@ -1,6 +1,6 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
-** Date:            Feb 22, 2019
+** Date:            Mar 1, 2019
 ** Description:     HereList class holds the nodes that hold the
 **                  characters for each team. The nodes are created
 **                  as a linked list queue.

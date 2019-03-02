@@ -1,6 +1,6 @@
 /*********************************************************************
 ** Author:          Sandro Aguilar
-** Date:            Feb 22, 2019
+** Date:            Mar 1, 2019
 ** Description:     BlueMen class is derived from Character class.
 **                  Blue men has a high defense that due to 3d6 dice
 **                  however this special ability is eroded as its
