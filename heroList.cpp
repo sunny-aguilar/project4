@@ -19,17 +19,7 @@ HeroList::HeroList() :
 ** Description:     node list destructor
 *********************************************************************/
 HeroList::~HeroList() {
-    // display if lists exists
-    cout << "Team One List before destructor " << headTeamOne << endl;
-    cout << "Team Two List before destructor " << headTeamTwo << endl;
-    cout << "LTeam List before destructor " << losersList << endl;
-
-    // display if characters exist
-    // cout << "Characters team 1 " << headTeamOne->hero << endl;
-    // cout << "Characters team 2 " << headTeamTwo->hero << endl;
-
-
-
+    
     HeroNode *garbage = nullptr;
     // delete player one
     if (headTeamOne != nullptr) {
