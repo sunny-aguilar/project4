@@ -348,11 +348,6 @@ void HeroList::displayLoserList() {
 ** Description:     empties the loser list
 *********************************************************************/
 void HeroList::emptyLoserList() {
-    // TODO - make sure this deletes the characters
-    cout << "Team One List " << headTeamOne << endl;
-    cout << "Team Two List " << headTeamTwo << endl;
-    cout << "Loser List " << losersList << endl << endl;
-
     // delete loser node list
     cout << "DELETING loserList:\n";
     if (losersList != nullptr) {
