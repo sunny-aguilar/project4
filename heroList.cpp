@@ -60,11 +60,6 @@ HeroList::~HeroList() {
         }
     }
     losersList = nullptr;
-
-    // display any remaining nodes
-    cout << "Team One List after destructor " << headTeamOne << endl;
-    cout << "Team Two List after destructor " << headTeamTwo << endl;
-    cout << "LTeam List after destructor " << losersList << endl;
 }
 
 /*********************************************************************
