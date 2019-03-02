@@ -207,7 +207,6 @@ void HeroList::sortHeroes(Player player) {
         moveBack(headTeamTwo);
     }
     else if (player == SECONDPLAYER) {
-        cout << "sortHeroes() Loser: " << headTeamTwo->hero->getName() << endl;
         addLoser(headTeamTwo);
         moveBack(headTeamOne);
     }
