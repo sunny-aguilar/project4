@@ -379,5 +379,4 @@ void HeroList::emptyLoserList() {
             delete headTeam2;
         }
     }
-
 }
