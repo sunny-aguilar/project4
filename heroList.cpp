@@ -265,9 +265,7 @@ void HeroList::moveBack(HeroNode *&winnerTeam) {
 **                  a stack
 *********************************************************************/
 void HeroList::addLoser(HeroNode *&loserTeam) {
-    // TODO - delete this after debuggged
-    cout << "\naddLoser() Match loser " << loserTeam->hero->getName() << endl;
-    
+
     // remove defeated hero from team
     HeroNode *head = loserTeam;
     loserTeam = head->next;
